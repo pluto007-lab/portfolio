@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">Portfolio</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#works">Works</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="hero-label">Web Design / Front-end</p>
+      <h1>Web制作の学習記録と<br>制作した作品をまとめています。</h1>
+      <p class="hero-text">
+        HTML・CSS・JavaScriptを中心に、WebサイトやWebアプリの制作を学んでいます。
+      </p>
+      <a href="#works" class="btn">Worksを見る</a>
+    </section>
+
+    <section class="about" id="about">
+      <h2>About</h2>
+      <p>
+        職業訓練校でWeb制作を学びながら、架空サービスやWebアプリの制作に取り組んでいます。
+        デザインの雰囲気だけでなく、使いやすさや機能の実装も意識して制作しています。
+      </p>
+    </section>
+
+    <section class="skills" id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>GitHub Pages</li>
+      </ul>
+    </section>
+
+    <section class="works" id="works">
+      <h2>Works</h2>
+
+      <div class="work-list">
+
+        <article class="work-card">
+          <img src="img/pale-table.png" alt="pale table">
+          <div class="work-content">
+            <h3>pale table</h3>
+            <p>架空の食器ブランドのECサイト風デモ。商品切り替えやカート機能を実装しました。</p>
+            <p class="tags">HTML / CSS / JavaScript / LocalStorage</p>
+            <div class="work-links">
+              <a href="https://pluto007-lab.github.io/pale-table/" target="_blank">Demo</a>
+              <a href="https://github.com/pluto007-lab/pale-table" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <img src="img/umabiyori.png" alt="umabiyori.">
+          <div class="work-content">
+            <h3>umabiyori.</h3>
+            <p>競馬場や牧場などの旅先を記録・管理するためのWebアプリです。</p>
+            <p class="tags">HTML / CSS / JavaScript / LocalStorage</p>
+            <div class="work-links">
+              <a href="#" target="_blank">Demo</a>
+              <a href="#" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <img src="img/wakaba.png" alt="若葉">
+          <div class="work-content">
+            <h3>若葉</h3>
+            <p>シニア向けスマホ教室の紹介サイト。安心感と見やすさを意識して制作しました。</p>
+            <p class="tags">HTML / CSS</p>
+            <div class="work-links">
+              <a href="#" target="_blank">Demo</a>
+              <a href="#" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <img src="img/rinkaku.png" alt="輪郭">
+          <div class="work-content">
+            <h3>輪郭</h3>
+            <p>他者の視点や日々の問いを通して、自分自身を見つめ直す自己探求アプリです。</p>
+            <p class="tags">HTML / Tailwind CSS / JavaScript</p>
+            <div class="work-links">
+              <a href="#" target="_blank">Demo</a>
+              <a href="#" target="_blank">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact</h2>
+      <p>GitHubにて制作物を公開しています。</p>
+      <a href="https://github.com/pluto007-lab" target="_blank" class="btn">GitHubを見る</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Portfolio</p>
+  </footer>
+
+</body>
+</html>
