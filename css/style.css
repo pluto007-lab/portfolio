@@ -1,215 +1,799 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background: #eef3f8;
-    color: #5d6470;
-    font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
-    line-height: 1.8;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #eef3f8;
+  color: #5d6470;
+  font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
+  line-height: 1.8;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+section {
+  scroll-margin-top: 90px;
+}
+
+nav a {
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+nav a.active {
+  color: #6f9dca;
+}
+
+nav a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -6px;
+  height: 2px;
+  background: #6f9dca;
+  border-radius: 999px;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  width: 100%;
+  margin: 0;
+
+  background: rgba(238, 243, 248, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(143, 161, 179, 0.15);
+}
+
+.header-inner {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 18px 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #6f9dca;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+nav a {
+  color: #8fa1b3;
+  font-size: 13px;
+  letter-spacing: 2px;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #6f9dca;
+}
+
+main {
+  width: 90%;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.hero {
+  margin-top: 40px;
+  padding: 90px 70px;
+  background: #fffdfa;
+  border-radius: 40px;
+  box-shadow: 12px 12px 24px rgba(120, 130, 150, 0.16);
+}
+
+.hero-label {
+  color: #8fa9c4;
+  letter-spacing: 3px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  color: #6f9dca;
+  font-size: 38px;
+  line-height: 1.6;
+  letter-spacing: 4px;
+  margin-bottom: 24px;
+}
+
+.hero-text {
+  margin-bottom: 32px;
+}
+
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.about p + p {
+  margin-top: 16px;
+}
+
+.btn,
+.work-links a {
+  display: inline-block;
+  padding: 12px 26px;
+  background: #ffffff;
+  color: #7fa8cc;
+  border-radius: 16px;
+  box-shadow: 0 8px 18px rgba(150, 160, 180, 0.18);
+  font-size: 13px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.btn:hover,
+.work-links a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(150, 160, 180, 0.24);
+}
+
+section {
+  margin-top: 80px;
+  scroll-margin-top: 40px;
+}
+
+section h2 {
+  color: #6f9dca;
+  font-size: 30px;
+  letter-spacing: 6px;
+  margin-bottom: 24px;
+}
+
+.about,
+.skills,
+.contact {
+  background: #fffdfa;
+  border-radius: 32px;
+  padding: 50px;
+}
+
+/* Portfolio Summary */
+
+.portfolio-summary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-top: 42px;
+}
+
+.summary-item {
+  padding: 20px 16px;
+  background: #f6f9fd;
+  border: 1px solid #e7eef6;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.summary-item dt {
+  color: #8fa1b3;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.summary-item dd {
+  margin-top: 4px;
+  color: #6f9dca;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.summary-item dd span {
+  margin-left: 3px;
+  font-size: 11px;
+  font-weight: normal;
+}
+
+/* Skills */
+
+.skill-group {
+  min-width: 0;
+}
+
+.skill-group + .skill-group {
+  margin-top: 42px;
+  padding-top: 36px;
+  border-top: 1px solid #e7edf3;
+}
+
+.skill-group h3 {
+  color: #779fc4;
+  font-size: 20px;
+  letter-spacing: 3px;
+  margin-bottom: 22px;
+}
+
+.skill-group h4 {
+  color: #7599ba;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  list-style: none;
+}
+
+.skill-tags li {
+  background: #eef6ff;
+  color: #6f9dca;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-size: 13px;
+}
+
+.skill-category {
+  padding: 16px 18px;
+  background: #f7faff;
+  border-radius: 14px;
+}
+
+.skill-category + .skill-category {
+  margin-top: 10px;
+  border-top: none;
+}
+
+.skill-category p {
+  font-size: 14px;
+}
+
+.skill-description {
+  max-width: 820px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+/* AI Tools */
+
+.ai-tool-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.ai-tool-card {
+  padding: 24px;
+  background: #f7faff;
+  border: 1px solid #e8f0f8;
+  border-radius: 22px;
+}
+
+.ai-tool-card p {
+  font-size: 14px;
+}
+
+.ai-tool-card:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
+/* Qualifications */
+
+.qualification-list {
+  display: grid;
+  gap: 14px;
+}
+
+.qualification-item {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 20px;
+  align-items: center;
+  padding: 16px 20px;
+  background: #f7faff;
+  border-radius: 18px;
+}
+
+.qualification-item dt {
+  color: #8ba8c3;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.qualification-item dd {
+  color: #5d6470;
+  font-size: 14px;
+}
+
+/* Experience */
+
+.experience-card {
+  background: #fffdfa;
+  border-radius: 32px;
+  padding: 42px 50px;
+  box-shadow: 10px 10px 22px rgba(120, 130, 150, 0.14);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.experience-label {
+  color: #8fa9c4;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 4px;
+}
+
+.experience-card h3 {
+  color: #6f9dca;
+  font-size: 22px;
+}
+
+.experience-date {
+  flex-shrink: 0;
+  color: #8fa9c4;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.experience-summary {
+  max-width: 850px;
+  font-size: 14px;
+}
+
+.experience-section {
+  margin-top: 28px;
+}
+
+.experience-section h4,
+.experience-result h4 {
+  color: #7599ba;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.experience-details {
+  padding-left: 22px;
+}
+
+.experience-details li {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.experience-result {
+  margin-top: 30px;
+  padding: 22px 24px;
+  background: #f7faff;
+  border-radius: 18px;
+}
+
+.experience-result p {
+  font-size: 14px;
+}
+
+/* Works */
+
+.work-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.work-card {
+  background: #fffdfa;
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: 10px 10px 22px rgba(120, 130, 150, 0.14);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 12px 14px 26px rgba(120, 130, 150, 0.18);
+}
+
+.work-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.work-content {
+  padding: 28px;
+}
+
+.work-content h3 {
+  color: #6f9dca;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.work-content p {
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.tags {
+  color: #8fa9c4;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.work-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.work-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 14px;
+}
+
+.work-meta span {
+  padding: 5px 10px;
+  background: #eef6ff;
+  color: #789cbd;
+  border-radius: 999px;
+  font-size: 10px;
+  letter-spacing: 0.3px;
+}
+
+/* GitHub */
+
+.github-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+  padding: 36px 42px;
+  background: #fffdfa;
+  border-radius: 32px;
+  box-shadow: 10px 10px 22px rgba(120, 130, 150, 0.14);
+}
+
+.github-card > div {
+  flex: 1;
+  min-width: 0;
+}
+
+.github-card .btn {
+  flex-shrink: 0;
+}
+
+.github-label {
+  margin-bottom: 5px;
+  color: #8fa9c4;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.github-card h3 {
+  margin-bottom: 10px;
+  color: #6f9dca;
+  font-size: 21px;
+}
+
+.github-card p {
+  font-size: 14px;
+}
+
+.experience h2,
+.works h2,
+.github-activity h2 {
+  margin-bottom: 18px;
+}
+
+/* Contact */
+
+.contact {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.contact > p {
+  margin-bottom: 20px;
+}
+
+.contact-email {
+  margin-top: 8px;
+}
+
+.contact-email a {
+  color: #6f9dca;
+  font-size: 15px;
+  letter-spacing: 1px;
+  overflow-wrap: anywhere;
+}
+
+.contact-email a:hover {
+  text-decoration: underline;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.footer {
+  text-align: center;
+  padding: 40px;
+  color: #8fa9c4;
+}
+
+.back-to-top {
+  position: fixed;
+
+  right: 32px;
+  bottom: 32px;
+
+  width: 56px;
+  height: 56px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #ffffff;
+  color: #6f9dca;
+
+  font-size: 24px;
+  font-weight: bold;
+
+  box-shadow: 0 10px 20px rgba(120,130,150,.18);
+
+  transition: .25s;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.back-to-top:hover {
+  transform: translateY(-4px);
+  background: #eef6ff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* タブレット・スマホ対応 */
+
+@media (max-width: 768px) {
   .header {
-    width: 90%;
-    max-width: 1080px;
-    margin: 30px auto 0;
-    padding: 24px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
+    margin-top: 10px;
   }
-  
-  .logo {
-    color: #6f9dca;
-    font-weight: bold;
-    letter-spacing: 3px;
+
+  .header-inner {
+    display: block;
+    padding: 14px 0;
   }
-  
+
+  nav {
+    margin-top: 12px;
+    gap: 8px 16px;
+  }
+
   nav a {
-    margin-left: 24px;
-    color: #8fa1b3;
-    font-size: 13px;
+    font-size: 12px;
+  }
+
+  .hero {
+    padding: 60px 30px;
+    border-radius: 30px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
     letter-spacing: 2px;
   }
-  
-  main {
-    width: 90%;
-    max-width: 1080px;
-    margin: 0 auto;
+
+  .hero-links {
+    flex-direction: column;
+    align-items: flex-start;
   }
   
-  .hero {
-    margin-top: 40px;
-    padding: 90px 70px;
-    background: #fffdfa;
-    border-radius: 40px;
-    box-shadow: 12px 12px 24px rgba(120, 130, 150, 0.16);
+  .experience-header {
+    display: block;
   }
   
-  .hero-label {
-    color: #8fa9c4;
-    letter-spacing: 3px;
-    margin-bottom: 18px;
+  .experience-date {
+    margin-top: 8px;
   }
   
-  .hero h1 {
-    color: #6f9dca;
-    font-size: 38px;
-    line-height: 1.6;
-    letter-spacing: 4px;
-    margin-bottom: 24px;
+  .experience-card {
+    padding: 32px;
   }
-  
-  .hero-text {
-    margin-bottom: 32px;
-  }
-  
-  .btn,
-  .work-links a {
-    display: inline-block;
-    padding: 12px 26px;
-    background: #ffffff;
-    color: #7fa8cc;
-    border-radius: 16px;
-    box-shadow: 0 8px 18px rgba(150, 160, 180, 0.18);
-    font-size: 13px;
-  }
-  
+
   section {
-    margin-top: 80px;
+    margin-top: 60px;
   }
-  
+
   section h2 {
-    color: #6f9dca;
-    font-size: 30px;
-    letter-spacing: 6px;
-    margin-bottom: 24px;
+    font-size: 26px;
+    letter-spacing: 4px;
   }
-  
+
   .about,
   .skills,
   .contact {
-    background: #fffdfa;
-    border-radius: 32px;
-    padding: 50px;
+    padding: 32px;
   }
-  
-  .skills ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14px;
-    list-style: none;
+
+  .skill-group + .skill-group {
+    margin-top: 36px;
+    padding-top: 34px;
   }
-  
-  .skills li {
-    background: #eef6ff;
-    color: #6f9dca;
-    padding: 10px 18px;
-    border-radius: 999px;
-    font-size: 13px;
+
+  .ai-tool-list {
+    grid-template-columns: 1fr;
   }
-  
+
+  .ai-tool-card:last-child:nth-child(odd) {
+    grid-column: auto;
+  }
+
+  .qualification-item {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
   .work-list {
-    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .work-card img {
+    height: 180px;
+  }
+
+  .experience-card {
+    padding: 32px;
+  }
+
+  .portfolio-summary {
     grid-template-columns: repeat(2, 1fr);
-    gap: 28px;
   }
   
-  .work-card {
-    background: #fffdfa;
-    border-radius: 32px;
-    overflow: hidden;
-    box-shadow: 10px 10px 22px rgba(120, 130, 150, 0.14);
+  .github-card {
+    display: block;
+    padding: 30px;
+  }
+  
+  .github-card .btn {
+    margin-top: 24px;
   }
   
   .work-card img {
-    width: 100%;
     height: 220px;
-    object-fit: cover;
-    background: #dfe8f3;
   }
-  
-  .work-content {
-    padding: 28px;
+}
+
+@media (max-width: 480px) {
+  main,
+  .header {
+    width: 92%;
   }
-  
-  .work-content h3 {
-    color: #6f9dca;
+
+  .hero {
+    padding: 46px 24px;
+  }
+
+  .hero h1 {
     font-size: 22px;
-    margin-bottom: 12px;
   }
-  
-  .work-content p {
-    font-size: 14px;
-    margin-bottom: 14px;
-  }
-  
-  .tags {
-    color: #8fa9c4;
-    font-size: 12px;
-    letter-spacing: 1px;
-  }
-  
-  .work-links {
-    display: flex;
-    gap: 12px;
-    margin-top: 20px;
-  }
-  
+
+  .about,
+  .skills,
   .contact {
-    text-align: center;
-    margin-bottom: 80px;
+    padding: 26px 22px;
+    border-radius: 24px;
+  }
+
+  .skill-tags {
+    gap: 10px;
+  }
+
+  .skill-tags li {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+
+  .ai-tool-card {
+    padding: 20px;
+  }
+
+  .work-content {
+    padding: 24px;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .experience-card {
+    padding: 26px 22px;
+    border-radius: 24px;
+  }
+
+  .experience-card {
+    padding: 26px 22px;
+    border-radius: 24px;
   }
   
-  .contact p {
-    margin-bottom: 24px;
+  .work-meta {
+    gap: 6px;
+  }
+
+  .portfolio-summary {
+    gap: 10px;
+    margin-top: 32px;
   }
   
-  .footer {
-    text-align: center;
-    padding: 40px;
-    color: #8fa9c4;
+  .summary-item {
+    padding: 16px 10px;
   }
   
-  /* スマホ対応 */
-  @media (max-width: 768px) {
-    .header {
-      display: block;
-    }
-  
-    nav {
-      margin-top: 20px;
-    }
-  
-    nav a {
-      margin: 0 16px 0 0;
-    }
-  
-    .hero {
-      padding: 60px 30px;
-    }
-  
-    .hero h1 {
-      font-size: 26px;
-    }
-  
-    .about,
-    .skills,
-    .contact {
-      padding: 32px;
-    }
-  
-    .work-list {
-      grid-template-columns: 1fr;
-    }
-  
-    .work-card img {
-      height: 180px;
-    }
+  .summary-item dd {
+    font-size: 32px;
   }
+  
+  .summary-item dt {
+    font-size: 13px;
+  }
+
+  .work-card img {
+    height: 190px;
+    padding: 8px;
+  }
+
+  .github-card {
+    padding: 24px 22px;
+  }
+}
