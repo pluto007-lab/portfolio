@@ -30,12 +30,14 @@ GitHub
 https://github.com/pluto007-lab
 
 ## Folder Structure
+```text
 portfolio
 ├── css
 ├── img
 ├── js
 ├── index.html
 └── README.md
+```
 
 ## Purpose
 
