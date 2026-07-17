@@ -6,7 +6,7 @@ Web制作とAI活用の学習・制作実績をまとめたポートフォリオ
 
 ## Demo
 
-https://〇〇.github.io/portfolio/
+https://pluto007-lab.github.io/portfolio/
 
 ## Features
 
