@@ -482,6 +482,12 @@ section h2 {
   letter-spacing: 0.3px;
 }
 
+.work-meta .active-project {
+  background: #e8f7f3;
+  color: #2f8173;
+  font-weight: bold;
+}
+
 /* GitHub */
 
 .github-card {
