@@ -1522,6 +1522,23 @@ html {
   font-size: 12px;
 }
 
+.v2-about-link {
+  display: inline-block;
+  min-height: 44px;
+  margin-top: 28px;
+  padding: 12px 20px;
+  border-radius: 999px;
+  background: var(--v2-blue-soft);
+  color: var(--v2-blue-dark);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.v2-about-link:hover {
+  background: #dbeeff;
+  transform: translateY(-2px);
+}
+
 .home-v2 .footer {
   position: relative;
   width: min(1180px, 92%);
