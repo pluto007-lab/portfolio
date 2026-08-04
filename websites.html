@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="想定ユーザー、情報設計、デザイン、アクセシビリティを考えて制作したWebサイトを紹介します。">
+  <title>Websites | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="home-v2 websites-v2">
+  <a class="skip-link" href="#main-content">本文へ移動</a>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Portfolio ホーム">Portfolio</a>
+      <nav aria-label="メインナビゲーション">
+        <a href="index.html">Home</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="web-apps.html">Web Apps</a>
+        <a href="websites.html" aria-current="page">Websites</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="websites-hero" aria-labelledby="websites-title">
+      <nav class="v2-breadcrumb" aria-label="パンくずリスト">
+        <a href="index.html">Home</a>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page">Websites</span>
+      </nav>
+      <p class="v2-section-label">Projects / Websites</p>
+      <h1 id="websites-title">Websites</h1>
+      <p>対象となるユーザーやサイトの目的を整理し、情報の見つけやすさと使いやすさを意識して制作したWebサイトを掲載しています。</p>
+    </section>
+
+    <section class="v2-section websites-featured" aria-labelledby="wakaba-title">
+      <div class="websites-featured-heading">
+        <div>
+          <p class="v2-section-label">Featured Website</p>
+          <h2 id="wakaba-title">シニア向けスマホ教室「若葉」</h2>
+        </div>
+        <span>公開中</span>
+      </div>
+
+      <div class="websites-featured-visual">
+        <img src="img/wakaba.png" alt="シニア向けスマホ教室「若葉」のトップページ">
+      </div>
+
+      <div class="websites-summary-grid">
+        <section aria-labelledby="wakaba-overview-title">
+          <p class="websites-detail-label">Overview</p>
+          <h3 id="wakaba-overview-title">概要</h3>
+          <p>シニア向けスマホ教室を想定した架空サイトです。1ページ構成から、講座・FAQ・お問い合わせ・コラムなどを含む複数ページ構成へ改善しました。</p>
+        </section>
+        <section aria-labelledby="wakaba-user-title">
+          <p class="websites-detail-label">Audience</p>
+          <h3 id="wakaba-user-title">想定ユーザー</h3>
+          <p>スマートフォンの基本操作に不安を感じるシニアと、教室選びを支える家族を想定しています。</p>
+        </section>
+        <section aria-labelledby="wakaba-purpose-title">
+          <p class="websites-detail-label">Purpose</p>
+          <h3 id="wakaba-purpose-title">制作目的</h3>
+          <p>必要な情報を迷わず見つけ、無料体験・電話・LINE・フォームから安心して問い合わせられるサイトを目指しました。</p>
+        </section>
+      </div>
+
+      <div class="websites-detail-grid">
+        <section class="websites-detail-panel" aria-labelledby="wakaba-structure-title">
+          <p class="websites-detail-label">Information architecture</p>
+          <h3 id="wakaba-structure-title">情報設計</h3>
+          <p>トップページでは教室の全体像を伝え、講座・料金、講師、アクセス、FAQ、問い合わせ、プライバシーポリシー、コラムを個別ページに分けました。</p>
+        </section>
+        <section class="websites-detail-panel" aria-labelledby="wakaba-design-title">
+          <p class="websites-detail-label">Design</p>
+          <h3 id="wakaba-design-title">デザイン方針</h3>
+          <p>落ち着いたグリーンと丸みのあるカードを基調に、文字サイズ・行間・ボタンの大きさを確保し、読みやすさと親しみやすさを整えました。</p>
+        </section>
+        <section class="websites-detail-panel" aria-labelledby="wakaba-features-title">
+          <p class="websites-detail-label">Features</p>
+          <h3 id="wakaba-features-title">主な機能</h3>
+          <ul class="websites-feature-list">
+            <li>文字サイズ変更</li>
+            <li>FAQアコーディオン</li>
+            <li>LINE相談モーダル</li>
+            <li>画像スライダー</li>
+            <li>問い合わせフォーム（デモ）</li>
+            <li>初心者向け記事コンテンツ</li>
+          </ul>
+        </section>
+        <section class="websites-detail-panel" aria-labelledby="wakaba-accessibility-title">
+          <p class="websites-detail-label">Accessibility</p>
+          <h3 id="wakaba-accessibility-title">アクセシビリティ上の工夫</h3>
+          <ul class="websites-feature-list">
+            <li>キーボード操作とフォーカス表示</li>
+            <li>FAQの開閉状態を支援技術へ通知</li>
+            <li>モーダル内へのフォーカス移動・復帰</li>
+            <li>Escキーによるモーダル終了</li>
+            <li>代替テキストとフォームラベル</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="websites-featured-footer">
+        <section aria-labelledby="wakaba-responsive-title">
+          <p class="websites-detail-label">Responsive</p>
+          <h3 id="wakaba-responsive-title">レスポンシブ対応</h3>
+          <p>PC・タブレット・スマートフォンに対応し、画面幅に応じてナビゲーションやカード、問い合わせ導線が読みやすく並ぶよう調整しています。</p>
+        </section>
+        <section aria-labelledby="wakaba-seo-title">
+          <p class="websites-detail-label">SEO &amp; publishing</p>
+          <h3 id="wakaba-seo-title">SEO・公開対応</h3>
+          <p>ページ別のtitle・description、見出し構造、内部リンク、OGP、Twitter Card、FAQ・記事・教室情報のJSON-LDを実装し、GitHub Pagesで公開しています。</p>
+          <p class="websites-improvement-note"><strong>今後の改善：</strong>canonical・OGP URL・OGP画像の絶対URL設定など、公開URLに合わせた仕上げを予定しています。</p>
+        </section>
+        <section aria-labelledby="wakaba-tech-title">
+          <p class="websites-detail-label">Technology</p>
+          <h3 id="wakaba-tech-title">使用技術</h3>
+          <ul class="websites-tech-list" aria-label="若葉の使用技術">
+            <li>HTML</li><li>CSS</li><li>Tailwind CSS</li><li>JavaScript</li><li>JSON-LD</li><li>GitHub Pages</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="websites-links">
+        <a href="https://pluto007-lab.github.io/wakaba/" target="_blank" rel="noopener noreferrer">Demoを見る</a>
+        <a href="https://github.com/pluto007-lab/wakaba" target="_blank" rel="noopener noreferrer">GitHubを見る</a>
+      </div>
+    </section>
+
+    <section class="v2-section" aria-labelledby="pale-table-title">
+      <div class="v2-section-header">
+        <div>
+          <p class="v2-section-label">Other Website</p>
+          <h2 id="pale-table-title">pale table</h2>
+        </div>
+        <p>商品の魅力と購入までの流れを、淡い色と余白で分かりやすくまとめたECサイト風デモです。</p>
+      </div>
+
+      <article class="website-secondary">
+        <div class="website-secondary-visual">
+          <img src="img/pale-table.png" alt="食器ECサイト風デモ pale tableのトップページ">
+        </div>
+        <div class="website-secondary-content">
+          <div class="website-secondary-meta"><span>EC Website</span><small>公開中</small></div>
+          <section aria-labelledby="pale-overview-title">
+            <p class="websites-detail-label">Overview &amp; audience</p>
+            <h3 id="pale-overview-title">概要・想定ユーザー</h3>
+            <p>北欧・淡色系の食器やインテリアを好み、商品を落ち着いて比較したいユーザーを想定した架空のECサイトです。</p>
+          </section>
+          <section aria-labelledby="pale-design-title">
+            <p class="websites-detail-label">Design concept</p>
+            <h3 id="pale-design-title">デザインコンセプト</h3>
+            <p>白・水色・薄いベージュを基調に、商品画像が主役になる余白のあるシンプルなレイアウトにしました。</p>
+          </section>
+          <section aria-labelledby="pale-features-title">
+            <p class="websites-detail-label">Implemented features</p>
+            <h3 id="pale-features-title">実装済みの機能</h3>
+            <ul class="websites-feature-list websites-feature-list-compact">
+              <li>商品詳細の切り替え</li>
+              <li>お気に入り保存</li>
+              <li>カートへの追加・商品削除</li>
+              <li>数量変更と合計金額の自動計算</li>
+              <li>スマートフォンナビゲーション</li>
+              <li>キーボード操作とフォーカス表示</li>
+            </ul>
+          </section>
+          <section aria-labelledby="pale-tech-title">
+            <p class="websites-detail-label">Technology</p>
+            <h3 id="pale-tech-title">使用技術</h3>
+            <ul class="websites-tech-list" aria-label="pale tableの使用技術">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>LocalStorage</li><li>GitHub Pages</li>
+            </ul>
+          </section>
+          <p class="websites-improvement-note"><strong>現在の状態：</strong>デモサイトとして公開中です。実際の注文・決済・フォーム送信には対応していません。</p>
+          <div class="websites-links websites-links-secondary">
+            <a href="https://pluto007-lab.github.io/pale-table/" target="_blank" rel="noopener noreferrer">Demoを見る</a>
+            <a href="https://github.com/pluto007-lab/pale-table" target="_blank" rel="noopener noreferrer">GitHubを見る</a>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section class="v2-section websites-principles" aria-labelledby="website-principles-title">
+      <div>
+        <p class="v2-section-label">Principles</p>
+        <h2 id="website-principles-title">制作で大切にしていること</h2>
+      </div>
+      <ul>
+        <li><span>01</span>想定ユーザーに合わせて情報量と見せ方を調整する</li>
+        <li><span>02</span>迷わず目的の情報へ進める構造にする</li>
+        <li><span>03</span>見た目だけでなく操作性も確認する</li>
+        <li><span>04</span>PC・スマートフォンの両方で使いやすくする</li>
+        <li><span>05</span>公開後の見え方やSEOも考慮する</li>
+      </ul>
+    </section>
+
+    <section class="v2-section websites-cta" aria-labelledby="websites-next-title">
+      <div>
+        <p class="v2-section-label">Next</p>
+        <h2 id="websites-next-title">他のカテゴリを見る</h2>
+        <p>各詳細ページは、Portfolio v2の制作に合わせて順次追加します。</p>
+      </div>
+      <div class="websites-cta-list" aria-label="準備中のページ">
+        <div><span>Designを見る</span><small>準備中</small></div>
+        <div><span>Developmentを見る</span><small>準備中</small></div>
+        <div><span>Contactへ進む</span><small>準備中</small></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="v2-footer-inner">
+      <div><a href="index.html" class="v2-footer-logo">Portfolio</a><p>Building, learning, and experimenting.</p></div>
+      <div class="v2-footer-links" aria-label="外部リンク">
+        <a href="mailto:mfmf0707@gmail.com">Email</a>
+        <a href="https://github.com/pluto007-lab" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+    <p class="v2-copyright">© 2026 Portfolio</p>
+    <a href="#" class="back-to-top" aria-label="ページ上部へ戻る">↑</a>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
