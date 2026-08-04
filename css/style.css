@@ -499,6 +499,33 @@ section h2.section-heading .heading-ja {
   object-position: top;
 }
 
+.work-image-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 240px;
+  padding: 28px;
+  background: #f7faff;
+  color: #789cbd;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.work-image-placeholder span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.work-image-placeholder small {
+  display: block;
+  margin-top: 8px;
+  color: #9aa9b8;
+  font-size: 11px;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
 .work-content {
   display: flex;
   flex: 1;
@@ -523,12 +550,31 @@ section h2.section-heading .heading-ja {
   letter-spacing: 1px;
 }
 
+.work-features {
+  margin: 0 0 14px;
+  padding-left: 20px;
+  font-size: 13px;
+}
+
+.work-features li + li {
+  margin-top: 4px;
+}
+
 .work-links {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
   margin-top: auto;
   padding-top: 20px;
+}
+
+.work-link-placeholder {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #f2f5f8;
+  color: #9aa5b1;
+  border-radius: 16px;
+  font-size: 13px;
 }
 
 .work-meta {
@@ -961,6 +1007,10 @@ html {
   .work-card img {
     height: 220px;
   }
+
+  .work-image-placeholder {
+    height: 220px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1040,6 +1090,11 @@ html {
   .work-card img {
     height: 190px;
     padding: 8px;
+  }
+
+  .work-image-placeholder {
+    height: 190px;
+    padding: 20px;
   }
 
   .github-card {
