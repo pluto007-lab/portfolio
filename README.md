@@ -18,6 +18,7 @@ Web制作・AI活用・実務経験・資格・制作物をまとめたポート
 ## 公開ページ
 
 https://pluto007-lab.github.io/portfolio/
+https://portfolio.pluto-lab.com
 
 ---
 
