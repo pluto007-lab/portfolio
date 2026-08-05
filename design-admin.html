@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Design Works Admin | Portfolio v2</title>
+  <link rel="stylesheet" href="css/design-admin.css">
+</head>
+<body>
+  <a class="admin-skip-link" href="#admin-main">管理画面の本文へ移動</a>
+  <header class="admin-header">
+    <div>
+      <p class="admin-kicker">Portfolio v2 / Local tool</p>
+      <h1>Design Works Admin</h1>
+      <p>ローカル作業用の管理画面です。保存はJSONファイルのダウンロード方式で、サーバー上のデータは変更しません。</p>
+    </div>
+    <div class="admin-header-actions">
+      <button id="help-button" type="button">使い方</button>
+      <a href="design.html">Designページを確認</a>
+    </div>
+  </header>
+
+  <main id="admin-main" class="admin-main" tabindex="-1">
+    <section class="admin-workflow" aria-labelledby="workflow-title">
+      <div class="admin-workflow-heading">
+        <div><p class="admin-kicker">Publishing flow</p><h2 id="workflow-title">編集から公開まで</h2></div>
+        <p id="workflow-current" class="admin-workflow-current" role="status" aria-live="polite">現在：データを読み込み中</p>
+      </div>
+      <ol class="admin-workflow-steps">
+        <li data-workflow-step="load"><span>1</span><strong>読み込み</strong></li>
+        <li data-workflow-step="edit"><span>2</span><strong>編集</strong></li>
+        <li data-workflow-step="export"><span>3</span><strong>JSONを書き出す</strong></li>
+        <li data-workflow-step="replace"><span>4</span><strong>portfolio/dataへ置き換える</strong></li>
+        <li data-workflow-step="commit"><span>5</span><strong>Git commit &amp; push</strong></li>
+        <li data-workflow-step="publish"><span>6</span><strong>Designページへ反映</strong></li>
+      </ol>
+    </section>
+    <section class="admin-toolbar" aria-labelledby="data-title">
+      <div>
+        <h2 id="data-title">データ管理</h2>
+        <p id="load-status" role="status" aria-live="polite">作品データを読み込んでいます。</p>
+      </div>
+      <div class="admin-actions">
+        <label class="admin-file-button">JSONを読み込む<input id="json-file" type="file" accept="application/json,.json"></label>
+        <button id="reset-button" type="button">最後に読み込んだ状態へ戻す</button>
+        <button id="download-json" class="admin-primary" type="button">💾 design-works.jsonを書き出す</button>
+        <button id="download-fallback" type="button">💾 design-works-fallback.jsを書き出す</button>
+      </div>
+      <dl class="admin-summary">
+        <div><dt>登録</dt><dd id="summary-total">0</dd></div>
+        <div><dt>表示</dt><dd id="summary-visible">0</dd></div>
+        <div><dt>代表作品</dt><dd id="summary-featured">0 / 3</dd></div>
+        <div><dt>変更</dt><dd id="summary-changed">0</dd></div>
+      </dl>
+      <p id="dirty-status" class="admin-save-status" aria-live="polite">変更はありません。</p>
+    </section>
+
+    <section class="admin-filters" aria-labelledby="filter-title">
+      <h2 id="filter-title">検索・絞り込み</h2>
+      <div class="admin-filter-grid">
+        <label>タイトル・ID検索<input id="search-filter" type="search"></label>
+        <label>カテゴリ<select id="category-filter"><option value="">すべて</option></select></label>
+        <label>タグ<select id="tag-filter"><option value="">すべて</option></select></label>
+        <label>表示状態<select id="visible-filter"><option value="">すべて</option><option value="visible">表示のみ</option><option value="hidden">非表示のみ</option></select></label>
+        <label class="admin-check"><input id="featured-filter" type="checkbox">代表作のみ</label>
+      </div>
+    </section>
+
+    <div class="admin-workspace">
+      <section class="admin-list-panel" aria-labelledby="list-title">
+        <div class="admin-panel-heading"><div><h2 id="list-title">作品一覧</h2><p id="list-note">全体順で表示しています。ドラッグまたは上下ボタンで並べ替えできます。</p></div><button id="add-button" class="admin-primary" type="button">新規追加</button></div>
+        <div id="work-list" class="admin-work-list"></div>
+      </section>
+
+      <section class="admin-editor-panel" aria-labelledby="editor-title">
+        <div class="admin-panel-heading"><div><h2 id="editor-title">作品編集</h2><p id="editor-message">一覧から作品を選択してください。</p></div><button id="delete-button" class="admin-danger" type="button" disabled>削除</button></div>
+        <form id="work-form" hidden novalidate>
+          <div id="form-errors" class="admin-errors" role="alert" hidden></div>
+          <div class="admin-form-primary">
+            <div class="admin-form-grid">
+              <label class="admin-span-2">タイトル<input name="title"></label>
+              <label>カテゴリ <span>必須</span><select name="category" required></select></label>
+              <label class="admin-span-2">画像パス（src） <span>リポジトリ内の相対パス</span><input name="src" required></label>
+              <label class="admin-span-2">説明<textarea name="description" rows="4"></textarea></label>
+            </div>
+            <fieldset class="admin-field-group"><legend>タグ</legend><div id="tag-chips" class="admin-chips"></div><label>タグを追加<input id="tag-input" list="tag-suggestions" placeholder="入力してEnter"></label><datalist id="tag-suggestions"></datalist></fieldset>
+            <fieldset class="admin-field-group"><legend>使用ツール</legend><div id="tool-chips" class="admin-chips"></div><label>ツールを追加<input id="tool-input" list="tool-suggestions" placeholder="入力してEnter"></label><datalist id="tool-suggestions"></datalist></fieldset>
+            <label class="admin-series-field">シリーズ<input name="series"></label>
+            <fieldset class="admin-publish-options"><legend>Designページの掲載設定</legend><p>「公開する」をONにすると作品一覧へ掲載されます。代表作品は公開作品の中から最大3点まで選べます。</p><label class="admin-check"><input name="visible" type="checkbox"><span>Designページに公開する</span></label><label class="admin-check"><input name="featured" type="checkbox"><span>代表作品にする（最大3点）</span></label></fieldset>
+          </div>
+          <details class="admin-technical-fields" open>
+            <summary>JSON管理項目</summary>
+            <p>画像パスは上の「画像パス（src）」と共通です。</p>
+            <div class="admin-form-grid">
+              <label>ID <span>必須・重複不可</span><input name="id" required></label>
+              <label>src <output id="technical-src">未設定</output></label>
+              <label>fileName<input name="fileName" required></label>
+              <label>order<input name="order" type="number" min="1" step="1" required></label>
+              <label>用途<input name="usage"></label>
+              <label>alt<input name="alt"></label>
+            </div>
+          </details>
+        </form>
+      </section>
+    </div>
+
+    <section class="admin-preview" aria-labelledby="preview-title">
+      <div class="admin-panel-heading"><div><h2 id="preview-title">簡易プレビュー</h2><p>代表作品と、その他の公開作品を分けて表示します。</p></div></div>
+      <div id="preview-grid"></div>
+    </section>
+  </main>
+
+  <dialog id="help-dialog" class="admin-help-dialog" aria-labelledby="help-title">
+    <div class="admin-dialog-heading"><div><p class="admin-kicker">How to use</p><h2 id="help-title">管理画面の使い方</h2></div><button id="help-close" type="button" aria-label="使い方を閉じる">×</button></div>
+    <p>この画面での編集は、ファイルを書き出してリポジトリへ置き換えるまでDesignページには反映されません。</p>
+    <ol>
+      <li><strong>作品を編集する</strong><span>一覧から作品を選び、内容や表示状態、並び順を調整します。</span></li>
+      <li><strong>2つのファイルを書き出す</strong><span><code>design-works.json</code>と<code>design-works-fallback.js</code>をダウンロードします。</span></li>
+      <li><strong>portfolio/data内のファイルを置き換える</strong><span>ダウンロードした同名ファイルで既存ファイルを置き換えます。</span></li>
+      <li><strong>Git commit</strong><span>差分を確認し、変更をコミットします。</span></li>
+      <li><strong>Git push</strong><span>公開ブランチへpushするとDesignページへ反映されます。</span></li>
+    </ol>
+    <button id="help-done" class="admin-primary" type="button">内容を確認しました</button>
+  </dialog>
+  <script src="data/design-works-fallback.js"></script>
+  <script src="js/design-admin.js"></script>
+</body>
+</html>

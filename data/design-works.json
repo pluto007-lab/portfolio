@@ -1,39 +1,670 @@
 [
-  {"id":"adobe-loona-logo-1","src":"img/design-works/adobe/pi_0521_ロゴkira.png","fileName":"pi_0521_ロゴkira.png","category":"Adobe","title":"LOONA CTRL ロゴ","tool":"Adobe製品（製品名未確認）","usage":"ロゴ","description":"","tags":["ロゴ","Adobe"],"series":"loona-ctrl","visible":true,"featured":true,"order":1,"alt":"月と軌道をモチーフにしたLOONA CTRLのロゴ"},
-  {"id":"adobe-loona-logo-2","src":"img/design-works/adobe/pi_0522_ロゴ月.png","fileName":"pi_0522_ロゴ月.png","category":"Adobe","title":"LOONA CTRL ロゴ","tool":"Adobe製品（製品名未確認）","usage":"ロゴ","description":"","tags":["ロゴ","Adobe"],"series":"loona-ctrl","visible":true,"featured":false,"order":2,"alt":"暗い背景に月と軌道を配置したLOONA CTRLのロゴ"},
-  {"id":"adobe-peach-banner","src":"img/design-works/adobe/p_0521_momo.png","fileName":"p_0521_momo.png","category":"Adobe","title":"桃の商品バナー","tool":"Adobe製品（製品名未確認）","usage":"商品広告バナー","description":"","tags":["バナー","広告","Adobe"],"series":"","visible":true,"featured":true,"order":3,"alt":"桃の新鮮さを伝える商品バナー"},
-  {"id":"adobe-legal-banner","src":"img/design-works/adobe/p_0528_bana1-復元.png","fileName":"p_0528_bana1-復元.png","category":"Adobe","title":"建設業に強い行政書士事務所","tool":"Adobe製品（製品名未確認）","usage":"サービス広告バナー","description":"","tags":["バナー","広告","Adobe"],"series":"","visible":true,"featured":true,"order":4,"alt":"建設業に強い行政書士事務所の広告バナー"},
-  {"id":"adobe-school-banner","src":"img/design-works/adobe/p_0529_schoolba-復元.png","fileName":"p_0529_schoolba-復元.png","category":"Adobe","title":"AI×Web スクール","tool":"Adobe製品（製品名未確認）","usage":"スクール広告バナー","description":"","tags":["バナー","広告","Adobe"],"series":"","visible":true,"featured":true,"order":5,"alt":"AIとWebを学ぶスクールの広告バナー"},
-  {"id":"adobe-loona-visual","src":"img/design-works/adobe/p_kirakira08.png","fileName":"p_kirakira08.png","category":"Adobe","title":"LOONA CTRL","tool":"Adobe製品（製品名未確認）","usage":"","description":"","tags":["Adobe"],"series":"loona-ctrl","visible":true,"featured":false,"order":6,"alt":"月面管制室を描いたLOONA CTRLのビジュアル"},
-  {"id":"adobe-taxi","src":"img/design-works/adobe/p_タクシー0805.png","fileName":"p_タクシー0805.png","category":"Adobe","title":"タクシー求人広告","tool":"Adobe製品（製品名未確認）","usage":"広告","description":"","tags":["広告","Adobe"],"series":"","visible":true,"featured":false,"order":7,"alt":"タクシー運転手の働き方を訴求する求人広告"},
-
-  {"id":"ai-kasa-1","src":"img/design-works/ai_image_design/kasa1.png","fileName":"kasa1.png","category":"AI Image Design","title":"3秒でたためる晴雨兼用傘","tool":"生成AI（製品名未確認）","usage":"商品広告","description":"","tags":["広告","AI Image Design"],"series":"umbrella-ad","visible":true,"featured":true,"order":8,"alt":"3秒でたためる晴雨兼用傘の商品広告"},
-  {"id":"ai-kasa-2","src":"img/design-works/ai_image_design/kasa2.png","fileName":"kasa2.png","category":"AI Image Design","title":"3秒でたためる晴雨兼用傘","tool":"生成AI（製品名未確認）","usage":"商品広告","description":"","tags":["広告","AI Image Design"],"series":"umbrella-ad","visible":true,"featured":false,"order":9,"alt":"晴雨兼用折りたたみ傘の機能を詳しく紹介する商品広告"},
-  {"id":"ai-clean-master-1","src":"img/design-works/ai_image_design/ma1.png","fileName":"ma1.png","category":"AI Image Design","title":"Clean Master","tool":"生成AI（製品名未確認）","usage":"商品広告","description":"","tags":["広告","AI Image Design"],"series":"clean-master","visible":true,"featured":true,"order":10,"alt":"家族の時間を訴求するロボット掃除機Clean Masterの広告"},
-  {"id":"ai-clean-master-2","src":"img/design-works/ai_image_design/ma2.png","fileName":"ma2.png","category":"AI Image Design","title":"Clean Master","tool":"生成AI（製品名未確認）","usage":"商品広告","description":"","tags":["広告","AI Image Design"],"series":"clean-master","visible":true,"featured":false,"order":11,"alt":"朝食中の掃除完了を訴求するロボット掃除機Clean Masterの広告"},
-  {"id":"ai-umalog","src":"img/design-works/ai_image_design/umalog.png","fileName":"umalog.png","category":"AI Image Design","title":"umalog.","tool":"生成AI（製品名未確認）","usage":"SNS企画資料","description":"","tags":["企画資料","SNS","AI Image Design"],"series":"","visible":true,"featured":true,"order":12,"alt":"競馬を推し活として楽しむSNS umalogの企画資料"},
-  {"id":"ai-umatabi-note","src":"img/design-works/ai_image_design/umatabinote.png","fileName":"umatabinote.png","category":"AI Image Design","title":"umatabi note","tool":"生成AI（製品名未確認）","usage":"アプリ紹介資料","description":"","tags":["アプリ紹介","AI Image Design"],"series":"","visible":true,"featured":true,"order":13,"alt":"馬に会いに行く旅の記録アプリ umatabi noteの紹介資料"},
-  {"id":"ai-wannyan-strategy","src":"img/design-works/ai_image_design/wan1.png","fileName":"wan1.png","category":"AI Image Design","title":"わんにゃんBOX 売上を伸ばすマーケティング戦略","tool":"生成AI（製品名未確認）","usage":"企画資料","description":"","tags":["企画資料","AI Image Design"],"series":"wannyan-box","visible":true,"featured":false,"order":14,"alt":"わんにゃんBOXのマーケティング戦略をまとめた企画資料"},
-  {"id":"ai-wannyan-persona","src":"img/design-works/ai_image_design/wan2.png","fileName":"wan2.png","category":"AI Image Design","title":"わんにゃんBOX ペルソナ","tool":"生成AI（製品名未確認）","usage":"企画資料","description":"","tags":["企画資料","AI Image Design"],"series":"wannyan-box","visible":true,"featured":false,"order":15,"alt":"わんにゃんBOXの利用者像をまとめたペルソナ資料"},
-
-  {"id":"canva-logo-1","src":"img/design-works/canva/SNSlogo1.png","fileName":"SNSlogo1.png","category":"Canva","title":"AI Career School ロゴ案","tool":"Canva","usage":"スクールロゴ","description":"","tags":["ロゴ","Canva"],"series":"ai-career-school-logo","visible":true,"featured":true,"order":16,"alt":"AI Career Schoolのグラデーションロゴ案"},
-  {"id":"canva-logo-2","src":"img/design-works/canva/SNSlogo2.png","fileName":"SNSlogo2.png","category":"Canva","title":"AI Career School ロゴ案","tool":"Canva","usage":"スクールロゴ","description":"","tags":["ロゴ","Canva"],"series":"ai-career-school-logo","visible":true,"featured":false,"order":17,"alt":"ドットで構成したAI Career Schoolのロゴ案"},
-  {"id":"canva-logo-3","src":"img/design-works/canva/SNSlogo3.png","fileName":"SNSlogo3.png","category":"Canva","title":"AI Career School ロゴ案","tool":"Canva","usage":"スクールロゴ","description":"","tags":["ロゴ","Canva"],"series":"ai-career-school-logo","visible":true,"featured":false,"order":18,"alt":"黒い文字で構成したAI Career Schoolのロゴ案"},
-  {"id":"canva-logo-4","src":"img/design-works/canva/SNSlogo4.png","fileName":"SNSlogo4.png","category":"Canva","title":"AI Career School ロゴ案","tool":"Canva","usage":"スクールロゴ","description":"","tags":["ロゴ","Canva"],"series":"ai-career-school-logo","visible":true,"featured":true,"order":19,"alt":"AIの文字を組み合わせたAI Career Schoolのモノグラムロゴ案"},
-  {"id":"canva-logo-5","src":"img/design-works/canva/SNSlogo5.png","fileName":"SNSlogo5.png","category":"Canva","title":"AI Career School ロゴ案","tool":"Canva","usage":"スクールロゴ","description":"","tags":["ロゴ","Canva"],"series":"ai-career-school-logo","visible":true,"featured":false,"order":20,"alt":"career schoolの文字を大きく組んだAI Career Schoolのロゴ案"},
-  {"id":"canva-tokyo-race","src":"img/design-works/canva/tokyorace.png","fileName":"tokyorace.png","category":"Canva","title":"トーキョーさんぽ","tool":"Canva","usage":"東京競馬場ガイド誌面","description":"","tags":["誌面","Canva"],"series":"","visible":true,"featured":true,"order":21,"alt":"東京競馬場で過ごす一日を紹介するガイド誌面"},
-
-  {"id":"sns-claude-1","src":"img/design-works/sns_design/ins0702_01.png","fileName":"ins0702_01.png","category":"SNS Design","title":"Claude Fable 5 解説 1/6","tool":"","usage":"SNSカルーセル","description":"","tags":["SNS画像","Claude"],"series":"claude-fable-5","visible":true,"featured":true,"order":22,"alt":"Claude Fable 5の公開停止と復活を解説するSNS投稿の表紙"},
-  {"id":"sns-claude-2","src":"img/design-works/sns_design/ins0702_02.png","fileName":"ins0702_02.png","category":"SNS Design","title":"Claude Fable 5 解説 2/6","tool":"","usage":"SNSカルーセル","description":"","tags":["SNS画像","Claude"],"series":"claude-fable-5","visible":true,"featured":false,"order":23,"alt":"Claude Fable 5の公開から利用再開までの時系列を示すSNS画像"},
-  {"id":"sns-claude-3","src":"img/design-works/sns_design/ins0702_03.png","fileName":"ins0702_03.png","category":"SNS Design","title":"Claude Fable 5 解説 3/6","tool":"","usage":"SNSカルーセル","description":"","tags":["SNS画像","Claude"],"series":"claude-fable-5","visible":true,"featured":false,"order":24,"alt":"Claude Fable 5の利用停止理由を解説するSNS画像"},
-  {"id":"sns-claude-4","src":"img/design-works/sns_design/ins0702_04.png","fileName":"ins0702_04.png","category":"SNS Design","title":"Claude Fable 5 解説 4/6","tool":"","usage":"SNSカルーセル","description":"","tags":["SNS画像","Claude"],"series":"claude-fable-5","visible":true,"featured":false,"order":25,"alt":"Claude Fable 5の提供再開理由を解説するSNS画像"},
-  {"id":"sns-claude-5","src":"img/design-works/sns_design/ins0702_05.png","fileName":"ins0702_05.png","category":"SNS Design","title":"Claude Fable 5 解説 5/6","tool":"","usage":"SNSカルーセル","description":"","tags":["SNS画像","Claude"],"series":"claude-fable-5","visible":true,"featured":false,"order":26,"alt":"Claude Fable 5の特徴を紹介するSNS画像"},
-  {"id":"sns-claude-6","src":"img/design-works/sns_design/ins0702_06.png","fileName":"ins0702_06.png","category":"SNS Design","title":"Claude Fable 5 解説 6/6","tool":"","usage":"SNSカルーセル","description":"","tags":["SNS画像","Claude"],"series":"claude-fable-5","visible":true,"featured":false,"order":27,"alt":"Claude Fable 5の公開見直しについてまとめたSNS画像"},
-  {"id":"sns-ai-compare-1","src":"img/design-works/sns_design/ins0703_01.png","fileName":"ins0703_01.png","category":"SNS Design","title":"ChatGPTとGemini旅行プラン比較 1/6","tool":"","usage":"SNSカルーセル","description":"","tags":["SNS画像","ChatGPT","Gemini"],"series":"chatgpt-gemini-travel","visible":true,"featured":true,"order":28,"alt":"ChatGPTとGeminiの旅行プランを比較するSNS投稿の表紙"},
-  {"id":"sns-ai-compare-2","src":"img/design-works/sns_design/ins0703_02.png","fileName":"ins0703_02.png","category":"SNS Design","title":"ChatGPTとGemini旅行プラン比較 2/6","tool":"","usage":"SNSカルーセル","description":"","tags":["SNS画像","ChatGPT","Gemini"],"series":"chatgpt-gemini-travel","visible":true,"featured":false,"order":29,"alt":"旅行プラン比較に使用した共通プロンプトを示すSNS画像"},
-  {"id":"sns-ai-compare-3","src":"img/design-works/sns_design/ins0703_03.png","fileName":"ins0703_03.png","category":"SNS Design","title":"ChatGPTとGemini旅行プラン比較 3/6","tool":"","usage":"SNSカルーセル","description":"","tags":["SNS画像","ChatGPT"],"series":"chatgpt-gemini-travel","visible":true,"featured":false,"order":30,"alt":"ChatGPTが提案した熱海旅行プランを紹介するSNS画像"},
-  {"id":"sns-ai-compare-4","src":"img/design-works/sns_design/ins0703_04.png","fileName":"ins0703_04.png","category":"SNS Design","title":"ChatGPTとGemini旅行プラン比較 4/6","tool":"","usage":"SNSカルーセル","description":"","tags":["SNS画像","Gemini"],"series":"chatgpt-gemini-travel","visible":true,"featured":false,"order":31,"alt":"Geminiが提案した熱海旅行プランを紹介するSNS画像"},
-  {"id":"sns-ai-compare-5","src":"img/design-works/sns_design/ins0703_05.png","fileName":"ins0703_05.png","category":"SNS Design","title":"ChatGPTとGemini旅行プラン比較 5/6","tool":"","usage":"SNSカルーセル","description":"","tags":["SNS画像","ChatGPT","Gemini"],"series":"chatgpt-gemini-travel","visible":true,"featured":false,"order":32,"alt":"ChatGPTとGeminiの旅行プランを項目別に比較するSNS画像"},
-  {"id":"sns-ai-compare-6","src":"img/design-works/sns_design/ins0703_06.png","fileName":"ins0703_06.png","category":"SNS Design","title":"ChatGPTとGemini旅行プラン比較 6/6","tool":"","usage":"SNSカルーセル","description":"","tags":["SNS画像","ChatGPT","Gemini"],"series":"chatgpt-gemini-travel","visible":true,"featured":false,"order":33,"alt":"ChatGPTとGeminiの旅行プラン比較結果をまとめたSNS画像"},
-  {"id":"sns-chatgpt-features","src":"img/design-works/sns_design/X_01.png","fileName":"X_01.png","category":"SNS Design","title":"ChatGPT便利機能3選","tool":"","usage":"SNS投稿画像","description":"","tags":["SNS画像","ChatGPT"],"series":"","visible":true,"featured":true,"order":34,"alt":"ChatGPTの便利機能3選を紹介するSNS画像"}
+  {
+    "id": "adobe-loona-logo-1",
+    "src": "img/design-works/adobe/pi_0521_ロゴkira.png",
+    "fileName": "pi_0521_ロゴkira.png",
+    "category": "Adobe",
+    "title": "LOONA CTRL ロゴ",
+    "tool": "Photoshop / Illustrator",
+    "usage": "ロゴ",
+    "description": "",
+    "tags": [
+      "ロゴ",
+      "Adobe"
+    ],
+    "series": "loona-ctrl",
+    "visible": true,
+    "featured": true,
+    "order": 1,
+    "alt": "月と軌道をモチーフにしたLOONA CTRLのロゴ"
+  },
+  {
+    "id": "adobe-loona-logo-2",
+    "src": "img/design-works/adobe/pi_0522_ロゴ月.png",
+    "fileName": "pi_0522_ロゴ月.png",
+    "category": "Adobe",
+    "title": "LOONA CTRL ロゴ",
+    "tool": "Photoshop / Illustrator",
+    "usage": "ロゴ",
+    "description": "",
+    "tags": [
+      "ロゴ",
+      "Adobe"
+    ],
+    "series": "loona-ctrl",
+    "visible": true,
+    "featured": false,
+    "order": 2,
+    "alt": "暗い背景に月と軌道を配置したLOONA CTRLのロゴ"
+  },
+  {
+    "id": "adobe-peach-banner",
+    "src": "img/design-works/adobe/p_0521_momo.png",
+    "fileName": "p_0521_momo.png",
+    "category": "Adobe",
+    "title": "桃の商品バナー",
+    "tool": "Photoshop",
+    "usage": "商品広告バナー",
+    "description": "",
+    "tags": [
+      "バナー",
+      "広告",
+      "Adobe"
+    ],
+    "series": "",
+    "visible": true,
+    "featured": false,
+    "order": 3,
+    "alt": "桃の新鮮さを伝える商品バナー"
+  },
+  {
+    "id": "adobe-legal-banner",
+    "src": "img/design-works/adobe/p_0528_bana1-復元.png",
+    "fileName": "p_0528_bana1-復元.png",
+    "category": "Adobe",
+    "title": "建設業に強い行政書士事務所",
+    "tool": "Photoshop",
+    "usage": "サービス広告バナー",
+    "description": "",
+    "tags": [
+      "バナー",
+      "広告",
+      "Adobe"
+    ],
+    "series": "",
+    "visible": true,
+    "featured": true,
+    "order": 4,
+    "alt": "建設業に強い行政書士事務所の広告バナー"
+  },
+  {
+    "id": "adobe-school-banner",
+    "src": "img/design-works/adobe/p_0529_schoolba-復元.png",
+    "fileName": "p_0529_schoolba-復元.png",
+    "category": "Adobe",
+    "title": "AI×Web スクール",
+    "tool": "Photoshop",
+    "usage": "スクール広告バナー",
+    "description": "",
+    "tags": [
+      "バナー",
+      "広告",
+      "Adobe"
+    ],
+    "series": "",
+    "visible": true,
+    "featured": true,
+    "order": 5,
+    "alt": "AIとWebを学ぶスクールの広告バナー"
+  },
+  {
+    "id": "adobe-loona-visual",
+    "src": "img/design-works/adobe/p_kirakira08.png",
+    "fileName": "p_kirakira08.png",
+    "category": "Adobe",
+    "title": "LOONA CTRL",
+    "tool": "Photoshop / ChatGPT",
+    "usage": "",
+    "description": "",
+    "tags": [
+      "Adobe",
+      "ChatGPT"
+    ],
+    "series": "loona-ctrl",
+    "visible": true,
+    "featured": false,
+    "order": 6,
+    "alt": "月面管制室を描いたLOONA CTRLのビジュアル"
+  },
+  {
+    "id": "adobe-taxi",
+    "src": "img/design-works/adobe/p_タクシー0805.png",
+    "fileName": "p_タクシー0805.png",
+    "category": "Adobe",
+    "title": "タクシー求人広告",
+    "tool": "Photoshop",
+    "usage": "広告",
+    "description": "",
+    "tags": [
+      "広告",
+      "Adobe"
+    ],
+    "series": "",
+    "visible": true,
+    "featured": false,
+    "order": 7,
+    "alt": "タクシー運転手の働き方を訴求する求人広告"
+  },
+  {
+    "id": "ai-kasa-1",
+    "src": "img/design-works/ai_image_design/kasa1.png",
+    "fileName": "kasa1.png",
+    "category": "AI Image Design",
+    "title": "3秒でたためる晴雨兼用傘",
+    "tool": "",
+    "usage": "商品広告",
+    "description": "",
+    "tags": [
+      "広告",
+      "AI Image Design"
+    ],
+    "series": "umbrella-ad",
+    "visible": true,
+    "featured": false,
+    "order": 8,
+    "alt": "3秒でたためる晴雨兼用傘の商品広告"
+  },
+  {
+    "id": "ai-kasa-2",
+    "src": "img/design-works/ai_image_design/kasa2.png",
+    "fileName": "kasa2.png",
+    "category": "AI Image Design",
+    "title": "3秒でたためる晴雨兼用傘",
+    "tool": "ChatGPT",
+    "usage": "商品広告",
+    "description": "",
+    "tags": [
+      "広告",
+      "AI Image Design"
+    ],
+    "series": "umbrella-ad",
+    "visible": true,
+    "featured": false,
+    "order": 9,
+    "alt": "晴雨兼用折りたたみ傘の機能を詳しく紹介する商品広告"
+  },
+  {
+    "id": "ai-clean-master-1",
+    "src": "img/design-works/ai_image_design/ma1.png",
+    "fileName": "ma1.png",
+    "category": "AI Image Design",
+    "title": "Clean Master",
+    "tool": "ChatGPT",
+    "usage": "商品広告",
+    "description": "",
+    "tags": [
+      "広告",
+      "AI Image Design"
+    ],
+    "series": "clean-master",
+    "visible": true,
+    "featured": false,
+    "order": 10,
+    "alt": "家族の時間を訴求するロボット掃除機Clean Masterの広告"
+  },
+  {
+    "id": "ai-clean-master-2",
+    "src": "img/design-works/ai_image_design/ma2.png",
+    "fileName": "ma2.png",
+    "category": "AI Image Design",
+    "title": "Clean Master",
+    "tool": "ChatGPT",
+    "usage": "商品広告",
+    "description": "",
+    "tags": [
+      "広告",
+      "AI Image Design"
+    ],
+    "series": "clean-master",
+    "visible": true,
+    "featured": false,
+    "order": 11,
+    "alt": "朝食中の掃除完了を訴求するロボット掃除機Clean Masterの広告"
+  },
+  {
+    "id": "ai-umalog",
+    "src": "img/design-works/ai_image_design/umalog.png",
+    "fileName": "umalog.png",
+    "category": "AI Image Design",
+    "title": "umalog.",
+    "tool": "ChatGPT",
+    "usage": "SNS企画資料",
+    "description": "",
+    "tags": [
+      "企画資料",
+      "SNS",
+      "AI Image Design"
+    ],
+    "series": "",
+    "visible": true,
+    "featured": false,
+    "order": 12,
+    "alt": "競馬を推し活として楽しむSNS umalogの企画資料"
+  },
+  {
+    "id": "ai-umatabi-note",
+    "src": "img/design-works/ai_image_design/umatabinote.png",
+    "fileName": "umatabinote.png",
+    "category": "AI Image Design",
+    "title": "umatabi note",
+    "tool": "ChatGPT",
+    "usage": "アプリ紹介資料",
+    "description": "",
+    "tags": [
+      "アプリ紹介",
+      "AI Image Design",
+      "企画資料"
+    ],
+    "series": "",
+    "visible": true,
+    "featured": false,
+    "order": 13,
+    "alt": "馬に会いに行く旅の記録アプリ umatabi noteの紹介資料"
+  },
+  {
+    "id": "ai-wannyan-strategy",
+    "src": "img/design-works/ai_image_design/wan1.png",
+    "fileName": "wan1.png",
+    "category": "AI Image Design",
+    "title": "わんにゃんBOX 売上を伸ばすマーケティング戦略",
+    "tool": "ChatGPT",
+    "usage": "企画資料",
+    "description": "",
+    "tags": [
+      "企画資料",
+      "AI Image Design"
+    ],
+    "series": "wannyan-box",
+    "visible": true,
+    "featured": false,
+    "order": 14,
+    "alt": "わんにゃんBOXのマーケティング戦略をまとめた企画資料"
+  },
+  {
+    "id": "ai-wannyan-persona",
+    "src": "img/design-works/ai_image_design/wan2.png",
+    "fileName": "wan2.png",
+    "category": "AI Image Design",
+    "title": "わんにゃんBOX ペルソナ",
+    "tool": "ChatGPT",
+    "usage": "企画資料",
+    "description": "",
+    "tags": [
+      "企画資料",
+      "AI Image Design"
+    ],
+    "series": "wannyan-box",
+    "visible": true,
+    "featured": false,
+    "order": 15,
+    "alt": "わんにゃんBOXの利用者像をまとめたペルソナ資料"
+  },
+  {
+    "id": "canva-logo-1",
+    "src": "img/design-works/canva/SNSlogo1.png",
+    "fileName": "SNSlogo1.png",
+    "category": "Canva",
+    "title": "AI Career School ロゴ案",
+    "tool": "Canva",
+    "usage": "スクールロゴ",
+    "description": "",
+    "tags": [
+      "ロゴ",
+      "Canva"
+    ],
+    "series": "ai-career-school-logo",
+    "visible": true,
+    "featured": false,
+    "order": 16,
+    "alt": "AI Career Schoolのグラデーションロゴ案"
+  },
+  {
+    "id": "canva-logo-2",
+    "src": "img/design-works/canva/SNSlogo2.png",
+    "fileName": "SNSlogo2.png",
+    "category": "Canva",
+    "title": "AI Career School ロゴ案",
+    "tool": "Canva",
+    "usage": "スクールロゴ",
+    "description": "",
+    "tags": [
+      "ロゴ",
+      "Canva"
+    ],
+    "series": "ai-career-school-logo",
+    "visible": true,
+    "featured": false,
+    "order": 17,
+    "alt": "ドットで構成したAI Career Schoolのロゴ案"
+  },
+  {
+    "id": "canva-logo-3",
+    "src": "img/design-works/canva/SNSlogo3.png",
+    "fileName": "SNSlogo3.png",
+    "category": "Canva",
+    "title": "AI Career School ロゴ案",
+    "tool": "Canva",
+    "usage": "スクールロゴ",
+    "description": "",
+    "tags": [
+      "ロゴ",
+      "Canva"
+    ],
+    "series": "ai-career-school-logo",
+    "visible": true,
+    "featured": false,
+    "order": 18,
+    "alt": "黒い文字で構成したAI Career Schoolのロゴ案"
+  },
+  {
+    "id": "canva-logo-4",
+    "src": "img/design-works/canva/SNSlogo4.png",
+    "fileName": "SNSlogo4.png",
+    "category": "Canva",
+    "title": "AI Career School ロゴ案",
+    "tool": "Canva",
+    "usage": "スクールロゴ",
+    "description": "",
+    "tags": [
+      "ロゴ",
+      "Canva"
+    ],
+    "series": "ai-career-school-logo",
+    "visible": true,
+    "featured": false,
+    "order": 19,
+    "alt": "AIの文字を組み合わせたAI Career Schoolのモノグラムロゴ案"
+  },
+  {
+    "id": "canva-logo-5",
+    "src": "img/design-works/canva/SNSlogo5.png",
+    "fileName": "SNSlogo5.png",
+    "category": "Canva",
+    "title": "AI Career School ロゴ案",
+    "tool": "Canva",
+    "usage": "スクールロゴ",
+    "description": "",
+    "tags": [
+      "ロゴ",
+      "Canva"
+    ],
+    "series": "ai-career-school-logo",
+    "visible": true,
+    "featured": false,
+    "order": 20,
+    "alt": "career schoolの文字を大きく組んだAI Career Schoolのロゴ案"
+  },
+  {
+    "id": "canva-tokyo-race",
+    "src": "img/design-works/canva/tokyorace.png",
+    "fileName": "tokyorace.png",
+    "category": "Canva",
+    "title": "東京競馬場ガイド",
+    "tool": "Canva",
+    "usage": "東京競馬場ガイド誌面",
+    "description": "",
+    "tags": [
+      "Canva",
+      "チラシ"
+    ],
+    "series": "",
+    "visible": true,
+    "featured": false,
+    "order": 21,
+    "alt": "東京競馬場で過ごす一日を紹介するガイド誌面"
+  },
+  {
+    "id": "sns-claude-1",
+    "src": "img/design-works/sns_design/ins0702_01.png",
+    "fileName": "ins0702_01.png",
+    "category": "SNS Design",
+    "title": "Claude Fable 5 解説 1/6",
+    "tool": "",
+    "usage": "SNSカルーセル",
+    "description": "",
+    "tags": [
+      "SNS画像",
+      "Claude",
+      "Instagram"
+    ],
+    "series": "claude-fable-5",
+    "visible": true,
+    "featured": false,
+    "order": 22,
+    "alt": "Claude Fable 5の公開停止と復活を解説するSNS投稿の表紙"
+  },
+  {
+    "id": "sns-claude-2",
+    "src": "img/design-works/sns_design/ins0702_02.png",
+    "fileName": "ins0702_02.png",
+    "category": "SNS Design",
+    "title": "Claude Fable 5 解説 2/6",
+    "tool": "ChatGPT",
+    "usage": "SNSカルーセル",
+    "description": "",
+    "tags": [
+      "SNS画像",
+      "Claude",
+      "Instagram"
+    ],
+    "series": "claude-fable-5",
+    "visible": true,
+    "featured": false,
+    "order": 23,
+    "alt": "Claude Fable 5の公開から利用再開までの時系列を示すSNS画像"
+  },
+  {
+    "id": "sns-claude-3",
+    "src": "img/design-works/sns_design/ins0702_03.png",
+    "fileName": "ins0702_03.png",
+    "category": "SNS Design",
+    "title": "Claude Fable 5 解説 3/6",
+    "tool": "ChatGPT",
+    "usage": "SNSカルーセル",
+    "description": "",
+    "tags": [
+      "SNS画像",
+      "Claude",
+      "Instagram"
+    ],
+    "series": "claude-fable-5",
+    "visible": true,
+    "featured": false,
+    "order": 24,
+    "alt": "Claude Fable 5の利用停止理由を解説するSNS画像"
+  },
+  {
+    "id": "sns-claude-4",
+    "src": "img/design-works/sns_design/ins0702_04.png",
+    "fileName": "ins0702_04.png",
+    "category": "SNS Design",
+    "title": "Claude Fable 5 解説 4/6",
+    "tool": "ChatGPT",
+    "usage": "SNSカルーセル",
+    "description": "",
+    "tags": [
+      "SNS画像",
+      "Claude",
+      "Instagram"
+    ],
+    "series": "claude-fable-5",
+    "visible": true,
+    "featured": false,
+    "order": 25,
+    "alt": "Claude Fable 5の提供再開理由を解説するSNS画像"
+  },
+  {
+    "id": "sns-claude-5",
+    "src": "img/design-works/sns_design/ins0702_05.png",
+    "fileName": "ins0702_05.png",
+    "category": "SNS Design",
+    "title": "Claude Fable 5 解説 5/6",
+    "tool": "ChatGPT",
+    "usage": "SNSカルーセル",
+    "description": "",
+    "tags": [
+      "SNS画像",
+      "Claude",
+      "Instagram"
+    ],
+    "series": "claude-fable-5",
+    "visible": true,
+    "featured": false,
+    "order": 26,
+    "alt": "Claude Fable 5の特徴を紹介するSNS画像"
+  },
+  {
+    "id": "sns-claude-6",
+    "src": "img/design-works/sns_design/ins0702_06.png",
+    "fileName": "ins0702_06.png",
+    "category": "SNS Design",
+    "title": "Claude Fable 5 解説 6/6",
+    "tool": "ChatGPT",
+    "usage": "SNSカルーセル",
+    "description": "",
+    "tags": [
+      "SNS画像",
+      "Claude",
+      "Instagram"
+    ],
+    "series": "claude-fable-5",
+    "visible": true,
+    "featured": false,
+    "order": 27,
+    "alt": "Claude Fable 5の公開見直しについてまとめたSNS画像"
+  },
+  {
+    "id": "sns-ai-compare-1",
+    "src": "img/design-works/sns_design/ins0703_01.png",
+    "fileName": "ins0703_01.png",
+    "category": "SNS Design",
+    "title": "ChatGPTとGemini旅行プラン比較 1/6",
+    "tool": "ChatGPT",
+    "usage": "SNSカルーセル",
+    "description": "",
+    "tags": [
+      "SNS画像",
+      "ChatGPT",
+      "Gemini",
+      "Instagram"
+    ],
+    "series": "chatgpt-gemini-travel",
+    "visible": true,
+    "featured": false,
+    "order": 28,
+    "alt": "ChatGPTとGeminiの旅行プランを比較するSNS投稿の表紙"
+  },
+  {
+    "id": "sns-ai-compare-2",
+    "src": "img/design-works/sns_design/ins0703_02.png",
+    "fileName": "ins0703_02.png",
+    "category": "SNS Design",
+    "title": "ChatGPTとGemini旅行プラン比較 2/6",
+    "tool": "ChatGPT",
+    "usage": "SNSカルーセル",
+    "description": "",
+    "tags": [
+      "SNS画像",
+      "ChatGPT",
+      "Gemini",
+      "Instagram"
+    ],
+    "series": "chatgpt-gemini-travel",
+    "visible": true,
+    "featured": false,
+    "order": 29,
+    "alt": "旅行プラン比較に使用した共通プロンプトを示すSNS画像"
+  },
+  {
+    "id": "sns-ai-compare-3",
+    "src": "img/design-works/sns_design/ins0703_03.png",
+    "fileName": "ins0703_03.png",
+    "category": "SNS Design",
+    "title": "ChatGPTとGemini旅行プラン比較 3/6",
+    "tool": "ChatGPT",
+    "usage": "SNSカルーセル",
+    "description": "",
+    "tags": [
+      "SNS画像",
+      "ChatGPT",
+      "Instagram"
+    ],
+    "series": "chatgpt-gemini-travel",
+    "visible": true,
+    "featured": false,
+    "order": 30,
+    "alt": "ChatGPTが提案した熱海旅行プランを紹介するSNS画像"
+  },
+  {
+    "id": "sns-ai-compare-4",
+    "src": "img/design-works/sns_design/ins0703_04.png",
+    "fileName": "ins0703_04.png",
+    "category": "SNS Design",
+    "title": "ChatGPTとGemini旅行プラン比較 4/6",
+    "tool": "Gemini / ChatGPT",
+    "usage": "SNSカルーセル",
+    "description": "",
+    "tags": [
+      "SNS画像",
+      "Gemini",
+      "Instagram"
+    ],
+    "series": "chatgpt-gemini-travel",
+    "visible": true,
+    "featured": false,
+    "order": 31,
+    "alt": "Geminiが提案した熱海旅行プランを紹介するSNS画像"
+  },
+  {
+    "id": "sns-ai-compare-5",
+    "src": "img/design-works/sns_design/ins0703_05.png",
+    "fileName": "ins0703_05.png",
+    "category": "SNS Design",
+    "title": "ChatGPTとGemini旅行プラン比較 5/6",
+    "tool": "ChatGPT",
+    "usage": "SNSカルーセル",
+    "description": "",
+    "tags": [
+      "SNS画像",
+      "ChatGPT",
+      "Gemini",
+      "Instagram"
+    ],
+    "series": "chatgpt-gemini-travel",
+    "visible": true,
+    "featured": false,
+    "order": 32,
+    "alt": "ChatGPTとGeminiの旅行プランを項目別に比較するSNS画像"
+  },
+  {
+    "id": "sns-ai-compare-6",
+    "src": "img/design-works/sns_design/ins0703_06.png",
+    "fileName": "ins0703_06.png",
+    "category": "SNS Design",
+    "title": "ChatGPTとGemini旅行プラン比較 6/6",
+    "tool": "ChatGPT",
+    "usage": "SNSカルーセル",
+    "description": "",
+    "tags": [
+      "SNS画像",
+      "ChatGPT",
+      "Gemini",
+      "Instagram"
+    ],
+    "series": "chatgpt-gemini-travel",
+    "visible": true,
+    "featured": false,
+    "order": 33,
+    "alt": "ChatGPTとGeminiの旅行プラン比較結果をまとめたSNS画像"
+  },
+  {
+    "id": "sns-chatgpt-features",
+    "src": "img/design-works/sns_design/X_01.png",
+    "fileName": "X_01.png",
+    "category": "SNS Design",
+    "title": "ChatGPT便利機能3選",
+    "tool": "ChatGPT",
+    "usage": "SNS投稿画像",
+    "description": "",
+    "tags": [
+      "SNS画像",
+      "ChatGPT",
+      "X"
+    ],
+    "series": "",
+    "visible": true,
+    "featured": false,
+    "order": 34,
+    "alt": "ChatGPTの便利機能3選を紹介するSNS画像"
+  }
 ]
