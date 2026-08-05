@@ -3,710 +3,219 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <meta name="description" content="Webアプリ開発、Webサイト制作、デザイン、開発基盤、AI活用に取り組むpluto007-labのポートフォリオです。">
+  <title>Portfolio | pluto007-lab</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="home-v2">
+  <a class="skip-link" href="#main-content">本文へ移動</a>
 
   <header class="header">
     <div class="header-inner">
-      <div class="logo">Portfolio</div>
-  
-      <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#works">Works</a>
-        <a href="#github">GitHub</a>
-        <a href="#contact">Contact</a>
+      <a href="#top" class="logo" aria-label="Portfolio ホーム">Portfolio</a>
+
+      <nav aria-label="メインナビゲーション">
+        <a href="#top">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#featured">Featured</a>
+        <a href="#now">Now</a>
+        <a href="about.html">About</a>
       </nav>
     </div>
   </header>
 
-  <main>
-
-    <section class="hero">
-      <p class="hero-label">Web Design / Front-end / AI</p>
-    
-      <h1>
-        Web制作とAI活用を組み合わせ、<br>
-        企画から実装まで取り組んでいます。
-      </h1>
-    
-      <p class="hero-text">
-        HTML・CSS・JavaScriptを中心に、
-        使いやすさと機能性を意識したWebサイト・Webアプリを制作しています。<br>
-        企画整理やコードの確認・修正には生成AIも活用しています。
+  <main id="main-content">
+    <section class="v2-hero" id="top" aria-labelledby="hero-title">
+      <p class="v2-eyebrow">pluto007-lab</p>
+      <h1 id="hero-title">Web Developer <span aria-hidden="true">/</span> Designer</h1>
+      <p class="v2-hero-copy">
+        Webアプリ開発を中心に、デザイン・開発基盤・AI活用まで幅広く取り組んでいます。
       </p>
-    
-      <div class="hero-links">
-        <a href="#works" class="btn">Worksを見る</a>
-    
+
+      <div class="v2-actions">
+        <a href="#projects" class="btn">Projectsを見る</a>
         <a
           href="https://github.com/pluto007-lab"
           target="_blank"
           rel="noopener noreferrer"
-          class="btn"
+          class="btn v2-btn-secondary"
         >
           GitHubを見る
         </a>
       </div>
-    
-      <dl class="portfolio-summary">
-        <div class="summary-item">
-          <dt>制作作品</dt>
-          <dd>7<span>件</span></dd>
-        </div>
-    
-        <div class="summary-item">
-          <dt>保有資格</dt>
-          <dd>4<span>件</span></dd>
-        </div>
-    
-        <div class="summary-item">
-          <dt>業務経験</dt>
-          <dd>1<span>件</span></dd>
-        </div>
-    
-        <div class="summary-item">
-          <dt>AIツール</dt>
-          <dd>6<span>種類</span></dd>
-        </div>
-      </dl>
+
+      <p class="v2-hero-note">Building, learning, and experimenting.</p>
     </section>
 
-    <section class="about" id="about">
-      <h2 class="section-heading">
-        <span class="heading-en">About</span>
-        <span class="heading-ja">自己紹介</span>
-      </h2>
-    
-      <div class="about-text">
-        <p>
-          職業訓練校でWeb制作を学びながら、WebサイトやWebアプリの企画・デザイン・実装・改善に取り組んでいます。
-        </p>
-      
-        <p>
-          HTML・CSS・JavaScriptによる制作に加え、Reactを用いたWebアプリ開発も経験しています。
-        </p>
-      
-        <p>
-          生成AIは、企画整理や要件定義、文章の見直しに加え、既存コードの確認・修正、複数ファイルにまたがる機能追加にも活用しています。出力をそのまま採用するのではなく、変更内容と動作を確認しながら制作を進めています。
-        </p>
+    <section class="v2-section" id="projects" aria-labelledby="projects-title">
+      <div class="v2-section-header">
+        <div>
+          <p class="v2-section-label">Explore</p>
+          <h2 id="projects-title">Projects <span>カテゴリ</span></h2>
+        </div>
+        <p>制作内容を目的や分野ごとに整理しています。</p>
+      </div>
+
+      <div class="v2-category-grid">
+        <a class="v2-category-card v2-category-card-link" href="web-apps.html" aria-labelledby="category-web-apps">
+          <p class="v2-category-number" aria-hidden="true">01</p>
+          <h3 id="category-web-apps">Web Apps</h3>
+          <p>ReactやJavaScriptを用いたWebアプリ</p>
+          <span class="v2-category-action">View projects →</span>
+        </a>
+
+        <a class="v2-category-card v2-category-card-link" href="websites.html" aria-labelledby="category-websites">
+          <p class="v2-category-number" aria-hidden="true">02</p>
+          <h3 id="category-websites">Websites</h3>
+          <p>企画・デザイン・実装を行ったWebサイト</p>
+          <span class="v2-category-action">View projects →</span>
+        </a>
+
+        <a class="v2-category-card v2-category-card-link" href="design.html" aria-labelledby="category-design">
+          <p class="v2-category-number" aria-hidden="true">03</p>
+          <h3 id="category-design">Design</h3>
+          <p>AdobeやCanvaを使用したデザイン制作</p>
+          <span class="v2-category-action">View projects →</span>
+        </a>
+
+        <a class="v2-category-card v2-category-card-link" href="development.html" aria-labelledby="category-development">
+          <p class="v2-category-number" aria-hidden="true">04</p>
+          <h3 id="category-development">Development</h3>
+          <p>開発基盤、技術、AIを活用した制作工程</p>
+          <span class="v2-category-action">View projects →</span>
+        </a>
+
+        <article class="v2-category-card" aria-labelledby="category-writing">
+          <p class="v2-category-number" aria-hidden="true">05</p>
+          <h3 id="category-writing">Writing</h3>
+          <p>制作記録や学習内容をまとめた記事</p>
+          <span class="v2-status" aria-label="Writingページは準備中">準備中</span>
+        </article>
+
+        <article class="v2-category-card" aria-labelledby="category-lab">
+          <p class="v2-category-number" aria-hidden="true">06</p>
+          <h3 id="category-lab">Lab</h3>
+          <p>試作、検証、アイデアを形にする実験室</p>
+          <span class="v2-status" aria-label="Labページは準備中">準備中</span>
+        </article>
       </div>
     </section>
 
-    <section class="skills" id="skills">
-      <h2 class="section-heading">
-        <span class="heading-en">Skills</span>
-        <span class="heading-ja">スキル</span>
-      </h2>
-
-      <div class="skill-group">
-        <h3 class="section-heading">
-          <span class="heading-en">Development Skills</span>
-          <span class="heading-ja">開発スキル</span>
-        </h3>
-      
-        <ul class="skill-tags">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Tailwind CSS</li>
-          <li>Vite</li>
-          <li>GitHub</li>
-          <li>GitHub Pages</li>
-          <li>LocalStorage</li>
-        </ul>
+    <section class="v2-section" id="featured" aria-labelledby="featured-title">
+      <div class="v2-section-header">
+        <div>
+          <p class="v2-section-label">Selected work</p>
+          <h2 id="featured-title">Featured Projects <span>注目の制作</span></h2>
+        </div>
+        <p>現在の取り組みを代表する3作品です。</p>
       </div>
 
-      <div class="skill-group">
-        <h3 class="section-heading">
-          <span class="heading-en">Currently Learning</span>
-          <span class="heading-ja">学習中</span>
-        </h3>
-      
-        <p class="skill-description">
-          より実践的なWebアプリ開発に向けて学習しています。
-        </p>
-      
-        <ul class="skill-tags">
-          <li>TypeScript</li>
-          <li>Next.js</li>
-        </ul>
-      </div>
-
-      <div class="skill-group">
-        <h3 class="section-heading">
-          <span class="heading-en">AI Tools</span>
-          <span class="heading-ja">AI活用</span>
-        </h3>
-        <p class="skill-description">
-          目的に応じて複数のAIツールを使い分けています。
-          出力をそのまま使用するのではなく、内容を確認・修正しながら制作に活用しています。
-        </p>
-
-        <div class="ai-tool-list">
-
-          <article class="ai-tool-card">
-            <h4>ChatGPT</h4>
-            <p>
-              企画の壁打ち、要件整理、文章作成、実装方針の検討、制作工程の整理に使用しています。
-            </p>
-          </article>
-        
-          <article class="ai-tool-card">
-            <h4>Gemini</h4>
-            <p>
-              画像生成・画像編集や、
-              Googleサービスと組み合わせた制作補助に使用しています。
-            </p>
-          </article>
-        
-          <article class="ai-tool-card">
-            <h4>NotebookLM</h4>
-            <p>
-              複数資料の要約・比較・整理や、
-              資料に基づいたスライド作成に使用しています。
-            </p>
-          </article>
-        
-          <article class="ai-tool-card">
-            <h4>Claude</h4>
-            <p>
-              長文の構造化、企画の壁打ち、
-              コードの確認・修正に使用しています。
-            </p>
-          </article>
-        
-          <article class="ai-tool-card">
-            <h4>Manus</h4>
-            <p>
-              リサーチ、情報整理、資料作成など、
-              複数工程を含むタスクの実行に使用しています。
-            </p>
-          </article>
-
-          <article class="ai-tool-card">
-            <h4>Codex</h4>
-            <p>
-              既存コードの確認・修正や、複数ファイルにまたがる機能追加に使用しています。変更内容と動作を確認しながら、ローカル環境での制作・改善に活用しています。
-            </p>
-          </article>
-        </div>
-        </div>
-      </div>
-
-      <div class="skill-group">
-        <h3 class="section-heading">
-          <span class="heading-en">Programming Experience</span>
-          <span class="heading-ja">学習経験</span>
-        </h3>
-      
-        <p class="skill-description">
-          過去の学習で使用した技術です。
-          Javaを中心に、PythonやPostgreSQLを用いた
-          基礎的なプログラミングとデータベース操作を学びました。
-        </p>
-      
-        <ul class="skill-tags">
-          <li>Java</li>
-          <li>Python</li>
-          <li>PostgreSQL</li>
-        </ul>
-      </div>
-
-      <div class="skill-group">
-        <h3 class="section-heading">
-          <span class="heading-en">PC Skills</span>
-          <span class="heading-ja">PCスキル</span>
-        </h3>
-
-        <div class="skill-category">
-          <h4>Microsoft Office</h4>
-          <p>Word / Excel / PowerPoint</p>
-        </div>
-
-        <div class="skill-category">
-          <h4>Google Workspace</h4>
-          <p>
-            Googleドキュメント / Googleスプレッドシート /
-            Googleスライド / Googleドライブ
-          </p>
-        </div>
-
-        <div class="skill-category" id="adobe-works">
-          <div class="skill-category-header">
-            <h4>Adobe</h4>
-            <a href="adobe-works.html" class="skill-works-link">作品を見る →</a>
-          </div>
-          <p>
-            Photoshop / Illustrator / Premiere Pro / InDesign
-          </p>
-        </div>
-
-        <div class="skill-category" id="canva-works">
-          <div class="skill-category-header">
-            <h4>Canva</h4>
-            <a href="canva-works.html" class="skill-works-link">作品を見る →</a>
-          </div>
-          <p>
-            ポスター制作 / スライド制作 / 動画編集
-          </p>
-        </div>
-      </div>
-
-      <div class="skill-group">
-        <h3 class="section-heading">
-          <span class="heading-en">Qualifications</span>
-          <span class="heading-ja">保有資格</span>
-        </h3>
-
-        <dl class="qualification-list">
-          <div class="qualification-item">
-            <dt>2023.07</dt>
-            <dd>ITパスポート</dd>
-          </div>
-
-          <div class="qualification-item">
-            <dt>2023.11</dt>
-            <dd>Microsoft Office Specialist Excel 2019</dd>
-          </div>
-
-          <div class="qualification-item">
-            <dt>2024.05</dt>
-            <dd>G検定</dd>
-          </div>
-
-          <div class="qualification-item">
-            <dt>2024.07</dt>
-            <dd>生成AIパスポート</dd>
-          </div>
-        </dl>
-      </div>
-
-      
-    </section>
-
-    <section class="experience" id="experience">
-      <h2 class="section-heading">
-        <span class="heading-en">Experience</span>
-        <span class="heading-ja">実務経験</span>
-      </h2>
-    
-      <article class="experience-card">
-        <div class="experience-header">
-          <div>
-            <p class="experience-label">業務委託</p>
-            <h3>企業データの調査・整備</h3>
-          </div>
-    
-          <p class="experience-date">2026.07</p>
-        </div>
-    
-        <p class="experience-summary">
-          約400社を対象とした企業情報の調査・入力業務を担当しました。
-          法人番号公表サイトなどを用いて情報を確認し、
-          Googleスプレッドシートへの入力・整備を行いました。
-        </p>
-    
-        <div class="experience-section">
-          <h4>Tasks</h4>
-    
-          <ul class="experience-details">
-            <li>約400社の企業情報を調査・整理</li>
-            <li>法人番号の検索・確認</li>
-            <li>Googleスプレッドシートへのデータ入力</li>
-            <li>入力済みデータの確認・整形</li>
-            <li>納品形式に合わせたデータ調整</li>
-          </ul>
-        </div>
-    
-        <div class="experience-section">
-          <h4>Tools</h4>
-    
-          <ul class="skill-tags">
-            <li>Googleスプレッドシート</li>
-            <li>Excel</li>
-            <li>Webリサーチ</li>
-            <li>データ入力</li>
-          </ul>
-        </div>
-    
-        <div class="experience-result">
-          <h4>Result</h4>
-    
-          <p>
-            正確性を確認しながらデータを整備し、
-            指定された形式で期限内に納品しました。
-          </p>
-        </div>
-      </article>
-    </section>
-
-    <section class="works" id="works">
-      <h2 class="section-heading">
-        <span class="heading-en">Works</span>
-        <span class="heading-ja">制作実績</span>
-      </h2>
-
-      <div class="work-list">
-
-        <article class="work-card">
+      <div class="v2-featured-grid">
+        <article class="v2-project-card v2-project-card-primary">
           <img src="img/career-track.png" alt="Career Trackのダッシュボード画面">
-
-          <div class="work-content">
-            <h3>Career Track</h3>
-            <div class="work-meta">
-              <span>就職活動管理Webアプリ</span>
-              <span class="active-project">開発継続中</span>
+          <div class="v2-project-content">
+            <div class="v2-project-heading">
+              <p>Web Application</p>
+              <span>開発継続中</span>
             </div>
-
+            <h3>Career Track</h3>
             <p>
               企業情報・応募状況・面接予定を一元管理できるWebアプリです。
               実際の就職活動で利用しながら継続的に改善しています。
             </p>
-
-            <p class="tags">
-              React / TypeScript / Vite / Tailwind CSS / LocalStorage / Git / GitHub
-            </p>
-
-            <div class="work-links">
-              <a
-                href="https://pluto007-lab.github.io/career-track/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Demo
-              </a>
-
-              <a
-                href="https://github.com/pluto007-lab/career-track"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
+            <p class="v2-tags">React / TypeScript / Vite / Tailwind CSS / LocalStorage</p>
+            <div class="v2-project-links">
+              <a href="https://pluto007-lab.github.io/career-track/" target="_blank" rel="noopener noreferrer">Demo</a>
+              <a href="https://github.com/pluto007-lab/career-track" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
         </article>
 
-        <article class="work-card">
+        <article class="v2-project-card">
           <img src="img/web-app-template.png" alt="VSCodeで開いたWeb App Templateの開発画面">
-
-          <div class="work-content">
+          <div class="v2-project-content">
+            <div class="v2-project-heading">
+              <p>Development</p>
+            </div>
             <h3>Web App Template v1.0</h3>
-            <div class="work-meta">
-              <span>開発テンプレート</span>
-              <span>個人制作</span>
-              <span>共通開発基盤</span>
-            </div>
-
             <p>
-              React + TypeScript + Vite をベースにしたWebアプリ開発テンプレートです。
-              今後の個人開発（Career Track・Hackboardなど）の共通基盤として利用します。
+              React + TypeScript + ViteをベースにしたWebアプリ開発テンプレートです。
+              今後の個人開発における共通基盤として利用します。
             </p>
-
-            <ul class="work-features">
-              <li>GitHub Template Repository</li>
-              <li>React Router標準搭載</li>
-              <li>Tailwind CSS v4</li>
-              <li>GitHub Actionsによる自動デプロイ</li>
-              <li>Xserver対応</li>
-              <li>共通フォルダ構成を設計</li>
-            </ul>
-
-            <p class="tags">
-              React / TypeScript / Vite / React Router / Tailwind CSS v4 / GitHub Actions
-            </p>
-
-            <div class="work-links">
-              <a
-                href="https://github.com/pluto007-lab/webapp-template"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
+            <p class="v2-tags">React / TypeScript / Vite / React Router / Tailwind CSS v4</p>
+            <div class="v2-project-links">
+              <a href="https://github.com/pluto007-lab/webapp-template" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
         </article>
 
-        <article class="work-card">
-          <img src="img/shift-app.png" alt="shift-appの画面">
-
-          <div class="work-content">
-            <h3>勤務シフト管理アプリ</h3>
-            <div class="work-meta">
-              <span>Webアプリ</span>
-              <span>個人制作</span>
-              <span>React</span>
-              <span>AI活用</span>
+        <article class="v2-project-card">
+          <img src="img/wakaba.png" alt="シニア向けスマホ教室「若葉」の画面">
+          <div class="v2-project-content">
+            <div class="v2-project-heading">
+              <p>Website</p>
             </div>
-
-            <p>
-              看護師向けの勤務シフト管理アプリです。
-              有休・夏季休暇の管理や勤務ルールの確認を行えるよう設計し、生成AIを開発支援ツールとして活用しながら制作しました。
-            </p>
-
-            <p class="tags">
-              React / Tailwind CSS / Vite / Gemini API
-            </p>
-
-            <div class="work-links">
-              <a
-                href="https://pluto007-lab.github.io/shift-app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Demo
-              </a>
-
-              <a
-                href="https://github.com/pluto007-lab/shift-app"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="work-card">
-          <img src="img/pale-table.png" alt="pale tableの画面">
-
-          <div class="work-content">
-            <h3>pale table</h3>
-            <div class="work-meta">
-              <span>ECサイト</span>
-              <span>個人制作</span>
-              <span>企画・デザイン・実装</span>
-            </div>
-
-            <p>
-              架空の食器ブランドのECサイト風デモ。
-              商品切り替えやカート機能を実装しました。
-            </p>
-
-            <p class="tags">
-              HTML / CSS / JavaScript / LocalStorage / Font Awesome
-            </p>
-
-            <div class="work-links">
-              <a
-                href="https://pluto007-lab.github.io/pale-table/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Demo
-              </a>
-
-              <a
-                href="https://github.com/pluto007-lab/pale-table"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="work-card">
-          <img src="img/umabiyori.png" alt="umabiyori.の画面">
-
-          <div class="work-content">
-            <h3>umabiyori.</h3>
-            <div class="work-meta">
-              <span>記録・管理アプリ</span>
-              <span>個人制作</span>
-              <span>企画・デザイン・実装</span>
-            </div>
-
-            <p>
-              競馬場や牧場などの旅先を
-              記録・管理するためのWebアプリです。
-            </p>
-
-            <p class="tags">
-              HTML / CSS / JavaScript / LocalStorage
-            </p>
-
-            <div class="work-links">
-              <a
-                href="https://pluto007-lab.github.io/umabiyori/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Demo
-              </a>
-
-              <a
-                href="https://github.com/pluto007-lab/umabiyori"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
-            </div>
-          </div>
-        </article>
-
-        <article class="work-card">
-          <img src="img/wakaba.png" alt="若葉の画面">
-
-          <div class="work-content">
             <h3>シニア向けスマホ教室「若葉」</h3>
-            <div class="work-meta">
-              <span>サービス紹介サイト</span>
-              <span>個人制作</span>
-              <span>企画・デザイン・実装・改善</span>
-            </div>
-
             <p>
-              シニア向けスマホ教室を想定した架空サイトです。見やすさと操作性に配慮し、講座・FAQ・お問い合わせ・コラムなどを含む構成へ改善しました。SEOとアクセシビリティにも取り組んでいます。
+              シニア向けスマホ教室を想定した架空サイトです。
+              見やすさと操作性に配慮し、複数ページ構成へ改善しました。
             </p>
-
-            <p class="tags">HTML / CSS / Tailwind CSS / JavaScript / JSON-LD / GitHub Pages</p>
-
-            <div class="work-links">
-              <a
-                href="https://pluto007-lab.github.io/wakaba/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Demo
-              </a>
-
-              <a
-                href="https://github.com/pluto007-lab/wakaba"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
+            <p class="v2-tags">HTML / CSS / Tailwind CSS / JavaScript / JSON-LD</p>
+            <div class="v2-project-links">
+              <a href="https://pluto007-lab.github.io/wakaba/" target="_blank" rel="noopener noreferrer">Demo</a>
+              <a href="https://github.com/pluto007-lab/wakaba" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
         </article>
-
-        <article class="work-card">
-          <img src="img/rinkaku.png" alt="輪郭の画面">
-
-          <div class="work-content">
-            <h3>輪郭</h3>
-            <div class="work-meta">
-              <span>自己探求アプリ</span>
-              <span>個人制作</span>
-              <span>企画・デザイン・実装</span>
-            </div>
-
-            <p>
-              他者の視点や日々の問いを通して、
-              自分自身を見つめ直す自己探求アプリです。
-            </p>
-
-            <p class="tags">
-              HTML / Tailwind CSS / JavaScript
-            </p>
-
-            <div class="work-links">
-              <a
-                href="https://pluto007-lab.github.io/rinkaku/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Demo
-              </a>
-
-              <a
-                href="https://github.com/pluto007-lab/rinkaku"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub
-              </a>
-            </div>
-          </div>
-        </article>
-
       </div>
     </section>
 
-    <section class="github-activity" id="github">
-      <h2>GitHub</h2>
-    
-      <div class="github-card">
-        <div>
-          <p class="github-label">GitHub Activity</p>
-    
-          <h3>制作物とソースコードを公開しています。</h3>
-    
-          <p>
-            WebサイトやWebアプリのコード、
-            各作品の概要や使用技術をGitHubで公開しています。
-          </p>
-        </div>
-    
-        <a
-          href="https://github.com/pluto007-lab"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn"
-        >
-          GitHubプロフィールを見る
-        </a>
+    <section class="v2-section v2-now" id="now" aria-labelledby="now-title">
+      <div class="v2-now-intro">
+        <p class="v2-section-label">Currently</p>
+        <h2 id="now-title">Now <span>現在の取り組み</span></h2>
+        <p>学習と実践を往復しながら、制作の幅を広げています。</p>
       </div>
+
+      <ul class="v2-now-list">
+        <li><span aria-hidden="true">01</span>Portfolio v2 制作中</li>
+        <li><span aria-hidden="true">02</span>学校公式SNS運営</li>
+        <li><span aria-hidden="true">03</span>React / TypeScript 学習</li>
+        <li><span aria-hidden="true">04</span>ハッカソン参加準備</li>
+      </ul>
     </section>
 
-    <section class="contact" id="contact">
-      <h2 class="section-heading">
-        <span class="heading-en">Contact</span>
-        <span class="heading-ja">お問い合わせ</span>
-      </h2>
-
-      <p>
-        制作やお仕事に関するご連絡は、
-        メールまたはGitHubからお願いいたします。
-      </p>
-
-      <p class="contact-email">
-        <a href="mailto:mfmf0707@gmail.com">
-          mfmf0707@gmail.com
-        </a>
-      </p>
-
-      <div class="contact-links">
-        <a
-          href="mailto:mfmf0707@gmail.com"
-          class="btn"
-        >
-          メールを送る
-        </a>
-
-        <a
-          href="https://github.com/pluto007-lab"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn"
-        >
-          GitHubを見る
-        </a>
+    <section class="v2-section v2-about" id="about" aria-labelledby="about-title">
+      <div>
+        <p class="v2-section-label">Profile</p>
+        <h2 id="about-title">About <span>自己紹介</span></h2>
+      </div>
+      <div class="v2-about-content">
+        <p>
+          職業訓練校でWeb制作を学びながら、WebサイトやWebアプリの企画・デザイン・実装・改善に取り組んでいます。
+          HTML・CSS・JavaScriptに加え、Reactを用いたWebアプリ開発も経験しています。
+        </p>
+        <a href="about.html" class="v2-about-link">Aboutを詳しく見る →</a>
       </div>
     </section>
-
   </main>
 
   <footer class="footer">
-    <p>© 2026 Portfolio</p>
-    <a href="#" class="back-to-top" aria-label="ページ上部へ戻る">
-      ↑
-    </a>
+    <div class="v2-footer-inner">
+      <div>
+        <a href="#top" class="v2-footer-logo">Portfolio</a>
+        <p>Building, learning, and experimenting.</p>
+      </div>
+      <div class="v2-footer-links" aria-label="外部リンク">
+        <a href="mailto:mfmf0707@gmail.com">Email</a>
+        <a href="https://github.com/pluto007-lab" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+    <p class="v2-copyright">© 2026 Portfolio</p>
+    <a href="#top" class="back-to-top" aria-label="ページ上部へ戻る">↑</a>
   </footer>
 
   <script src="js/script.js"></script>
-
 </body>
 </html>

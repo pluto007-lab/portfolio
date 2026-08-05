@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Photoshop、Illustrator、Canvaなどを使用して制作したデザインを紹介します。">
+  <title>Design | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="home-v2 design-v2">
+  <a class="skip-link" href="#main-content">本文へ移動</a>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Portfolio ホーム">Portfolio</a>
+      <nav aria-label="メインナビゲーション">
+        <a href="index.html">Home</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="web-apps.html">Web Apps</a>
+        <a href="websites.html">Websites</a>
+        <a href="design.html" aria-current="page">Design</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="design-v2-hero" aria-labelledby="design-title">
+      <nav class="v2-breadcrumb" aria-label="パンくずリスト">
+        <a href="index.html">Home</a>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page">Design</span>
+      </nav>
+      <div class="design-v2-hero-copy">
+        <p class="v2-section-label">Visual works / Selected categories</p>
+        <h1 id="design-title">Design</h1>
+        <p>Photoshop、Illustrator、Canvaなどを使用して制作したデザインを掲載しています。用途や目的に合わせて、情報が伝わる配色・余白・構成を考えています。</p>
+      </div>
+      <p class="design-v2-hero-note" aria-hidden="true">Collection<br>2026</p>
+    </section>
+
+    <section class="v2-section design-v2-categories" aria-labelledby="design-categories-title">
+      <div class="design-v2-section-heading">
+        <div>
+          <p class="v2-section-label">Design Categories</p>
+          <h2 id="design-categories-title">カテゴリから見る</h2>
+        </div>
+        <p>制作ツールと表現方法ごとに整理しています。</p>
+      </div>
+
+      <div class="design-category-grid">
+        <article class="design-category-card design-category-card-photo">
+          <div class="design-category-visual" aria-hidden="true"><span>Ps</span><small>Digital imaging</small></div>
+          <div class="design-category-content">
+            <p class="design-category-number">01</p>
+            <h3>Photoshop</h3>
+            <p>画像補正や合成、Webで使用するバナーなどの制作をまとめています。</p>
+            <p class="design-category-tool">Tool / Photoshop</p>
+            <a href="#design-gallery-adobe">作品を見る <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="design-category-card design-category-card-illustration">
+          <div class="design-category-visual" aria-hidden="true"><span>Ai</span><small>Vector graphics</small></div>
+          <div class="design-category-content">
+            <p class="design-category-number">02</p>
+            <h3>Illustrator</h3>
+            <p>図形や文字を組み合わせたロゴ、グラフィック制作をまとめています。</p>
+            <p class="design-category-tool">Tool / Illustrator</p>
+            <a href="#design-gallery-adobe">作品を見る <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="design-category-card design-category-card-canva">
+          <div class="design-category-visual" aria-hidden="true"><span>Ca</span><small>Layout design</small></div>
+          <div class="design-category-content">
+            <p class="design-category-number">03</p>
+            <h3>Canva</h3>
+            <p>用途に合わせて情報を整理した誌面やロゴ案などを掲載しています。</p>
+            <p class="design-category-tool">Tool / Canva</p>
+            <a href="#design-gallery-canva">作品を見る <span aria-hidden="true">→</span></a>
+          </div>
+        </article>
+
+        <article class="design-category-card design-category-card-logo">
+          <div class="design-category-visual" aria-hidden="true"><span>Lo</span><small>Logo &amp; social</small></div>
+          <div class="design-category-content">
+            <p class="design-category-number">04</p>
+            <h3>Logo / SNS Design</h3>
+            <p>ロゴとSNS投稿を、目的や伝える情報に合わせて整理しています。</p>
+            <p class="design-category-tool">Tools / Photoshop・Illustrator・Canva</p>
+            <a href="#design-gallery-sns-design">作品を見る <span aria-hidden="true">↓</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="v2-section design-v2-featured" aria-labelledby="featured-design-title">
+      <div class="design-v2-section-heading">
+        <div>
+          <p class="v2-section-label">Featured Works</p>
+          <h2 id="featured-design-title">代表作品と作品一覧</h2>
+        </div>
+        <p>代表作品を先に紹介し、その他の公開作品は必要なときに展開できます。</p>
+      </div>
+      <div class="design-gallery" aria-label="デザイン作品一覧" data-gallery-source="data/design-works.json">
+      </div>
+      <div class="design-gallery-controls">
+        <p id="design-gallery-status" aria-live="polite">作品データを読み込んでいます。</p>
+        <button type="button" id="design-gallery-toggle" class="design-gallery-toggle" hidden>その他の作品を見る</button>
+      </div>
+      <noscript><p class="design-gallery-noscript">この作品一覧はJSONデータから生成されるため、表示にはJavaScriptが必要です。</p></noscript>
+    </section>
+
+    <section class="v2-section design-v2-approach" aria-labelledby="design-approach-title">
+      <div class="design-v2-section-heading">
+        <div>
+          <p class="v2-section-label">Design Approach</p>
+          <h2 id="design-approach-title">制作の視点</h2>
+        </div>
+      </div>
+      <ul class="design-approach-list">
+        <li><span>01</span>目的に合う見せ方</li>
+        <li><span>02</span>情報の優先順位</li>
+        <li><span>03</span>配色と余白</li>
+        <li><span>04</span>Webとの一貫性</li>
+        <li><span>05</span>改善を前提とした制作</li>
+      </ul>
+    </section>
+
+    <section class="v2-section design-v2-tools" aria-labelledby="design-tools-title">
+      <div>
+        <p class="v2-section-label">Tools</p>
+        <h2 id="design-tools-title">使用ツール</h2>
+      </div>
+      <ul aria-label="デザインに使用しているツール">
+        <li><span>Ps</span>Photoshop</li>
+        <li><span>Ai</span>Illustrator</li>
+        <li><span>Ca</span>Canva</li>
+        <li><span>GPT</span>ChatGPT</li>
+      </ul>
+    </section>
+
+    <section class="v2-section design-v2-cta" aria-labelledby="design-next-title">
+      <div>
+        <p class="v2-section-label">Next</p>
+        <h2 id="design-next-title">次のカテゴリへ</h2>
+      </div>
+      <div class="design-v2-cta-list">
+        <a href="websites.html"><span>Websitesを見る</span><small>View</small></a>
+        <div><span>Developmentを見る</span><small>準備中</small></div>
+        <div><span>Contactへ進む</span><small>準備中</small></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="v2-footer-inner">
+      <div><a href="index.html" class="v2-footer-logo">Portfolio</a><p>Building, learning, and experimenting.</p></div>
+      <div class="v2-footer-links" aria-label="外部リンク">
+        <a href="mailto:mfmf0707@gmail.com">Email</a>
+        <a href="https://github.com/pluto007-lab" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+    <p class="v2-copyright">© 2026 Portfolio</p>
+    <a href="#" class="back-to-top" aria-label="ページ上部へ戻る">↑</a>
+  </footer>
+  <script src="js/script.js"></script>
+  <script src="data/design-works-fallback.js"></script>
+  <script src="js/design-gallery.js"></script>
+</body>
+</html>

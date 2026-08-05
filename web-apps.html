@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Career Trackをはじめ、実際の困りごとを起点に設計・改善したWebアプリを紹介します。">
+  <title>Web Apps | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="home-v2 web-apps-v2">
+  <a class="skip-link" href="#main-content">本文へ移動</a>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Portfolio ホーム">Portfolio</a>
+      <nav aria-label="メインナビゲーション">
+        <a href="index.html">Home</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="web-apps.html" aria-current="page">Web Apps</a>
+        <a href="index.html#now">Now</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="web-apps-hero" aria-labelledby="web-apps-title">
+      <nav class="v2-breadcrumb" aria-label="パンくずリスト">
+        <a href="index.html">Home</a>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page">Web Apps</span>
+      </nav>
+      <p class="v2-section-label">Projects / Web applications</p>
+      <h1 id="web-apps-title">Web Apps</h1>
+      <p>
+        実際の困りごとや管理しづらさを起点に、情報を整理し、
+        使いやすい形へ落とし込んだWebアプリを掲載しています。
+      </p>
+    </section>
+
+    <section class="v2-section web-apps-featured" aria-labelledby="career-track-title">
+      <div class="web-apps-featured-heading">
+        <div>
+          <p class="v2-section-label">Featured App</p>
+          <h2 id="career-track-title">Career Track</h2>
+        </div>
+        <span>開発継続中</span>
+      </div>
+
+      <div class="web-apps-featured-visual">
+        <img src="img/career-track.png" alt="Career Trackのダッシュボード画面">
+      </div>
+
+      <div class="web-apps-featured-summary">
+        <section aria-labelledby="career-overview-title">
+          <p class="web-apps-detail-label">Overview</p>
+          <h3 id="career-overview-title">概要</h3>
+          <p>企業情報・応募状況・面接準備を一元管理し、今確認すべき企業と次に行うことを整理するWebアプリです。</p>
+        </section>
+        <section aria-labelledby="career-origin-title">
+          <p class="web-apps-detail-label">Origin</p>
+          <h3 id="career-origin-title">制作のきっかけ</h3>
+          <p>就職活動で企業情報、応募状況、提出期限、面接予定が複数の場所へ分散し、管理が煩雑になった経験から制作を始めました。</p>
+        </section>
+        <section aria-labelledby="career-problem-title">
+          <p class="web-apps-detail-label">Problem</p>
+          <h3 id="career-problem-title">解決したい課題</h3>
+          <p>次に行うことが分かりづらい、予定を見落としやすい、企業を比較しにくいといった管理上の負担を減らすことを目指しています。</p>
+        </section>
+      </div>
+
+      <div class="web-apps-featured-detail">
+        <section class="web-apps-detail-panel" aria-labelledby="career-features-title">
+          <p class="web-apps-detail-label">Features</p>
+          <h3 id="career-features-title">主な機能</h3>
+          <ul class="web-apps-feature-list">
+            <li>企業情報管理</li>
+            <li>応募状況管理</li>
+            <li>面接予定・面接対策</li>
+            <li>企業評価</li>
+            <li>LocalStorageによるローカル保存</li>
+            <li>実際の利用を通した継続的な機能改善</li>
+          </ul>
+        </section>
+
+        <section class="web-apps-detail-panel" aria-labelledby="career-design-title">
+          <p class="web-apps-detail-label">Design &amp; engineering</p>
+          <h3 id="career-design-title">工夫した点</h3>
+          <ul class="web-apps-feature-list">
+            <li>応募状態を基準に一覧・検索・絞り込みを共通管理</li>
+            <li>評価理由が分かるルールベースの企業評価</li>
+            <li>既存データを壊さない後方互換性への配慮</li>
+            <li>JSONバックアップ・復元とインポート前検証</li>
+            <li>PC・タブレット・スマートフォンへの対応</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="web-apps-featured-footer">
+        <section aria-labelledby="career-tech-title">
+          <p class="web-apps-detail-label">Technology</p>
+          <h3 id="career-tech-title">使用技術</h3>
+          <ul class="web-apps-tech-list" aria-label="Career Trackの使用技術">
+            <li>React</li><li>TypeScript</li><li>Vite</li><li>React Router</li>
+            <li>Tailwind CSS</li><li>LocalStorage</li><li>Git</li><li>GitHub</li>
+          </ul>
+        </section>
+
+        <section aria-labelledby="career-status-title">
+          <p class="web-apps-detail-label">Status</p>
+          <h3 id="career-status-title">現在の開発状況</h3>
+          <p>実際の就職活動で利用しながら、必要になった機能を追加し、操作や情報の見つけやすさを継続的に改善しています。</p>
+        </section>
+
+        <section aria-labelledby="career-roadmap-title">
+          <p class="web-apps-detail-label">Roadmap</p>
+          <h3 id="career-roadmap-title">今後の改善予定</h3>
+          <ul class="web-apps-roadmap-list">
+            <li>志望度・お気に入り機能</li>
+            <li>面接前後の印象を時系列で管理</li>
+            <li>AI・企業調査メモの履歴管理</li>
+            <li>リスクチェックと面接確認事項の連携</li>
+            <li>認証・クラウド保存・複数端末同期</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="web-apps-featured-links">
+        <a href="https://pluto007-lab.github.io/career-track/" target="_blank" rel="noopener noreferrer">Demoを見る</a>
+        <a href="https://github.com/pluto007-lab/career-track" target="_blank" rel="noopener noreferrer">GitHubを見る</a>
+      </div>
+    </section>
+
+    <section class="v2-section" aria-labelledby="other-apps-title">
+      <div class="v2-section-header">
+        <div>
+          <p class="v2-section-label">Other Apps</p>
+          <h2 id="other-apps-title">その他のWebアプリ</h2>
+        </div>
+        <p>異なるテーマを通して、情報管理や操作設計を試した作品です。</p>
+      </div>
+
+      <div class="web-apps-card-grid">
+        <article class="web-app-card">
+          <img src="img/shift-app.png" alt="勤務シフト管理アプリの画面">
+          <div class="web-app-card-content">
+            <div class="web-app-card-meta"><span>Web App</span><small>公開中</small></div>
+            <h3>勤務シフト管理アプリ</h3>
+            <p>看護師向けの勤務シフト管理アプリです。有休・夏季休暇の管理や勤務ルールの確認を行えるよう設計しました。</p>
+            <p class="web-app-card-tech">React / Tailwind CSS / Vite / Gemini API</p>
+            <div class="web-app-card-links">
+              <a href="https://pluto007-lab.github.io/shift-app/" target="_blank" rel="noopener noreferrer">Demo</a>
+              <a href="https://github.com/pluto007-lab/shift-app" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="web-app-card">
+          <img src="img/umabiyori.png" alt="umabiyori.の画面">
+          <div class="web-app-card-content">
+            <div class="web-app-card-meta"><span>Record App</span><small>公開中</small></div>
+            <h3>umabiyori.</h3>
+            <p>競馬場や牧場などの旅先を記録・管理するためのWebアプリです。</p>
+            <p class="web-app-card-tech">HTML / CSS / JavaScript / LocalStorage</p>
+            <div class="web-app-card-links">
+              <a href="https://pluto007-lab.github.io/umabiyori/" target="_blank" rel="noopener noreferrer">Demo</a>
+              <a href="https://github.com/pluto007-lab/umabiyori" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="web-app-card">
+          <img src="img/rinkaku.png" alt="自己探求アプリ「輪郭」の画面">
+          <div class="web-app-card-content">
+            <div class="web-app-card-meta"><span>Reflection App</span><small>公開中</small></div>
+            <h3>輪郭</h3>
+            <p>他者の視点や日々の問いを通して、自分自身を見つめ直す自己探求アプリです。</p>
+            <p class="web-app-card-tech">HTML / Tailwind CSS / JavaScript</p>
+            <div class="web-app-card-links">
+              <a href="https://pluto007-lab.github.io/rinkaku/" target="_blank" rel="noopener noreferrer">Demo</a>
+              <a href="https://github.com/pluto007-lab/rinkaku" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="v2-section web-apps-principles" aria-labelledby="principles-title">
+      <div>
+        <p class="v2-section-label">Principles</p>
+        <h2 id="principles-title">制作で大切にしていること</h2>
+      </div>
+      <ul>
+        <li><span>01</span>情報を見つけやすく整理する</li>
+        <li><span>02</span>自分が実際に困ったことから考える</li>
+        <li><span>03</span>小さく作って改善する</li>
+        <li><span>04</span>保存・操作の分かりやすさを重視する</li>
+        <li><span>05</span>AIは設計・検証・改善の補助として使う</li>
+      </ul>
+    </section>
+
+    <section class="v2-section web-apps-cta" aria-labelledby="web-apps-next-title">
+      <div>
+        <p class="v2-section-label">Next</p>
+        <h2 id="web-apps-next-title">他のカテゴリを見る</h2>
+        <p>各詳細ページは、Portfolio v2の制作に合わせて順次追加します。</p>
+      </div>
+      <div class="web-apps-cta-list" aria-label="準備中のページ">
+        <div><span>Developmentを見る</span><small>準備中</small></div>
+        <div><span>Websitesを見る</span><small>準備中</small></div>
+        <div><span>Contactへ進む</span><small>準備中</small></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="v2-footer-inner">
+      <div><a href="index.html" class="v2-footer-logo">Portfolio</a><p>Building, learning, and experimenting.</p></div>
+      <div class="v2-footer-links" aria-label="外部リンク">
+        <a href="mailto:mfmf0707@gmail.com">Email</a>
+        <a href="https://github.com/pluto007-lab" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+    </div>
+    <p class="v2-copyright">© 2026 Portfolio</p>
+    <a href="#" class="back-to-top" aria-label="ページ上部へ戻る">↑</a>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
