@@ -74,7 +74,10 @@
   const createCategorySection = (category, categoryWorks, imageOffset) => {
     const slug = category.toLowerCase().replaceAll(' ', '-');
     const section = element('section', `design-gallery-group design-gallery-group-${slug}`);
-    const titleId = `design-gallery-${slug}`;
+    const sectionId = `design-gallery-${slug}`;
+    const titleId = `${sectionId}-title`;
+    section.id = sectionId;
+    section.tabIndex = -1;
     section.setAttribute('aria-labelledby', titleId);
 
     const heading = element('div', 'design-gallery-group-heading');
@@ -90,6 +93,19 @@
     return section;
   };
 
+  const moveToCategory = (hash = window.location.hash) => {
+    if (!hash.startsWith('#design-gallery-')) return false;
+    const targetId = hash.slice(1);
+    const target = document.getElementById(targetId);
+    if (!target) {
+      console.warn('[Design gallery] 移動先 #' + targetId + ' がDOMに存在しません。');
+      return false;
+    }
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    target.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' });
+    target.focus({ preventScroll: true });
+    return true;
+  };
   const render = () => {
     const visibleWorks = works.filter((work) => work.visible).sort((a, b) => a.order - b.order);
     const featuredWorks = visibleWorks.filter((work) => work.featured);
@@ -98,7 +114,6 @@
     let imageOffset = 0;
     categoryOrder.forEach((category) => {
       const categoryWorks = selectedWorks.filter((work) => work.category === category);
-      if (!categoryWorks.length) return;
       fragment.append(createCategorySection(category, categoryWorks, imageOffset));
       imageOffset += categoryWorks.length;
     });
@@ -112,23 +127,37 @@
     toggle.setAttribute('aria-expanded', String(showingAll));
   };
 
+  window.addEventListener('hashchange', () => moveToCategory());
   toggle.addEventListener('click', () => {
     showingAll = !showingAll;
     render();
     status.focus?.();
   });
 
-  fetch(gallery.dataset.gallerySource)
-    .then((response) => {
-      if (!response.ok) throw new Error('作品データを読み込めませんでした。');
+  const loadWorks = () => {
+    if (window.location.protocol === 'file:') {
+      if (Array.isArray(window.DESIGN_WORKS_FALLBACK)) {
+        return Promise.resolve(window.DESIGN_WORKS_FALLBACK);
+      }
+      return Promise.reject(new Error('file://表示用の作品データを読み込めませんでした。'));
+    }
+
+    return fetch(gallery.dataset.gallerySource).then((response) => {
+      if (!response.ok) throw new Error(`作品データを読み込めませんでした（HTTP ${response.status}）。`);
       return response.json();
-    })
+    });
+  };
+
+  loadWorks()
     .then((data) => {
       works = Array.isArray(data) ? data : [];
       render();
+      moveToCategory();
     })
-    .catch(() => {
-      gallery.replaceChildren();
+    .catch((error) => {
+      render();
       status.textContent = '作品データを読み込めませんでした。';
+      console.error('[Design gallery] 作品データの読み込みに失敗しました。', error);
+      moveToCategory();
     });
 })();
