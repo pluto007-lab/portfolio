@@ -4697,3 +4697,172 @@ html {
 @media(max-width:768px){.contact-v2 main{padding-top:20px}.contact-hero{width:min(100% - 28px,1320px);min-height:auto;padding:34px 28px;border-radius:28px}.contact-hero-layout{grid-template-columns:1fr;margin-top:58px}.contact-section-heading{align-items:flex-start;flex-direction:column}.contact-guide{grid-template-columns:1fr}.contact-cta{align-items:flex-start;flex-direction:column}.contact-cta>div:last-child{justify-content:flex-start}}
 @media(max-width:600px){.contact-hero{width:calc(100% - 20px);padding:28px 20px;border-radius:22px}.contact-hero h1{font-size:clamp(52px,17vw,70px);letter-spacing:-2px}.contact-hero-layout>div:first-child>p:last-child{font-size:15px}.contact-message-card{min-height:180px;padding:22px}.contact-methods,.contact-scope,.contact-guide,.contact-cta{padding:24px 18px;border-radius:21px}.contact-method-grid{grid-template-columns:1fr}.contact-method-grid article{min-height:250px;padding:24px}.contact-method-grid a{font-size:13px}.contact-scope ul{grid-template-columns:1fr}.contact-scope li{min-height:auto}.contact-scope li span{margin-bottom:18px}.contact-guide{gap:28px}.contact-cta>div:last-child{width:100%;flex-direction:column}.contact-cta a{width:100%;text-align:center}}
 @media(prefers-reduced-motion:reduce){.contact-v2 *,.contact-v2 *::before,.contact-v2 *::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+/* Home quality improvement Phase 2-1 */
+.home-v2:not(.about-v2):not(.web-apps-v2):not(.websites-v2):not(.design-v2):not(.development-v2):not(.planning-v2):not(.writing-v2):not(.lab-v2):not(.contact-v2) .v2-hero {
+  min-height: 420px;
+  padding: clamp(46px, 5.5vw, 66px) clamp(30px, 7vw, 82px);
+}
+
+.home-v2:not(.about-v2):not(.web-apps-v2):not(.websites-v2):not(.design-v2):not(.development-v2):not(.planning-v2):not(.writing-v2):not(.lab-v2):not(.contact-v2) .v2-hero h1 {
+  max-width: 760px;
+  margin: 11px 0 17px;
+  font-size: clamp(40px, 6.2vw, 72px);
+}
+
+.home-v2:not(.about-v2):not(.web-apps-v2):not(.websites-v2):not(.design-v2):not(.development-v2):not(.planning-v2):not(.writing-v2):not(.lab-v2):not(.contact-v2) .v2-hero-copy {
+  max-width: 760px;
+  font-size: clamp(15px, 1.6vw, 18px);
+  line-height: 1.75;
+}
+
+.home-v2:not(.about-v2):not(.web-apps-v2):not(.websites-v2):not(.design-v2):not(.development-v2):not(.planning-v2):not(.writing-v2):not(.lab-v2):not(.contact-v2) .v2-hero-copy span {
+  display: inline-block;
+  margin-right: .25em;
+}
+
+.home-v2:not(.about-v2):not(.web-apps-v2):not(.websites-v2):not(.design-v2):not(.development-v2):not(.planning-v2):not(.writing-v2):not(.lab-v2):not(.contact-v2) .v2-actions {
+  margin-top: 24px;
+}
+
+.home-v2:not(.about-v2):not(.web-apps-v2):not(.websites-v2):not(.design-v2):not(.development-v2):not(.planning-v2):not(.writing-v2):not(.lab-v2):not(.contact-v2) .v2-hero-note {
+  display: flex;
+  margin-top: 28px;
+  align-items: baseline;
+  gap: 12px;
+  letter-spacing: 0;
+}
+
+.home-v2:not(.about-v2):not(.web-apps-v2):not(.websites-v2):not(.design-v2):not(.development-v2):not(.planning-v2):not(.writing-v2):not(.lab-v2):not(.contact-v2) .v2-hero-note strong {
+  color: #617b91;
+  font-size: 13px;
+  letter-spacing: .08em;
+}
+
+.home-v2:not(.about-v2):not(.web-apps-v2):not(.websites-v2):not(.design-v2):not(.development-v2):not(.planning-v2):not(.writing-v2):not(.lab-v2):not(.contact-v2) .v2-hero-note span {
+  color: #8797a7;
+  font-size: 11px;
+}
+
+.home-v2:not(.about-v2):not(.web-apps-v2):not(.websites-v2):not(.design-v2):not(.development-v2):not(.planning-v2):not(.writing-v2):not(.lab-v2):not(.contact-v2) #projects {
+  margin-top: 64px;
+}
+
+.home-v2:not(.about-v2):not(.web-apps-v2):not(.websites-v2):not(.design-v2):not(.development-v2):not(.planning-v2):not(.writing-v2):not(.lab-v2):not(.contact-v2) .v2-category-grid-seven {
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.home-v2:not(.about-v2):not(.web-apps-v2):not(.websites-v2):not(.design-v2):not(.development-v2):not(.planning-v2):not(.writing-v2):not(.lab-v2):not(.contact-v2) .v2-category-card-primary {
+  grid-column: span 4;
+  min-height: 254px;
+  border-color: rgba(117, 165, 202, .48);
+  background: linear-gradient(145deg, rgba(255, 253, 250, .96), rgba(235, 246, 254, .92));
+  box-shadow: 10px 14px 30px rgba(75, 111, 143, .12);
+}
+
+.home-v2:not(.about-v2):not(.web-apps-v2):not(.websites-v2):not(.design-v2):not(.development-v2):not(.planning-v2):not(.writing-v2):not(.lab-v2):not(.contact-v2) .v2-category-card-primary::before {
+  position: absolute;
+  top: 0;
+  right: 28px;
+  left: 28px;
+  height: 4px;
+  border-radius: 0 0 999px 999px;
+  background: var(--v2-blue);
+  content: "";
+}
+
+.home-v2:not(.about-v2):not(.web-apps-v2):not(.websites-v2):not(.design-v2):not(.development-v2):not(.planning-v2):not(.writing-v2):not(.lab-v2):not(.contact-v2) .v2-category-card-primary h3 {
+  font-size: 27px;
+}
+
+.home-v2:not(.about-v2):not(.web-apps-v2):not(.websites-v2):not(.design-v2):not(.development-v2):not(.planning-v2):not(.writing-v2):not(.lab-v2):not(.contact-v2) .v2-category-card-secondary {
+  grid-column: span 3;
+  min-height: 194px;
+  padding: 24px;
+  box-shadow: 5px 7px 18px rgba(93, 111, 137, .06);
+}
+
+.home-v2:not(.about-v2):not(.web-apps-v2):not(.websites-v2):not(.design-v2):not(.development-v2):not(.planning-v2):not(.writing-v2):not(.lab-v2):not(.contact-v2) .v2-category-card-secondary h3 {
+  margin-top: 22px;
+  font-size: 20px;
+}
+
+@media (max-width: 900px) {
+  .home-v2:not(.about-v2):not(.web-apps-v2):not(.websites-v2):not(.design-v2):not(.development-v2):not(.planning-v2):not(.writing-v2):not(.lab-v2):not(.contact-v2) .v2-category-grid-seven {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .home-v2:not(.about-v2):not(.web-apps-v2):not(.websites-v2):not(.design-v2):not(.development-v2):not(.planning-v2):not(.writing-v2):not(.lab-v2):not(.contact-v2) .v2-category-card-primary,
+  .home-v2:not(.about-v2):not(.web-apps-v2):not(.websites-v2):not(.design-v2):not(.development-v2):not(.planning-v2):not(.writing-v2):not(.lab-v2):not(.contact-v2) .v2-category-card-secondary {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .home-v2:not(.about-v2):not(.web-apps-v2):not(.websites-v2):not(.design-v2):not(.development-v2):not(.planning-v2):not(.writing-v2):not(.lab-v2):not(.contact-v2) .v2-hero {
+    min-height: 0;
+    padding: 30px 24px 28px;
+  }
+
+  .home-v2:not(.about-v2):not(.web-apps-v2):not(.websites-v2):not(.design-v2):not(.development-v2):not(.planning-v2):not(.writing-v2):not(.lab-v2):not(.contact-v2) .v2-hero h1 {
+    margin: 10px 0 16px;
+    font-size: clamp(35px, 10.4vw, 42px);
+    line-height: 1.04;
+  }
+
+  .home-v2:not(.about-v2):not(.web-apps-v2):not(.websites-v2):not(.design-v2):not(.development-v2):not(.planning-v2):not(.writing-v2):not(.lab-v2):not(.contact-v2) .v2-hero-copy {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .home-v2:not(.about-v2):not(.web-apps-v2):not(.websites-v2):not(.design-v2):not(.development-v2):not(.planning-v2):not(.writing-v2):not(.lab-v2):not(.contact-v2) .v2-hero-copy span {
+    margin-right: 0;
+    white-space: nowrap;
+  }
+
+  .home-v2:not(.about-v2):not(.web-apps-v2):not(.websites-v2):not(.design-v2):not(.development-v2):not(.planning-v2):not(.writing-v2):not(.lab-v2):not(.contact-v2) .v2-actions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .home-v2:not(.about-v2):not(.web-apps-v2):not(.websites-v2):not(.design-v2):not(.development-v2):not(.planning-v2):not(.writing-v2):not(.lab-v2):not(.contact-v2) .v2-actions .btn {
+    min-width: 0;
+    padding-right: 10px;
+    padding-left: 10px;
+    white-space: nowrap;
+  }
+
+  .home-v2:not(.about-v2):not(.web-apps-v2):not(.websites-v2):not(.design-v2):not(.development-v2):not(.planning-v2):not(.writing-v2):not(.lab-v2):not(.contact-v2) .v2-hero-note {
+    margin-top: 22px;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .home-v2:not(.about-v2):not(.web-apps-v2):not(.websites-v2):not(.design-v2):not(.development-v2):not(.planning-v2):not(.writing-v2):not(.lab-v2):not(.contact-v2) #projects {
+    margin-top: 44px;
+  }
+
+  .home-v2:not(.about-v2):not(.web-apps-v2):not(.websites-v2):not(.design-v2):not(.development-v2):not(.planning-v2):not(.writing-v2):not(.lab-v2):not(.contact-v2) .v2-category-grid-seven {
+    grid-template-columns: 1fr;
+  }
+
+  .home-v2:not(.about-v2):not(.web-apps-v2):not(.websites-v2):not(.design-v2):not(.development-v2):not(.planning-v2):not(.writing-v2):not(.lab-v2):not(.contact-v2) .v2-category-card-primary {
+    min-height: 210px;
+  }
+
+  .home-v2:not(.about-v2):not(.web-apps-v2):not(.websites-v2):not(.design-v2):not(.development-v2):not(.planning-v2):not(.writing-v2):not(.lab-v2):not(.contact-v2) .v2-category-card-secondary {
+    min-height: 164px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .home-v2:not(.about-v2):not(.web-apps-v2):not(.websites-v2):not(.design-v2):not(.development-v2):not(.planning-v2):not(.writing-v2):not(.lab-v2):not(.contact-v2) .v2-category-card-primary {
+    grid-column: span 2;
+  }
+
+  .home-v2:not(.about-v2):not(.web-apps-v2):not(.websites-v2):not(.design-v2):not(.development-v2):not(.planning-v2):not(.writing-v2):not(.lab-v2):not(.contact-v2) .v2-category-card-secondary {
+    min-height: 194px;
+  }
+}
