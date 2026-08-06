@@ -15,7 +15,11 @@
     <div class="header-inner">
       <a href="#top" class="logo" aria-label="Portfolio ホーム">Portfolio</a>
 
-      <nav aria-label="メインナビゲーション">
+      <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-navigation" aria-label="メニューを開く">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+      <nav id="mobile-navigation" class="site-nav" aria-label="メインナビゲーション">
+        <button class="mobile-nav-close" type="button" aria-label="メニューを閉じる"><span aria-hidden="true">×</span></button>
         <a href="#top">Home</a>
         <a href="#projects">Projects</a>
         <a href="#featured">Featured</a>
@@ -24,6 +28,7 @@
       </nav>
     </div>
   </header>
+  <div class="mobile-nav-overlay" aria-hidden="true"></div>
 
   <main id="main-content">
     <section class="v2-hero" id="top" aria-labelledby="hero-title">
@@ -216,6 +221,6 @@
     <a href="#top" class="back-to-top" aria-label="ページ上部へ戻る">↑</a>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="js/script.js?v=7"></script>
 </body>
 </html>

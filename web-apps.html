@@ -14,7 +14,11 @@
   <header class="header">
     <div class="header-inner">
       <a href="index.html" class="logo" aria-label="Portfolio ホーム">Portfolio</a>
-      <nav aria-label="メインナビゲーション">
+      <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-navigation" aria-label="メニューを開く">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+      <nav id="mobile-navigation" class="site-nav" aria-label="メインナビゲーション">
+        <button class="mobile-nav-close" type="button" aria-label="メニューを閉じる"><span aria-hidden="true">×</span></button>
         <a href="index.html">Home</a>
         <a href="index.html#projects">Projects</a>
         <a href="web-apps.html" aria-current="page">Web Apps</a>
@@ -23,6 +27,7 @@
       </nav>
     </div>
   </header>
+  <div class="mobile-nav-overlay" aria-hidden="true"></div>
 
   <main id="main-content">
     <section class="web-apps-hero" aria-labelledby="web-apps-title">
@@ -225,6 +230,6 @@
     <p class="v2-copyright">© 2026 Portfolio</p>
     <a href="#" class="back-to-top" aria-label="ページ上部へ戻る">↑</a>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.js?v=7"></script>
 </body>
 </html>
