@@ -62,11 +62,7 @@ if (mobileNavToggle && mobileNav && mobileNavClose && mobileNavOverlay) {
   mobileNavClose.addEventListener("click", () => setMenuState(false));
   mobileNavOverlay.addEventListener("click", () => setMenuState(false));
 
-  mobileNav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      window.setTimeout(() => setMenuState(false, false), 300);
-    });
-  });
+  window.addEventListener("hashchange", () => setMenuState(false, false));
 
   document.addEventListener("keydown", (event) => {
     if (!document.body.classList.contains("mobile-nav-open")) return;
