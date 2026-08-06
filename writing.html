@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="日々の気づきや体験、制作の裏側を観察し、考え、言葉として残すWritingページです。">
+  <title>Writing | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="home-v2 writing-v2">
+  <a class="skip-link" href="#main-content">本文へ移動</a>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Portfolio ホーム">Portfolio</a>
+      <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-navigation" aria-label="メニューを開く"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+      <nav id="mobile-navigation" class="site-nav" aria-label="メインナビゲーション">
+        <button class="mobile-nav-close" type="button" aria-label="メニューを閉じる"><span aria-hidden="true">×</span></button>
+        <a href="index.html">Home</a><a href="index.html#projects">Projects</a><a href="web-apps.html">Web Apps</a><a href="websites.html">Websites</a><a href="design.html">Design</a><a href="development.html">Development</a><a href="planning.html">Planning</a><a href="writing.html" aria-current="page">Writing</a><a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mobile-nav-overlay" aria-hidden="true"></div>
+
+  <main id="main-content">
+    <section class="writing-hero" aria-labelledby="writing-title">
+      <nav class="v2-breadcrumb" aria-label="パンくずリスト"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Writing</span></nav>
+      <div class="writing-hero-layout">
+        <div><p class="v2-section-label">Notes / Essays / Records</p><h1 id="writing-title">Writing</h1><p class="writing-lead">日々の気づきや体験、制作の裏側を言葉として残しています。書くことで考えを整理し、自分の中にある違和感や興味を確かめています。</p><p class="writing-catch">観察し、考え、言葉にする。</p></div>
+        <div class="writing-open-notebook" aria-hidden="true"><div><span>01</span><i></i><i></i><i></i><i></i></div><div><span>NOTE</span><i></i><i></i><i></i><i></i></div><b></b></div>
+      </div>
+    </section>
+
+    <section class="v2-section writing-shelves" aria-labelledby="writing-shelves-title">
+      <div class="writing-section-heading"><p class="v2-section-label">Writing Shelves</p><h2 id="writing-shelves-title">文章を置く棚</h2><p>記事が増えたときに、体験やテーマから探せる分類です。未確認の記事を無理に棚へ入れず、分類情報が揃ってから整理します。</p></div>
+      <div class="writing-shelf-grid">
+        <article><span>01</span><h3>Essays <small>エッセイ</small></h3><p>日常や記憶、価値観について</p></article>
+        <article><span>02</span><h3>Horse Racing <small>競馬</small></h3><p>競馬場体験、予想、振り返り</p></article>
+        <article><span>03</span><h3>Observation <small>人や出来事の観察</small></h3><p>setlog、ギャル、人間観察など</p></article>
+        <article><span>04</span><h3>Making / Learning <small>制作</small></h3><p>Web制作、SNS運営、学び、試行錯誤</p></article>
+      </div>
+    </section>
+
+    <section class="v2-section writing-featured" aria-labelledby="writing-featured-title">
+      <div class="writing-section-heading"><p class="v2-section-label">Featured Writing</p><h2 id="writing-featured-title">代表記事</h2><p>情報とリンクを確認できた記事から、最大3件を掲載します。</p></div>
+      <div id="writing-featured-list" class="writing-featured-grid" aria-live="polite"><p class="writing-empty-state">記事情報を読み込んでいます。</p></div>
+    </section>
+
+    <section class="v2-section writing-archive" aria-labelledby="writing-archive-title">
+      <div class="writing-section-heading"><p class="v2-section-label">Article Archive</p><h2 id="writing-archive-title">記事の記録</h2><p id="writing-load-status" aria-live="polite">記事情報を読み込んでいます。</p></div>
+      <div id="writing-archive-list" class="writing-archive-grid"><p class="writing-empty-state">記事一覧を読み込んでいます。</p></div>
+    </section>
+
+    <section class="v2-section writing-philosophy" aria-labelledby="writing-philosophy-title">
+      <div class="writing-section-heading"><p class="v2-section-label">Writing Philosophy</p><h2 id="writing-philosophy-title">書くときに大切にしていること</h2></div>
+      <ol><li><span>01</span><p>日常の違和感を見逃さない</p></li><li><span>02</span><p>体験を具体的に書く</p></li><li><span>03</span><p>自分の「普通」を疑う</p></li><li><span>04</span><p>読んだ人が自分のことを考えられる文章を目指す</p></li><li><span>05</span><p>書くことで考えを整理する</p></li></ol>
+    </section>
+
+    <section class="v2-section writing-note-cta" aria-labelledby="note-cta-title"><div><p class="v2-section-label">Read on note</p><h2 id="note-cta-title">noteで記事を読む</h2><p>noteプロフィールURLの確認後に接続します。</p></div><span class="v2-disabled-link" aria-label="noteプロフィールへのリンクは準備中">リンク準備中</span></section>
+
+    <section class="v2-section writing-next" aria-labelledby="writing-next-title"><div><p class="v2-section-label">Next</p><h2 id="writing-next-title">次のカテゴリへ</h2></div><div><a href="planning.html">Planningを見る <span aria-hidden="true">→</span></a><span class="v2-disabled-link" aria-label="Labページは準備中">Labを見る（準備中）</span><span class="v2-disabled-link" aria-label="Contactページは準備中">Contactへ進む（準備中）</span></div></section>
+  </main>
+
+  <footer class="footer"><div class="v2-footer-inner"><div><a href="index.html" class="v2-footer-logo">Portfolio</a><p>Building, learning, and experimenting.</p><p class="writing-footer-ja">つくり、学び、実験する。</p></div><div class="v2-footer-links" aria-label="外部リンク"><a href="mailto:mfmf0707@gmail.com">Email</a><a href="https://github.com/pluto007-lab" target="_blank" rel="noopener noreferrer">GitHub</a></div></div><p class="v2-copyright">© 2026 Portfolio</p><a href="#" class="back-to-top" aria-label="ページ上部へ戻る">↑</a></footer>
+  <script src="js/script.js?v=10"></script>
+  <script src="js/writing-gallery.js"></script>
+</body>
+</html>
