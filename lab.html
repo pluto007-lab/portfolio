@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="好奇心、実験、思考、プロトタイプを、完成前の過程も含めて残すPortfolio Labです。">
+  <title>Lab | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="home-v2 lab-v2">
+  <a class="skip-link" href="#main-content">本文へ移動</a>
+
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Portfolio ホーム">Portfolio</a>
+      <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-navigation" aria-label="メニューを開く">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+      <nav id="mobile-navigation" class="site-nav" aria-label="メインナビゲーション">
+        <button class="mobile-nav-close" type="button" aria-label="メニューを閉じる"><span aria-hidden="true">×</span></button>
+        <a href="index.html">Home</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="web-apps.html">Web Apps</a>
+        <a href="websites.html">Websites</a>
+        <a href="design.html">Design</a>
+        <a href="development.html">Development</a>
+        <a href="planning.html">Planning</a>
+        <a href="writing.html">Writing</a>
+        <a href="lab.html" aria-current="page">Lab</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mobile-nav-overlay" aria-hidden="true"></div>
+
+  <main id="main-content">
+    <section class="lab-hero" aria-labelledby="lab-title">
+      <nav class="v2-breadcrumb" aria-label="パンくずリスト"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Lab</span></nav>
+      <div class="lab-hero-layout">
+        <div>
+          <p class="v2-section-label">Curiosity / Tests / Notes</p>
+          <h1 id="lab-title">Lab</h1>
+          <p class="lab-hero-lead">思いついたことを、すぐに試してみる。<br>完成品だけでなく、途中のアイデアや実験も残しています。</p>
+        </div>
+        <div class="lab-observation-board" aria-hidden="true">
+          <p>OBSERVATION LOG</p>
+          <div><span>?</span><i></i><strong>TRY</strong><i></i><span>↻</span></div>
+          <small>unfinished / learning / next test</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="v2-section lab-tiny" aria-labelledby="tiny-title">
+      <div class="lab-section-heading"><p class="v2-section-label">Small Tests</p><h2 id="tiny-title">Tiny Experiments</h2><p>小さな疑問や思いつきを、完成度を求めすぎずに試すための棚です。結果だけでなく、途中で分かったことも残します。</p></div>
+      <div class="lab-tiny-strip" aria-label="小さな実験の進め方"><span>気づく</span><b aria-hidden="true">→</b><span>試す</span><b aria-hidden="true">→</b><span>観察する</span><b aria-hidden="true">→</b><span>残す</span></div>
+    </section>
+
+    <section class="v2-section lab-ideas" aria-labelledby="ideas-title">
+      <div class="lab-section-heading"><p class="v2-section-label">Idea Board</p><h2 id="ideas-title">思考途中のアイデア</h2><p>構想として確認できているものを、そのまま研究ノートへ留めています。</p></div>
+      <div class="lab-idea-grid">
+        <article><div><span>Idea</span><small>01</small></div><h3>Hackboard</h3><p>構想の記録。詳細は検討中です。</p></article>
+        <article><div><span>Idea</span><small>02</small></div><h3>占い管理アプリ</h3><p>構想の記録。詳細は検討中です。</p></article>
+        <article><div><span>Idea</span><small>03</small></div><h3>交通費精算アプリ</h3><p>構想の記録。詳細は検討中です。</p></article>
+        <article><div><span>Idea</span><small>04</small></div><h3>人生研究室</h3><p>構想の記録。詳細は検討中です。</p></article>
+        <article><div><span>Idea</span><small>05</small></div><h3>Tiny Experiments</h3><p>構想の記録。詳細は検討中です。</p></article>
+      </div>
+      <p class="lab-status-key"><span>Idea</span> 構想段階　<span>Research</span> 調査中　<span>Prototype</span> 試作中</p>
+    </section>
+
+    <section class="v2-section lab-log" aria-labelledby="log-title">
+      <div class="lab-section-heading"><p class="v2-section-label">Experiment Log</p><h2 id="log-title">試したことの記録</h2><p>完成したかどうかではなく、何を試し、次へ何を残したかを記録します。</p></div>
+      <ol class="lab-log-list">
+        <li><time>LOG 01</time><div><h3>Portfolio v2制作</h3><p>カテゴリごとに役割と世界観を分ける、複数ページ構成を試しています。</p></div><span>Testing</span></li>
+        <li><time>LOG 02</time><div><h3>Design作品管理画面</h3><p>作品情報の編集、表示管理、並べ替え、書き出しをブラウザ上で行う方法を試しました。</p></div><span>Built</span></li>
+        <li><time>LOG 03</time><div><h3>JSONによる作品管理</h3><p>表示データとHTMLを分け、作品が増えても管理しやすい構造を試しました。</p></div><span>Testing</span></li>
+      </ol>
+    </section>
+
+    <section class="v2-section lab-research" aria-labelledby="research-title">
+      <div class="lab-section-heading"><p class="v2-section-label">Current Research</p><h2 id="research-title">現在、観察していること</h2><p>制作や学習の中で、継続して考えているテーマです。</p></div>
+      <ul><li><span>01</span>AI活用</li><li><span>02</span>UX</li><li><span>03</span>情報整理</li><li><span>04</span>React</li><li><span>05</span>TypeScript</li></ul>
+    </section>
+
+    <section class="v2-section lab-philosophy" aria-labelledby="philosophy-title">
+      <div><p class="v2-section-label">Lab Philosophy</p><h2 id="philosophy-title">失敗も、次の実験に残る成果。</h2></div>
+      <p>完成だけをゴールにせず、試した過程と分かったことを残します。作って終わりではなく、観察して学び、次の改善へつなげます。</p>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="v2-footer-inner"><div><a href="index.html" class="v2-footer-logo">Portfolio</a><p>Building, learning, and experimenting.</p><p class="lab-footer-ja">つくり、学び、実験する。</p></div><div class="v2-footer-links" aria-label="外部リンク"><a href="mailto:mfmf0707@gmail.com">Email</a><a href="https://github.com/pluto007-lab" target="_blank" rel="noopener noreferrer">GitHub</a></div></div><p class="v2-copyright">© 2026 Portfolio</p><a href="#" class="back-to-top" aria-label="ページ上部へ戻る">↑</a></footer>
+  <script src="js/script.js?v=10"></script>
+</body>
+</html>
