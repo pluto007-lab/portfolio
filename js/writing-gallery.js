@@ -2,6 +2,13 @@ const writingFeatured = document.querySelector("#writing-featured-list");
 const writingArchive = document.querySelector("#writing-archive-list");
 const writingStatus = document.querySelector("#writing-load-status");
 
+const writingCategories = [
+  { name: "Essays", id: "writing-category-essays", label: "エッセイ" },
+  { name: "Horse Racing", id: "writing-category-horse-racing", label: "競馬" },
+  { name: "Observation", id: "writing-category-observation", label: "人や出来事の観察" },
+  { name: "Making / Learning", id: "writing-category-making-learning", label: "制作・学び" },
+];
+
 const addTextBlock = (parent, label, value) => {
   if (!value) return;
 
@@ -79,6 +86,8 @@ const renderWriting = (articles) => {
   const featuredArticles = visibleArticles
     .filter((article) => article.featured === true && article.noteUrl)
     .slice(0, 3);
+  const featuredIds = new Set(featuredArticles.map((article) => article.id));
+  const archiveArticles = visibleArticles.filter((article) => !featuredIds.has(article.id));
 
   writingFeatured.replaceChildren();
   writingArchive.replaceChildren();
@@ -92,8 +101,34 @@ const renderWriting = (articles) => {
     writingFeatured.append(empty);
   }
 
-  visibleArticles.forEach((article) => writingArchive.append(createArticleCard(article)));
-  writingStatus.textContent = `${visibleArticles.length}件の候補記事を管理中です。`;
+  writingCategories.forEach((category) => {
+    const categoryArticles = archiveArticles.filter((article) => article.category === category.name);
+    if (!categoryArticles.length) return;
+
+    const section = document.createElement("section");
+    section.id = category.id;
+    section.className = "writing-archive-group";
+    section.setAttribute("aria-labelledby", `${category.id}-title`);
+
+    const heading = document.createElement("div");
+    heading.className = "writing-archive-group-heading";
+    const spine = document.createElement("span");
+    spine.textContent = category.name;
+    const title = document.createElement("h3");
+    title.id = `${category.id}-title`;
+    title.textContent = category.label;
+    const count = document.createElement("small");
+    count.textContent = `${categoryArticles.length}記事`;
+    heading.append(spine, title, count);
+
+    const grid = document.createElement("div");
+    grid.className = "writing-archive-grid";
+    categoryArticles.forEach((article) => grid.append(createArticleCard(article)));
+    section.append(heading, grid);
+    writingArchive.append(section);
+  });
+
+  writingStatus.textContent = `代表3件と、カテゴリ別の記事${archiveArticles.length}件を掲載しています。`;
 };
 
 fetch("data/writing-articles.json")
