@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Webアプリや制作支援ツールの設計、実装、改善プロセスを紹介します。">
   <title>Development | Portfolio</title>
-  <link rel="stylesheet" href="css/style.css?v=19">
+  <link rel="stylesheet" href="css/style.css?v=20">
 </head>
 <body class="home-v2 development-v2">
   <a class="skip-link" href="#main-content">本文へ移動</a>
@@ -48,69 +48,65 @@
         <div>
           <p class="v2-section-label">Build / Test / Improve</p>
           <h1 id="development-title">Development</h1>
-          <p>アイデアを形にし、使いながら改善を続けることを大切にしています。</p>
+          <p>課題を整理し、設計・実装・公開後の運用まで見据えて改善する開発プロセスを紹介します。</p>
         </div>
         <div class="development-blueprint" aria-hidden="true"><span>01</span><span>PLAN</span><span>BUILD</span><span>REVIEW</span></div>
       </div>
     </section>
 
-    <section class="v2-section development-projects" aria-labelledby="development-projects-title">
-      <div class="development-section-heading"><div><p class="v2-section-label">Featured Projects</p><h2 id="development-projects-title">開発プロジェクト</h2></div><p>課題の発見から設計、実装、運用までをプロジェクトごとに整理しています。</p></div>
+    <section class="v2-section development-projects development-featured" aria-labelledby="development-projects-title">
+      <div class="development-section-heading"><div><p class="v2-section-label">Featured Development</p><h2 id="development-projects-title">開発ケーススタディ</h2></div><p>課題の発見から設計、実装、運用改善までを、代表的な2件で紹介します。</p></div>
 
       <article class="development-case development-case-primary" aria-labelledby="development-career-title">
         <header class="development-case-header"><div><p>Case 01 / Web Application</p><h3 id="development-career-title">Career Track</h3></div><span>継続開発中</span></header>
-        <div class="development-case-visual"><img src="img/career-track.png" alt="Career Trackのダッシュボード画面"></div>
-        <div class="development-case-summary">
-          <section><p class="development-note-label">Overview</p><h4>概要</h4><p>企業情報・応募状況・面接準備を一元管理し、今確認すべき企業と次に行うことを整理するWebアプリです。</p></section>
+        <div class="development-case-intro">
           <section><p class="development-note-label">Background</p><h4>制作背景</h4><p>就職活動で企業情報、応募状況、提出期限、面接予定が複数の場所へ分散し、管理が煩雑になった経験から制作を始めました。</p></section>
-          <section><p class="development-note-label">Problem</p><h4>解決したい課題</h4><p>次に行うことが分かりづらい、予定を見落としやすい、企業を比較しにくいといった管理上の負担を減らすことを目指しています。</p></section>
+          <section><p class="development-note-label">Problem</p><h4>誰のどんな課題を解決するか</h4><p>就職活動中に、次に行うことが分かりづらい、予定を見落としやすい、企業を比較しにくいといった管理上の負担を減らします。</p></section>
+          <section><p class="development-note-label">Solution</p><h4>解決方法</h4><p>企業情報・応募状況・面接準備を一元管理し、今確認すべき企業と次に行うことを整理できる形にしました。</p></section>
         </div>
-        <div class="development-case-details">
-          <section><p class="development-note-label">Functions</p><h4>主な機能</h4><ul><li>企業情報管理</li><li>応募状況管理</li><li>面接予定・面接対策</li><li>企業評価</li><li>LocalStorageによるローカル保存</li><li>JSONバックアップ・復元</li></ul></section>
+        <div class="development-case-visual"><img src="img/career-track.png" alt="Career Trackのダッシュボード画面"></div>
+        <div class="development-case-body">
+          <section><p class="development-note-label">Design &amp; implementation</p><h4>設計・実装上の工夫</h4><p>情報を企業単位で整理し、応募状況、面接予定、企業評価を確認できる構成にしています。LocalStorageによる保存とJSONバックアップ・復元にも対応しています。</p><ul><li>企業情報管理</li><li>応募状況管理</li><li>面接予定・面接対策</li><li>企業評価</li></ul></section>
           <section><p class="development-note-label">Technology</p><h4>技術</h4><ul class="development-tech-list"><li>React</li><li>TypeScript</li><li>Vite</li><li>React Router</li><li>Tailwind CSS</li><li>LocalStorage</li><li>Git</li><li>GitHub</li></ul></section>
-          <section><p class="development-note-label">Status</p><h4>現在</h4><p>実際の就職活動で利用しながら、必要になった機能を追加し、操作や情報の見つけやすさを継続的に改善しています。</p></section>
+          <section><p class="development-note-label">Continuous improvement</p><h4>継続改善</h4><p>実際の就職活動で利用しながら、必要になった機能を追加し、操作や情報の見つけやすさを継続的に改善しています。</p></section>
         </div>
         <div class="development-links"><a href="https://pluto007-lab.github.io/career-track/" target="_blank" rel="noopener noreferrer">Demoを見る</a><a href="https://github.com/pluto007-lab/career-track" target="_blank" rel="noopener noreferrer">GitHubを見る</a></div>
       </article>
 
       <article class="development-case development-case-admin" aria-labelledby="development-admin-title">
         <header class="development-case-header"><div><p>Case 02 / Management Tool</p><h3 id="development-admin-title">Design Works Admin</h3></div><span>Local Tool</span></header>
-        <div class="development-admin-layout">
-          <div class="development-admin-diagram" aria-hidden="true"><div><span>JSON</span><span>EDIT</span><span>EXPORT</span></div><p>design-works.json</p></div>
-          <div class="development-admin-story"><p class="development-note-label">Background</p><h4>作品管理を、手編集から画面操作へ</h4><p>作品数が増え、JSONを直接編集する運用が煩雑になったため、作品追加、タグ管理、代表作品設定、公開設定、JSON出力をブラウザ上で行える管理画面を制作しました。</p></div>
+        <ol class="development-admin-flow" aria-label="管理画面を制作した流れ"><li><span>01</span>作品数が増える</li><li><span>02</span>JSONの直接編集が煩雑になる</li><li><span>03</span>管理画面を自作する</li><li><span>04</span>追加・編集・公開管理を効率化する</li></ol>
+        <div class="development-case-intro development-admin-intro">
+          <section><p class="development-note-label">Background</p><h4>制作背景</h4><p>作品数が増え、JSONを直接編集する運用が煩雑になったことをきっかけに、ブラウザ上で作品情報を扱える管理画面を制作しました。</p></section>
+          <section><p class="development-note-label">Solution</p><h4>解決した課題</h4><p>Designページのデータを読み込み、追加・編集・並べ替え・公開管理からJSON出力までを一つの画面へまとめました。</p></section>
         </div>
-        <div class="development-case-summary development-admin-summary">
-          <section><p class="development-note-label">Overview</p><h4>概要</h4><p>Designページの作品データを読み込み、編集結果をJSONファイルとして書き出すローカル作業用の管理画面です。</p></section>
-          <section><p class="development-note-label">Data</p><h4>JSON管理</h4><p>既存スキーマを維持し、読み込み時と書き出し前にデータ形式や必須項目を検証します。</p></section>
-          <section><p class="development-note-label">Publishing</p><h4>公開設定</h4><p>Designページへの掲載と、最大3点の代表作品設定を分けて管理します。</p></section>
-        </div>
-        <div class="development-admin-functions" aria-label="Design Works Adminの主な機能"><span>作品追加</span><span>タグ管理</span><span>並べ替え</span><span>代表作品管理</span><span>公開設定</span><span>JSON書き出し</span><span>簡易プレビュー</span></div>
-        <div class="development-case-details development-admin-details">
-          <section><p class="development-note-label">Technology</p><h4>技術</h4><ul class="development-tech-list"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>JSON</li><li>File API</li><li>Drag and Drop API</li></ul></section>
-          <section><p class="development-note-label">Operation</p><h4>運用方法</h4><p>静的サイトのためサーバーへ直接保存せず、JSONとfile://用フォールバックをダウンロードしてリポジトリ内のファイルと置き換えます。</p></section>
+        <div class="development-admin-functions" aria-label="Design Works Adminの主な機能"><span>作品管理</span><span>タグ管理</span><span>代表作品管理</span><span>公開状態管理</span><span>並べ替え</span><span>JSON検証・書き出し</span><span>簡易プレビュー</span></div>
+        <div class="development-case-body development-admin-body">
+          <section><p class="development-note-label">Technology</p><h4>使用技術</h4><ul class="development-tech-list"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>JSON</li><li>File API</li><li>Drag and Drop API</li></ul></section>
+          <section><p class="development-note-label">Static operation</p><h4>静的サイトでの運用方法</h4><p>サーバーへ直接保存せず、検証済みのJSONとfile://用フォールバックをダウンロードし、リポジトリ内のファイルと置き換えて反映します。</p></section>
         </div>
         <div class="development-links"><a href="design-admin.html">Demoを見る</a><a href="https://github.com/pluto007-lab/portfolio" target="_blank" rel="noopener noreferrer">GitHubを見る</a></div>
       </article>
+    </section>
 
-      <article class="development-case" aria-labelledby="development-template-title">
-        <header class="development-case-header"><div><p>Case 03 / Development Foundation</p><h3 id="development-template-title">Web App Template v1.0</h3></div><span>Common Base</span></header>
-        <div class="development-case-visual"><img src="img/web-app-template.png" alt="VSCodeで開いたWeb App Templateの開発画面"></div>
-        <div class="development-case-summary">
-          <section><p class="development-note-label">Overview</p><h4>概要</h4><p>React + TypeScript + Viteを利用し、新しいWebアプリを素早く立ち上げるために制作したWebアプリ開発テンプレートです。</p></section>
-          <section><p class="development-note-label">Background</p><h4>制作背景</h4><p>毎回ゼロから環境構築する時間を減らし、開発を始める前の準備を共通化して、今後の個人開発を効率化するために制作しました。</p></section>
-          <section><p class="development-note-label">Position</p><h4>位置付け</h4><p>今後の個人開発を素早く始め、開発効率を高めるための共通開発基盤です。</p></section>
-        </div>
-        <div class="development-case-details development-admin-details">
-          <section><p class="development-note-label">Features</p><h4>特徴</h4><ul><li>GitHub Template Repository</li><li>GitHub Actions</li><li>Xserver自動デプロイ</li><li>共通フォルダ構成</li><li>開発をすぐ始められる構成</li></ul></section>
-          <section><p class="development-note-label">Technology</p><h4>技術</h4><ul class="development-tech-list"><li>React</li><li>TypeScript</li><li>Vite</li><li>React Router</li><li>Tailwind CSS v4</li></ul></section>
-        </div>
-        <div class="development-links"><a href="https://github.com/pluto007-lab/webapp-template" target="_blank" rel="noopener noreferrer">GitHubを見る</a></div>
-      </article>
-
-      <article class="development-case development-case-compact" aria-labelledby="development-shift-title">
-        <div class="development-compact-visual"><img src="img/shift-app.png" alt="勤務シフト管理アプリの画面"></div>
-        <div class="development-compact-content"><div class="development-case-header"><div><p>Case 04 / React Application</p><h3 id="development-shift-title">勤務シフト管理アプリ</h3></div><span>公開中</span></div><p>看護師向けの勤務シフト管理アプリです。有休・夏季休暇の管理や勤務ルールの確認を行えるよう設計しました。</p><ul class="development-tech-list"><li>React</li><li>Tailwind CSS</li><li>Vite</li><li>Gemini API</li></ul><div class="development-links"><a href="https://pluto007-lab.github.io/shift-app/" target="_blank" rel="noopener noreferrer">Demoを見る</a><a href="https://github.com/pluto007-lab/shift-app" target="_blank" rel="noopener noreferrer">GitHubを見る</a></div></div>
-      </article>
+    <section class="v2-section development-other" aria-labelledby="development-other-title">
+      <div class="development-section-heading"><div><p class="v2-section-label">Other Development</p><h2 id="development-other-title">開発基盤・アプリ</h2></div><p>機能・技術・役割を短く確認できる要点型の開発事例です。</p></div>
+      <div class="development-other-grid">
+        <article class="development-other-card" aria-labelledby="development-template-title">
+          <header><div><p>Foundation / Common Base</p><h3 id="development-template-title">Web App Template v1.0</h3></div><span>共通開発基盤</span></header>
+          <p>React + TypeScript + Viteを利用し、新しいWebアプリを素早く立ち上げるために制作したテンプレートです。毎回の環境構築と準備を共通化します。</p>
+          <p class="development-other-position">個人開発を素早く始めるための共通開発基盤</p>
+          <ul class="development-tech-list"><li>React</li><li>TypeScript</li><li>Vite</li><li>React Router</li><li>Tailwind CSS v4</li><li>GitHub Template Repository</li><li>GitHub Actions</li><li>Xserver自動デプロイ</li><li>共通フォルダ構成</li></ul>
+          <div class="development-links"><a href="https://github.com/pluto007-lab/webapp-template" target="_blank" rel="noopener noreferrer">GitHubを見る</a></div>
+        </article>
+        <article class="development-other-card" aria-labelledby="development-shift-title">
+          <header><div><p>React Application</p><h3 id="development-shift-title">勤務シフト管理アプリ</h3></div><span>公開中</span></header>
+          <p>看護師向けの勤務シフト管理アプリです。有休・夏季休暇の管理や勤務ルールの確認に加え、休み希望を考慮した割り当て、違反警告、公平性を意識した設計に取り組みました。</p>
+          <ul class="development-other-points"><li>休み希望を考慮した割り当て</li><li>違反警告</li><li>公平性を意識した設計</li></ul>
+          <ul class="development-tech-list"><li>React</li><li>Vite</li><li>Tailwind CSS</li></ul>
+          <div class="development-links"><a href="https://pluto007-lab.github.io/shift-app/" target="_blank" rel="noopener noreferrer">Demoを見る</a><a href="https://github.com/pluto007-lab/shift-app" target="_blank" rel="noopener noreferrer">GitHubを見る</a></div>
+        </article>
+      </div>
     </section>
 
     <section class="v2-section development-philosophy" aria-labelledby="philosophy-title">
@@ -123,7 +119,10 @@
       <div class="development-future-list"><article><span>01</span><h3>Hackboard</h3><p>構想中</p></article><article><span>02</span><h3>Tiny Experiments</h3><p>構想中</p></article></div>
     </section>
 
-    <section class="v2-section development-cta" aria-labelledby="development-next-title"><div><p class="v2-section-label">Next Category</p><h2 id="development-next-title">制作や開発について話す</h2><p>Webアプリ、制作支援ツール、改善の進め方について、お気軽にご連絡ください。</p></div><a href="contact.html">Contactへ進む <span aria-hidden="true">→</span></a></section>
+    <section class="v2-section development-cta" aria-labelledby="development-next-title">
+      <div><p class="v2-section-label">Next Category</p><h2 id="development-next-title">次の視点へ進む</h2><p>作品、企画、連絡先を、それぞれのページで紹介しています。</p></div>
+      <div class="development-cta-list"><a href="web-apps.html"><span>Web Appsを見る</span><small>View</small></a><a href="planning.html"><span>Planningを見る</span><small>View</small></a><a href="contact.html"><span>Contactへ進む</span><small>View</small></a></div>
+    </section>
   </main>
 
   <footer class="footer"><div class="v2-footer-inner"><div><a href="index.html" class="v2-footer-logo">Portfolio</a><p>Building, learning, and experimenting.</p></div><div class="v2-footer-links" aria-label="外部リンク"><a href="mailto:mfmf0707@gmail.com">Email</a><a href="https://github.com/pluto007-lab" target="_blank" rel="noopener noreferrer">GitHub</a></div></div><p class="v2-copyright">© 2026 Portfolio</p><a href="#" class="back-to-top" aria-label="ページ上部へ戻る">↑</a></footer>
