@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="pluto007-labの制作に対する考え方、活動スタイル、経験、資格を紹介します。">
   <title>About | Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=17">
 </head>
 
 <body class="home-v2 about-v2">
@@ -21,14 +21,15 @@
       <nav id="mobile-navigation" class="site-nav" aria-label="メインナビゲーション">
         <button class="mobile-nav-close" type="button" aria-label="メニューを閉じる"><span aria-hidden="true">×</span></button>
         <a href="index.html">Home</a>
-        <a href="index.html#projects">Projects</a>
-        <a href="index.html#featured">Featured</a>
-        <a href="index.html#now">Now</a>
+        <a href="about.html" aria-current="page">About</a>
+        <a href="web-apps.html">Web Apps</a>
+        <a href="websites.html">Websites</a>
+        <a href="design.html">Design</a>
+        <a href="development.html">Development</a>
         <a href="planning.html">Planning</a>
         <a href="writing.html">Writing</a>
         <a href="lab.html">Lab</a>
         <a href="contact.html">Contact</a>
-        <a href="about.html" aria-current="page">About</a>
       </nav>
     </div>
   </header>
@@ -44,7 +45,16 @@
 
       <p class="v2-section-label">Profile &amp; approach</p>
       <h1 id="about-page-title">About</h1>
-      <p class="about-v2-lead">「思いついたら、まず小さく作ってみる」を大切にしています。</p>
+      <p class="about-v2-lead">
+        <span>「思いついたら、</span><span>まず小さく作ってみる」</span><span>を大切にしています。</span>
+      </p>
+    </section>
+
+    <section class="about-v2-summary v2-section" id="about-details" aria-labelledby="about-summary-title">
+      <div class="about-v2-summary-heading">
+        <p class="v2-section-label">Approach</p>
+        <h2 id="about-summary-title">制作姿勢</h2>
+      </div>
       <div class="about-v2-intro">
         <p>
           職業訓練校でWeb制作を学びながら、WebアプリやWebサイトの企画・デザイン・実装・改善に取り組んでいます。
@@ -197,14 +207,14 @@
       <div>
         <p class="v2-section-label">Next</p>
         <h2 id="next-title">制作と取り組みを見る</h2>
-        <p>各詳細ページは、Portfolio v2の制作に合わせて順次追加します。</p>
+        <p>制作分野の詳細と、ご連絡先をご案内します。</p>
       </div>
 
-      <div class="about-v2-cta-list" aria-label="準備中のページ">
-        <div><span>Web Appsを見る</span><small>準備中</small></div>
-        <div><span>Developmentを見る</span><small>準備中</small></div>
+      <nav class="about-v2-cta-list" aria-label="次に見るページ">
+        <a href="web-apps.html"><span>Web Appsを見る</span><small>View</small></a>
+        <a href="development.html"><span>Developmentを見る</span><small>View</small></a>
         <a href="contact.html"><span>Contactへ進む</span><small>View</small></a>
-      </div>
+      </nav>
     </section>
   </main>
 
@@ -213,6 +223,7 @@
       <div>
         <a href="index.html" class="v2-footer-logo">Portfolio</a>
         <p>Building, learning, and experimenting.</p>
+        <p class="about-v2-footer-ja">つくり、学び、実験する。</p>
       </div>
       <div class="v2-footer-links" aria-label="外部リンク">
         <a href="mailto:mfmf0707@gmail.com">Email</a>

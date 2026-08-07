@@ -35,7 +35,7 @@ const mobileNavToggle = document.querySelector(".mobile-nav-toggle");
 const mobileNav = document.querySelector("#mobile-navigation");
 const mobileNavClose = document.querySelector(".mobile-nav-close");
 const mobileNavOverlay = document.querySelector(".mobile-nav-overlay");
-const mobileNavMedia = window.matchMedia("(max-width: 600px)");
+const mobileNavMedia = window.matchMedia("(max-width: 899px)");
 
 if (mobileNavToggle && mobileNav && mobileNavClose && mobileNavOverlay) {
   const focusableSelector = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
