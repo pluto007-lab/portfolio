@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Writing Articles Admin | Portfolio v2</title>
+  <link rel="stylesheet" href="css/writing-admin.css">
+</head>
+<body>
+  <a class="admin-skip-link" href="#admin-main">管理画面の本文へ移動</a>
+  <header class="admin-header">
+    <div>
+      <p class="admin-kicker">Portfolio v2 / Local tool</p>
+      <h1>Writing Articles Admin</h1>
+      <p>note記事の掲載内容を編集し、JSONとして書き出すローカル作業用画面です。サーバーへ直接保存はしません。</p>
+    </div>
+    <a href="writing.html">Writingページを確認</a>
+  </header>
+
+  <main id="admin-main" class="admin-main" tabindex="-1">
+    <section class="admin-workflow" aria-labelledby="workflow-title">
+      <div class="admin-section-heading">
+        <div><p class="admin-kicker">Publishing flow</p><h2 id="workflow-title">編集から公開まで</h2></div>
+        <p id="workflow-current" class="admin-current" role="status" aria-live="polite">現在：データを読み込み中</p>
+      </div>
+      <aside class="admin-fetch-guide" aria-label="note記事情報の自動取得手順">
+        <strong>自動取得を使う場合</strong>
+        <ol><li><code>npm run writing-admin</code>を実行</li><li>表示されたlocalhost URLを開く</li><li>note URLを入力して記事情報を取得</li><li>内容を確認・編集</li><li>JSONを書き出す</li></ol>
+        <p><code>file://</code>では自動取得できません。API停止時も手動編集とJSON書き出しは利用できます。</p>
+      </aside>
+      <ol class="admin-workflow-steps">
+        <li data-step="load"><span>1</span><strong>記事を編集</strong></li>
+        <li data-step="select"><span>2</span><strong>代表記事と順番を決める</strong></li>
+        <li data-step="export"><span>3</span><strong>JSONを書き出す</strong></li>
+        <li data-step="replace"><span>4</span><strong>data内を差し替える</strong></li>
+        <li data-step="check"><span>5</span><strong>Writingページを確認</strong></li>
+        <li data-step="publish"><span>6</span><strong>commit・push</strong></li>
+      </ol>
+    </section>
+
+    <section class="admin-toolbar" aria-labelledby="data-title">
+      <div class="admin-section-heading">
+        <div><h2 id="data-title">記事データ</h2><p id="load-status" role="status" aria-live="polite">記事データを読み込んでいます。</p></div>
+      </div>
+      <div class="admin-actions">
+        <label class="admin-file-button">JSONを読み込む<input id="json-file" type="file" accept="application/json,.json"></label>
+        <button id="reset-button" type="button">最後に読み込んだ状態へ戻す</button>
+        <button id="download-json" class="admin-primary" type="button">writing-articles.jsonを書き出す</button>
+        <button id="download-fallback" type="button">writing-articles-fallback.jsを書き出す</button>
+      </div>
+      <dl class="admin-summary">
+        <div><dt>登録</dt><dd id="summary-total">0</dd></div>
+        <div><dt>公開</dt><dd id="summary-visible">0</dd></div>
+        <div><dt>代表記事</dt><dd id="summary-featured">0 / 3</dd></div>
+        <div><dt>変更</dt><dd id="summary-changed">0</dd></div>
+      </dl>
+      <p id="dirty-status" class="admin-save-status" aria-live="polite">読み込み中です。</p>
+    </section>
+
+    <section class="admin-filters" aria-labelledby="filter-title">
+      <h2 id="filter-title">検索・絞り込み</h2>
+      <div class="admin-filter-grid">
+        <label>タイトル検索<input id="search-filter" type="search"></label>
+        <label>カテゴリ<select id="category-filter"><option value="">すべて</option></select></label>
+        <label>公開状態<select id="visible-filter"><option value="">すべて</option><option value="visible">公開</option><option value="hidden">非公開</option></select></label>
+        <label>代表状態<select id="featured-filter"><option value="">すべて</option><option value="featured">代表記事</option><option value="normal">通常記事</option></select></label>
+        <label>タグ<select id="tag-filter"><option value="">すべて</option></select></label>
+      </div>
+    </section>
+
+    <div class="admin-workspace">
+      <section class="admin-list-panel" aria-labelledby="list-title">
+        <div class="admin-section-heading">
+          <div><h2 id="list-title">記事一覧</h2><p id="list-note">全体の表示順です。ドラッグまたは上下ボタンで変更できます。</p></div>
+          <button id="add-button" class="admin-primary" type="button">記事を追加</button>
+        </div>
+        <div id="article-list" class="admin-article-list"></div>
+      </section>
+
+      <section class="admin-editor-panel" aria-labelledby="editor-title">
+        <div class="admin-section-heading">
+          <div><h2 id="editor-title">記事編集</h2><p id="editor-message">一覧から記事を選択してください。</p></div>
+          <button id="delete-button" class="admin-danger" type="button" disabled>削除</button>
+        </div>
+        <form id="article-form" hidden novalidate>
+          <div id="form-errors" class="admin-errors" role="alert" hidden></div>
+          <div class="admin-form-grid">
+            <label class="admin-span-2">タイトル <span>必須</span><input name="title" required></label>
+            <label>カテゴリ <span>必須</span><select name="category" required></select></label>
+            <label>公開日 <span>未入力可</span><input name="publishedAt" type="date"></label>
+            <div class="admin-span-2 admin-note-fetch">
+              <label>note URL <span>必須</span><input name="noteUrl" type="url" required></label>
+              <button id="fetch-note-metadata" type="button">noteから記事情報を取得</button>
+              <p id="metadata-status" role="status" aria-live="polite">空欄のタイトル・公開日・画像・紹介文だけを自動入力します。</p>
+            </div>
+            <label class="admin-span-2">紹介文<textarea name="excerpt" rows="3"></textarea></label>
+            <label class="admin-span-2">この記事を書いたきっかけ<textarea name="trigger" rows="3"></textarea></label>
+            <label class="admin-span-2">記事で考えたこと<textarea name="theme" rows="3"></textarea></label>
+            <label class="admin-span-2">画像パス <span>リポジトリ内の相対パス・未入力可</span><input name="image"></label>
+            <label>ビュー数 <span>0以上の整数</span><input name="views" type="number" min="0" step="1"></label>
+            <label>スキ数 <span>0以上の整数</span><input name="likes" type="number" min="0" step="1"></label>
+          </div>
+
+          <fieldset class="admin-field-group">
+            <legend>タグ</legend>
+            <div id="tag-chips" class="admin-chips"></div>
+            <label>タグを追加<input id="tag-input" list="tag-suggestions" placeholder="入力してEnter"></label>
+            <datalist id="tag-suggestions"></datalist>
+          </fieldset>
+
+          <fieldset class="admin-publish-options">
+            <legend>Writingページの掲載設定</legend>
+            <p>公開をONにすると記事一覧へ掲載されます。代表記事は公開記事の中から最大3件です。</p>
+            <label class="admin-check"><input name="visible" type="checkbox"><span>Writingページに公開する</span></label>
+            <label class="admin-check"><input name="featured" type="checkbox"><span>代表記事にする（最大3件）</span></label>
+            <label>代表順位 <span>1〜3・代表記事のみ</span><input name="featuredOrder" type="number" min="1" max="3" step="1"></label>
+          </fieldset>
+
+          <details class="admin-technical-fields">
+            <summary>JSON管理項目</summary>
+            <div class="admin-form-grid">
+              <label>ID <span>必須・重複不可</span><input name="id" required></label>
+              <label>表示順 <span>1以上の整数</span><input name="order" type="number" min="1" step="1" required></label>
+            </div>
+          </details>
+        </form>
+      </section>
+    </div>
+
+    <section class="admin-preview" aria-labelledby="preview-title">
+      <div class="admin-section-heading">
+        <div><h2 id="preview-title">簡易プレビュー</h2><p>公開記事だけを管理画面用の簡易カードで表示します。</p></div>
+        <label>表示方法<select id="preview-sort"><option value="manual">手動選定順</option><option value="views">ビュー数順</option><option value="likes">スキ数順</option><option value="latest">最新順</option></select></label>
+      </div>
+      <div id="preview-content"></div>
+    </section>
+  </main>
+
+  <script src="data/writing-articles-fallback.js"></script>
+  <script src="js/writing-admin.js"></script>
+</body>
+</html>

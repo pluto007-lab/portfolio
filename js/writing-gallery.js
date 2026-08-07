@@ -85,6 +85,7 @@ const renderWriting = (articles) => {
     .sort((a, b) => Number(a.order) - Number(b.order));
   const featuredArticles = visibleArticles
     .filter((article) => article.featured === true && article.noteUrl)
+    .sort((a, b) => (Number(a.featuredOrder) || Number(a.order)) - (Number(b.featuredOrder) || Number(b.order)))
     .slice(0, 3);
   const featuredIds = new Set(featuredArticles.map((article) => article.id));
   const archiveArticles = visibleArticles.filter((article) => !featuredIds.has(article.id));
