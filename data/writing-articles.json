@@ -9,9 +9,14 @@
     "tags": [],
     "image": "",
     "noteUrl": "https://note.com/pluto91/n/nb6fb8ff01feb?sub_rt=share_sb",
-    "featured": true,
+    "featured": false,
+    "featuredOrder": "",
     "visible": true,
-    "order": 1
+    "order": 1,
+    "views": 154,
+    "likes": 21,
+    "comments": 0,
+    "publishedAt": "2026-07-24"
   },
   {
     "id": "fukushima-racecourse-return",
@@ -24,8 +29,13 @@
     "image": "",
     "noteUrl": "https://note.com/pluto91/n/nc8ffbb05941c?sub_rt=share_sb",
     "featured": false,
+    "featuredOrder": "",
     "visible": true,
-    "order": 2
+    "order": 2,
+    "views": 60,
+    "likes": 10,
+    "comments": 0,
+    "publishedAt": "2026-07-24"
   },
   {
     "id": "three-color-somen-hackathon",
@@ -38,8 +48,13 @@
     "image": "",
     "noteUrl": "https://note.com/pluto91/n/ndd5387681bfd?sub_rt=share_sb",
     "featured": false,
+    "featuredOrder": "",
     "visible": true,
-    "order": 3
+    "order": 3,
+    "views": 99,
+    "likes": 16,
+    "comments": 0,
+    "publishedAt": "2026-07-26"
   },
   {
     "id": "wearing-sega-hardware",
@@ -52,8 +67,13 @@
     "image": "",
     "noteUrl": "https://note.com/pluto91/n/n1f9e5c0751f2?sub_rt=share_sb",
     "featured": true,
+    "featuredOrder": 2,
     "visible": true,
-    "order": 4
+    "order": 4,
+    "views": 162,
+    "likes": 14,
+    "comments": 0,
+    "publishedAt": "2026-07-30"
   },
   {
     "id": "setlog-solo-sharing",
@@ -65,9 +85,14 @@
     "tags": [],
     "image": "",
     "noteUrl": "https://note.com/pluto91/n/n69eefa2f4f6a?sub_rt=share_sb",
-    "featured": false,
+    "featured": true,
+    "featuredOrder": 1,
     "visible": true,
-    "order": 5
+    "order": 5,
+    "views": 168,
+    "likes": 15,
+    "comments": 2,
+    "publishedAt": "2026-07-30"
   },
   {
     "id": "osaka-police-video-nutrition",
@@ -80,8 +105,13 @@
     "image": "",
     "noteUrl": "https://note.com/pluto91/n/nd8b577406be6?sub_rt=share_sb",
     "featured": false,
+    "featuredOrder": "",
     "visible": true,
-    "order": 6
+    "order": 6,
+    "views": 108,
+    "likes": 10,
+    "comments": 0,
+    "publishedAt": "2026-08-04"
   },
   {
     "id": "school-official-sns-detour",
@@ -94,8 +124,13 @@
     "image": "",
     "noteUrl": "https://note.com/pluto91/n/nfe08ea822fe5?sub_rt=share_sb",
     "featured": true,
+    "featuredOrder": 3,
     "visible": true,
-    "order": 7
+    "order": 7,
+    "views": 112,
+    "likes": 11,
+    "comments": 2,
+    "publishedAt": "2026-08-04"
   },
   {
     "id": "just-listening-unexpected-result",
@@ -108,7 +143,12 @@
     "image": "",
     "noteUrl": "https://note.com/pluto91/n/n0deff91c70ad?sub_rt=share_sb",
     "featured": false,
+    "featuredOrder": "",
     "visible": true,
-    "order": 8
+    "order": 8,
+    "views": 101,
+    "likes": 6,
+    "comments": 0,
+    "publishedAt": "2026-08-05"
   }
 ]

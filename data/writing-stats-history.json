@@ -1,0 +1,57 @@
+{
+  "snapshots": [
+    {
+      "capturedAt": "2026-08-10T03:13:44.968Z",
+      "articles": [
+        {
+          "articleId": "n69eefa2f4f6a",
+          "views": 168,
+          "likes": 15,
+          "comments": 2
+        },
+        {
+          "articleId": "n1f9e5c0751f2",
+          "views": 162,
+          "likes": 14,
+          "comments": 0
+        },
+        {
+          "articleId": "nb6fb8ff01feb",
+          "views": 154,
+          "likes": 21,
+          "comments": 0
+        },
+        {
+          "articleId": "nfe08ea822fe5",
+          "views": 112,
+          "likes": 11,
+          "comments": 2
+        },
+        {
+          "articleId": "nd8b577406be6",
+          "views": 108,
+          "likes": 10,
+          "comments": 0
+        },
+        {
+          "articleId": "n0deff91c70ad",
+          "views": 101,
+          "likes": 6,
+          "comments": 0
+        },
+        {
+          "articleId": "ndd5387681bfd",
+          "views": 99,
+          "likes": 16,
+          "comments": 0
+        },
+        {
+          "articleId": "nc8ffbb05941c",
+          "views": 60,
+          "likes": 10,
+          "comments": 0
+        }
+      ]
+    }
+  ]
+}

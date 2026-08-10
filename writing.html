@@ -6,6 +6,7 @@
   <meta name="description" content="日々の気づきや体験、制作の裏側を観察し、考え、言葉として残すWritingページです。">
   <title>Writing | Portfolio</title>
   <link rel="stylesheet" href="css/style.css?v=20">
+  <link rel="stylesheet" href="css/writing-archive.css">
 </head>
 <body class="home-v2 writing-v2">
   <a class="skip-link" href="#main-content">本文へ移動</a>
@@ -41,15 +42,22 @@
     <section class="v2-section writing-shelves" aria-labelledby="writing-shelves-title">
       <div class="writing-section-heading"><p class="v2-section-label">Writing Shelves</p><h2 id="writing-shelves-title">文章を置く棚</h2><p>興味のある棚から、カテゴリごとの記事へ移動できます。</p></div>
       <nav class="writing-shelf-grid" aria-label="記事カテゴリ">
-        <a href="#writing-category-essays"><span>01</span><h3>Essays <small>エッセイ</small></h3><p>日常や記憶、価値観について</p></a>
-        <a href="#writing-category-horse-racing"><span>02</span><h3>Horse Racing <small>競馬</small></h3><p>競馬場体験、予想、振り返り</p></a>
-        <a href="#writing-category-observation"><span>03</span><h3>Observation <small>人や出来事の観察</small></h3><p>setlog、ギャル、人間観察など</p></a>
-        <a href="#writing-category-making-learning"><span>04</span><h3>Making / Learning <small>制作</small></h3><p>Web制作、SNS運営、学び、試行錯誤</p></a>
+        <a href="#writing-archive-title" data-writing-category="Essays"><span>01</span><h3>Essays <small>エッセイ</small></h3><p>日常や記憶、価値観について</p></a>
+        <a href="#writing-archive-title" data-writing-category="Horse Racing"><span>02</span><h3>Horse Racing <small>競馬</small></h3><p>競馬場体験、予想、振り返り</p></a>
+        <a href="#writing-archive-title" data-writing-category="Observation"><span>03</span><h3>Observation <small>人や出来事の観察</small></h3><p>setlog、ギャル、人間観察など</p></a>
+        <a href="#writing-archive-title" data-writing-category="Making / Learning"><span>04</span><h3>Making / Learning <small>制作</small></h3><p>Web制作、SNS運営、学び、試行錯誤</p></a>
       </nav>
     </section>
 
     <section class="v2-section writing-archive" aria-labelledby="writing-archive-title">
       <div class="writing-section-heading"><p class="v2-section-label">Article Archive</p><h2 id="writing-archive-title">記事の記録</h2><p id="writing-load-status" aria-live="polite">記事情報を読み込んでいます。</p></div>
+      <div class="writing-category-filters" role="group" aria-label="記事をカテゴリで絞り込む">
+        <button type="button" data-writing-filter="all" aria-pressed="true">すべて</button>
+        <button type="button" data-writing-filter="Essays" aria-pressed="false">Essays</button>
+        <button type="button" data-writing-filter="Horse Racing" aria-pressed="false">Horse Racing</button>
+        <button type="button" data-writing-filter="Observation" aria-pressed="false">Observation</button>
+        <button type="button" data-writing-filter="Making / Learning" aria-pressed="false">Making / Learning</button>
+      </div>
       <div id="writing-archive-list" class="writing-archive-grid"><p class="writing-empty-state">記事一覧を読み込んでいます。</p></div>
     </section>
 
@@ -65,6 +73,7 @@
 
   <footer class="footer"><div class="v2-footer-inner"><div><a href="index.html" class="v2-footer-logo">Portfolio</a><p>Building, learning, and experimenting.</p><p class="writing-footer-ja">つくり、学び、実験する。</p></div><div class="v2-footer-links" aria-label="外部リンク"><a href="mailto:mfmf0707@gmail.com">Email</a><a href="https://github.com/pluto007-lab" target="_blank" rel="noopener noreferrer">GitHub</a></div></div><p class="v2-copyright">© 2026 Portfolio</p><a href="#" class="back-to-top" aria-label="ページ上部へ戻る">↑</a></footer>
   <script src="js/script.js?v=10"></script>
+  <script src="data/writing-articles-fallback.js"></script>
   <script src="js/writing-gallery.js"></script>
 </body>
 </html>

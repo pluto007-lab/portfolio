@@ -66,6 +66,43 @@
         <label>公開状態<select id="visible-filter"><option value="">すべて</option><option value="visible">公開</option><option value="hidden">非公開</option></select></label>
         <label>代表状態<select id="featured-filter"><option value="">すべて</option><option value="featured">代表記事</option><option value="normal">通常記事</option></select></label>
         <label>タグ<select id="tag-filter"><option value="">すべて</option></select></label>
+        <label>並べ替え<select id="list-sort"><option value="order">現在の並び順</option><option value="publishedAt">公開日（新しい順）</option><option value="views">PV（多い順）</option><option value="likes">スキ数（多い順）</option><option value="likeRate">スキ率（高い順）</option></select></label>
+      </div>
+    </section>
+
+
+    <section class="admin-stats-import" aria-labelledby="stats-import-title">
+      <div class="admin-section-heading">
+        <div><p class="admin-kicker">note stats import</p><h2 id="stats-import-title">noteアクセス状況を取り込む</h2><p>表示済みのアクセス状況をブックマークレットでコピーし、確認後にPV・スキ・コメントだけを反映します。</p></div>
+        <a id="note-stats-bookmarklet" class="admin-bookmarklet" href="#">noteアクセス状況を取得</a>
+      </div>
+      <p class="admin-import-guide">上のリンクをブックマークバーへドラッグし、<code>https://note.com/sitesettings/stats</code>で実行してください。内部APIやCookieは使用しません。</p>
+      <label>取得したJSONを貼り付ける<textarea id="note-stats-json" rows="7" spellcheck="false" placeholder="{ &quot;source&quot;: &quot;note-stats&quot;, ... }"></textarea></label>
+      <div class="admin-actions">
+        <button id="preview-note-stats" type="button">取り込み内容を確認</button>
+        <button id="apply-note-stats" class="admin-primary" type="button" disabled>確認した内容を反映する</button>
+      </div>
+      <div id="note-stats-results" class="admin-stats-results" aria-live="polite"><p class="admin-empty">JSONを貼り付けて「取り込み内容を確認」を押してください。</p></div>
+    </section>
+
+
+    <section class="admin-history" aria-labelledby="history-title">
+      <div class="admin-section-heading">
+        <div><p class="admin-kicker">time series</p><h2 id="history-title">アクセス状況の履歴</h2><p>既存履歴を読み込み、今回の取得値をsnapshotとして追加して書き出します。</p></div>
+        <div class="admin-history-actions">
+          <label class="admin-file-button">履歴JSONを読み込む<input id="history-file" type="file" accept="application/json,.json"></label>
+          <button id="download-history" class="admin-primary" type="button">writing-stats-history.jsonを書き出す</button>
+        </div>
+      </div>
+      <dl class="admin-history-summary">
+        <div><dt>snapshot数</dt><dd id="history-count">0</dd></div>
+        <div><dt>最初の取得日時</dt><dd id="history-first">—</dd></div>
+        <div><dt>最新の取得日時</dt><dd id="history-latest">—</dd></div>
+      </dl>
+      <p id="history-status" class="admin-save-status" aria-live="polite">履歴を読み込んでいます。</p>
+      <label class="admin-history-select">記事ごとの履歴<select id="history-article"><option value="">記事を選択してください</option></select></label>
+      <div class="admin-history-table-wrap">
+        <table class="admin-history-table"><thead><tr><th>取得日時</th><th>PV</th><th>スキ</th><th>コメント</th><th>スキ率</th></tr></thead><tbody id="history-table-body"><tr><td colspan="5">記事を選択してください。</td></tr></tbody></table>
       </div>
     </section>
 
@@ -100,6 +137,8 @@
             <label class="admin-span-2">画像パス <span>リポジトリ内の相対パス・未入力可</span><input name="image"></label>
             <label>ビュー数 <span>0以上の整数</span><input name="views" type="number" min="0" step="1"></label>
             <label>スキ数 <span>0以上の整数</span><input name="likes" type="number" min="0" step="1"></label>
+            <label>コメント数 <span>0以上の整数・未入力可</span><input name="comments" type="number" min="0" step="1"></label>
+            <div class="admin-like-rate" aria-live="polite"><span>スキ率</span><output id="like-rate-output">—</output><small>スキ数 ÷ ビュー数 × 100</small></div>
           </div>
 
           <fieldset class="admin-field-group">

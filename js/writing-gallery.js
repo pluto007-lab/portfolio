@@ -1,13 +1,8 @@
 const writingFeatured = document.querySelector("#writing-featured-list");
 const writingArchive = document.querySelector("#writing-archive-list");
 const writingStatus = document.querySelector("#writing-load-status");
-
-const writingCategories = [
-  { name: "Essays", id: "writing-category-essays", label: "エッセイ" },
-  { name: "Horse Racing", id: "writing-category-horse-racing", label: "競馬" },
-  { name: "Observation", id: "writing-category-observation", label: "人や出来事の観察" },
-  { name: "Making / Learning", id: "writing-category-making-learning", label: "制作・学び" },
-];
+const writingFilterButtons = document.querySelectorAll("[data-writing-filter]");
+const writingShelfLinks = document.querySelectorAll("[data-writing-category]");
 
 const addTextBlock = (parent, label, value) => {
   if (!value) return;
@@ -88,7 +83,13 @@ const renderWriting = (articles) => {
     .sort((a, b) => (Number(a.featuredOrder) || Number(a.order)) - (Number(b.featuredOrder) || Number(b.order)))
     .slice(0, 3);
   const featuredIds = new Set(featuredArticles.map((article) => article.id));
-  const archiveArticles = visibleArticles.filter((article) => !featuredIds.has(article.id));
+  const archiveArticles = visibleArticles
+    .filter((article) => !featuredIds.has(article.id))
+    .sort((a, b) => {
+      const dateDifference = Date.parse(b.publishedAt || "") - Date.parse(a.publishedAt || "");
+      if (Number.isFinite(dateDifference) && dateDifference !== 0) return dateDifference;
+      return Number(a.order) - Number(b.order);
+    });
 
   writingFeatured.replaceChildren();
   writingArchive.replaceChildren();
@@ -102,41 +103,44 @@ const renderWriting = (articles) => {
     writingFeatured.append(empty);
   }
 
-  writingCategories.forEach((category) => {
-    const categoryArticles = archiveArticles.filter((article) => article.category === category.name);
-    if (!categoryArticles.length) return;
+  const applyFilter = (category = "all") => {
+    const filteredArticles = category === "all"
+      ? archiveArticles
+      : archiveArticles.filter((article) => article.category === category);
 
-    const section = document.createElement("section");
-    section.id = category.id;
-    section.className = "writing-archive-group";
-    section.setAttribute("aria-labelledby", `${category.id}-title`);
+    writingArchive.replaceChildren();
+    filteredArticles.forEach((article) => writingArchive.append(createArticleCard(article)));
+    writingFilterButtons.forEach((button) => {
+      button.setAttribute("aria-pressed", String(button.dataset.writingFilter === category));
+    });
 
-    const heading = document.createElement("div");
-    heading.className = "writing-archive-group-heading";
-    const spine = document.createElement("span");
-    spine.textContent = category.name;
-    const title = document.createElement("h3");
-    title.id = `${category.id}-title`;
-    title.textContent = category.label;
-    const count = document.createElement("small");
-    count.textContent = `${categoryArticles.length}記事`;
-    heading.append(spine, title, count);
+    const categoryLabel = category === "all" ? "すべての通常記事" : category;
+    writingStatus.textContent = `代表記事3件と、${categoryLabel}${filteredArticles.length}件を掲載しています。`;
+  };
 
-    const grid = document.createElement("div");
-    grid.className = "writing-archive-grid";
-    categoryArticles.forEach((article) => grid.append(createArticleCard(article)));
-    section.append(heading, grid);
-    writingArchive.append(section);
+  writingFilterButtons.forEach((button) => {
+    button.addEventListener("click", () => applyFilter(button.dataset.writingFilter));
+  });
+  writingShelfLinks.forEach((link) => {
+    link.addEventListener("click", () => applyFilter(link.dataset.writingCategory));
   });
 
-  writingStatus.textContent = `代表3件と、カテゴリ別の記事${archiveArticles.length}件を掲載しています。`;
+  applyFilter();
 };
 
-fetch("data/writing-articles.json")
-  .then((response) => {
+const loadWritingArticles = () => {
+  if (location.protocol === "file:") {
+    if (!Array.isArray(window.WRITING_ARTICLES_FALLBACK)) throw new Error("file://用フォールバックがありません。");
+    return Promise.resolve(window.WRITING_ARTICLES_FALLBACK);
+  }
+
+  return fetch("data/writing-articles.json", { cache: "no-store" }).then((response) => {
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     return response.json();
-  })
+  });
+};
+
+loadWritingArticles()
   .then((articles) => {
     if (!Array.isArray(articles)) throw new Error("記事データが配列ではありません。");
     renderWriting(articles);
