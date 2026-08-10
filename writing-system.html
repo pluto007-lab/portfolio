@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="note記事の掲載・更新とアクセス状況の蓄積を効率化するWriting管理・分析システムの制作事例です。">
+  <title>Writing管理・分析システム | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css?v=20">
+  <link rel="stylesheet" href="css/writing-system.css?v=5">
+</head>
+<body class="home-v2 writing-system-case">
+  <a class="skip-link" href="#main-content">本文へ移動</a>
+  <header class="header"><div class="header-inner">
+    <a href="index.html" class="logo" aria-label="Portfolio ホーム">Portfolio</a>
+    <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-navigation" aria-label="メニューを開く"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+    <nav id="mobile-navigation" class="site-nav" aria-label="メインナビゲーション">
+      <button class="mobile-nav-close" type="button" aria-label="メニューを閉じる"><span aria-hidden="true">×</span></button>
+      <div class="site-nav-group"><p class="site-nav-group-label">Overview</p><a href="index.html">Home</a><a href="about.html">About</a></div>
+      <div class="site-nav-group"><p class="site-nav-group-label">Works</p><a href="web-apps.html">Web Apps</a><a href="websites.html">Websites</a><a href="design.html">Design</a><a href="development.html" aria-current="page">Development</a><a href="planning.html">Planning</a><a href="writing.html">Writing</a><a href="lab.html">Lab</a></div>
+      <div class="site-nav-group"><p class="site-nav-group-label">Connect</p><a href="contact.html">Contact</a></div>
+    </nav>
+  </div></header>
+  <div class="mobile-nav-overlay" aria-hidden="true"></div>
+
+  <main id="main-content">
+    <section class="writing-case-hero" aria-labelledby="case-title">
+      <nav class="v2-breadcrumb" aria-label="パンくずリスト"><a href="index.html">Home</a><span aria-hidden="true">/</span><a href="development.html">Development</a><span aria-hidden="true">/</span><span aria-current="page">Writing管理・分析システム</span></nav>
+      <div class="writing-case-hero-grid"><div><p class="v2-section-label">Development Case Study</p><h1 id="case-title"><span>Writing管理・</span><span>分析システム</span></h1><p>記事を掲載する作業だけでなく、更新・分析・履歴保存までを一つの運用フローとして設計した、自分用のローカル管理ツールです。</p></div><ol aria-label="開発プロセス"><li>課題発見</li><li>要件整理</li><li>方式選定</li><li>実装</li><li>実運用</li><li>データ蓄積</li></ol></div>
+    </section>
+
+    <section class="v2-section writing-case-background" aria-labelledby="background-title">
+      <div class="writing-case-heading"><p class="v2-section-label">01 / Background</p><h2 id="background-title">手入力が増える<em class="writing-case-nowrap">運用を、</em>仕組みから見直す</h2></div>
+      <div class="writing-case-columns"><p>note記事をポートフォリオへ掲載するたびに、タイトル、公開日、画像、紹介文を手入力していました。記事数が増えるほど、代表記事や掲載順を含めた更新作業も煩雑になります。</p><p>アクセス状況の分析にも、noteの画面からPV・スキ・コメントを確認し、手作業で記録する必要がありました。そこで、記事管理からアクセスデータの蓄積までを一つの仕組みにまとめました。</p></div>
+    </section>
+
+    <section class="v2-section writing-case-operation" aria-labelledby="operation-title">
+      <div class="writing-case-heading"><p class="v2-section-label">02 / Operation Flow</p><h2 id="operation-title"><em class="writing-case-nowrap">二つの流れを、</em>一つの管理画面へ</h2></div>
+      <div class="writing-case-flow-grid">
+        <article><h3>記事を掲載する</h3><ol><li>note URL入力</li><li>記事情報自動取得</li><li>管理画面で編集</li><li>JSON書き出し</li><li>Writingページへ反映</li></ol></article>
+        <article><h3>アクセス状況を蓄積する</h3><ol><li>noteアクセス状況取得</li><li>既存記事と照合</li><li>PV・スキ・コメント更新</li><li>スキ率自動計算</li><li>取得時点のデータを履歴保存</li></ol></article>
+      </div>
+    </section>
+
+    <section class="v2-section writing-case-features" aria-labelledby="features-title">
+      <div class="writing-case-heading"><p class="v2-section-label">03 / Features</p><h2 id="features-title">運用に必要な機能</h2></div>
+      <ul><li>note URLから記事情報取得</li><li>記事管理画面</li><li>カテゴリ・代表記事・掲載順管理</li><li>JSON / fallback書き出し</li><li>noteアクセス状況の半自動取得</li><li>記事ID → URL → タイトルによる照合</li><li>更新前後の差分確認</li><li>PV / スキ / コメント管理</li><li>スキ率自動計算</li><li>PV / スキ / スキ率などの並べ替え</li><li>アクセス状況snapshotの時系列保存</li></ul>
+    </section>
+
+    <section class="v2-section writing-case-safety" aria-labelledby="safety-title">
+      <div class="writing-case-heading"><p class="v2-section-label">04 / Design Decision</p><h2 id="safety-title"><em class="writing-case-nowrap">完全自動化より、</em>安全に確認できる半自動化</h2></div>
+      <div class="writing-case-safety-grid"><div><p>noteには一般ユーザー向けの公式APIがないため、ログインCookieやパスワードを外部へ保存する完全自動化は避けました。内部APIも使用せず、ログイン済みブラウザに表示されたDOMから必要な情報だけを取得します。</p></div><ol aria-label="誤更新を防ぐ流れ"><li>照合</li><li>差分確認</li><li>ユーザー操作で反映</li></ol></div>
+    </section>
+
+    <section class="v2-section writing-case-data" aria-labelledby="data-title">
+      <div class="writing-case-heading"><p class="v2-section-label">05 / Data Design</p><h2 id="data-title">現在値と時系列履歴を分ける</h2></div>
+      <div class="writing-case-data-grid"><article><p>Current</p><h3>data/writing-articles.json</h3><span>公開ページで使う最新の記事情報と現在値</span></article><article><p>History</p><h3>data/writing-stats-history.json</h3><span>取得日時ごとのPV・スキ・コメント</span></article></div>
+      <p class="writing-case-data-note">公開用データを肥大化させず、PV推移、スキ率推移、初動型・後伸び型、投稿後の既存記事への流入を後から分析できる構造にしています。</p>
+    </section>
+
+    <section class="v2-section writing-case-screens" aria-labelledby="screens-title">
+      <div class="writing-case-heading"><p class="v2-section-label">06 / Interface</p><h2 id="screens-title">画面で確認できること</h2></div>
+      <div class="writing-case-screen-grid">
+        <figure><a href="img/writing-system/writing-admin.png" target="_blank" rel="noopener noreferrer" aria-label="記事管理画面の画像を拡大して見る"><img src="img/writing-system/writing-admin.png" alt="note記事の一覧と編集フォームを表示したWriting管理画面"></a><figcaption><span>SCREEN 01</span>記事管理画面</figcaption></figure>
+        <figure><a href="img/writing-system/stats-import.png" target="_blank" rel="noopener noreferrer" aria-label="アクセス状況取り込み・差分確認画面の画像を拡大して見る"><img src="img/writing-system/stats-import.png" alt="noteアクセス状況を8記事と照合しPV・スキ・コメントの差分を確認する画面"></a><figcaption><span>SCREEN 02</span>アクセス状況取り込み・差分確認</figcaption></figure>
+        <figure><a href="img/writing-system/stats-history.png" target="_blank" rel="noopener noreferrer" aria-label="時系列履歴画面の画像を拡大して見る"><img src="img/writing-system/stats-history.png" alt="記事ごとのPV・スキ・コメント・スキ率を時系列で保存する履歴画面"></a><figcaption><span>SCREEN 03</span>時系列履歴</figcaption></figure>
+      </div>
+      <p class="writing-case-screen-note">画像を選択すると原寸で確認できます。時系列履歴は、データ蓄積後に同じ画像ファイルを更新します。</p>
+    </section>
+
+    <section class="v2-section writing-case-tech" aria-labelledby="tech-title"><div><p class="v2-section-label">Technology</p><h2 id="tech-title">使用技術</h2></div><ul><li>HTML</li><li>CSS</li><li>Vanilla JavaScript</li><li>Node.js</li><li>JSON</li><li>Bookmarklet</li><li>Git</li><li>GitHub</li></ul></section>
+    <section class="v2-section writing-case-next" aria-labelledby="next-title"><div><p class="v2-section-label">Back to Writing</p><h2 id="next-title">記事と、その裏側へ</h2><p>管理する仕組みだけでなく、実際に書いている記事も紹介しています。</p></div><a href="writing.html">Writingへ戻る <span aria-hidden="true">→</span></a></section>
+  </main>
+
+  <footer class="footer"><div class="v2-footer-inner"><div><a href="index.html" class="v2-footer-logo">Portfolio</a><p>Building, learning, and experimenting.</p><p class="writing-case-footer-ja">つくり、学び、実験する。</p></div><div class="v2-footer-links" aria-label="外部リンク"><a href="mailto:mfmf0707@gmail.com">Email</a><a href="https://github.com/pluto007-lab" target="_blank" rel="noopener noreferrer">GitHub</a></div></div><p class="v2-copyright">© 2026 Portfolio</p><a href="#" class="back-to-top" aria-label="ページ上部へ戻る">↑</a></footer>
+  <script src="js/script.js?v=10"></script>
+</body>
+</html>

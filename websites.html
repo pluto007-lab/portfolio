@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="想定ユーザー、情報設計、デザイン、アクセシビリティを考えて制作したWebサイトを紹介します。">
   <title>Websites | Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=20">
 </head>
 
 <body class="home-v2 websites-v2">
@@ -14,15 +14,34 @@
   <header class="header">
     <div class="header-inner">
       <a href="index.html" class="logo" aria-label="Portfolio ホーム">Portfolio</a>
-      <nav aria-label="メインナビゲーション">
-        <a href="index.html">Home</a>
-        <a href="index.html#projects">Projects</a>
-        <a href="web-apps.html">Web Apps</a>
-        <a href="websites.html" aria-current="page">Websites</a>
-        <a href="about.html">About</a>
+      <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-navigation" aria-label="メニューを開く">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+      <nav id="mobile-navigation" class="site-nav" aria-label="メインナビゲーション">
+        <button class="mobile-nav-close" type="button" aria-label="メニューを閉じる"><span aria-hidden="true">×</span></button>
+        <div class="site-nav-group">
+          <p class="site-nav-group-label">Overview</p>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+        </div>
+        <div class="site-nav-group">
+          <p class="site-nav-group-label">Works</p>
+          <a href="web-apps.html">Web Apps</a>
+          <a href="websites.html" aria-current="page">Websites</a>
+          <a href="design.html">Design</a>
+          <a href="development.html">Development</a>
+          <a href="planning.html">Planning</a>
+          <a href="writing.html">Writing</a>
+          <a href="lab.html">Lab</a>
+        </div>
+        <div class="site-nav-group">
+          <p class="site-nav-group-label">Connect</p>
+          <a href="contact.html">Contact</a>
+        </div>
       </nav>
     </div>
   </header>
+  <div class="mobile-nav-overlay" aria-hidden="true"></div>
 
   <main id="main-content">
     <section class="websites-hero" aria-labelledby="websites-title">
@@ -45,14 +64,10 @@
         <span>公開中</span>
       </div>
 
-      <div class="websites-featured-visual">
-        <img src="img/wakaba.png" alt="シニア向けスマホ教室「若葉」のトップページ">
-      </div>
-
-      <div class="websites-summary-grid">
+      <div class="websites-summary-grid websites-case-intro">
         <section aria-labelledby="wakaba-overview-title">
-          <p class="websites-detail-label">Overview</p>
-          <h3 id="wakaba-overview-title">概要</h3>
+          <p class="websites-detail-label">Background</p>
+          <h3 id="wakaba-overview-title">制作背景</h3>
           <p>シニア向けスマホ教室を想定した架空サイトです。1ページ構成から、講座・FAQ・お問い合わせ・コラムなどを含む複数ページ構成へ改善しました。</p>
         </section>
         <section aria-labelledby="wakaba-user-title">
@@ -61,10 +76,19 @@
           <p>スマートフォンの基本操作に不安を感じるシニアと、教室選びを支える家族を想定しています。</p>
         </section>
         <section aria-labelledby="wakaba-purpose-title">
-          <p class="websites-detail-label">Purpose</p>
-          <h3 id="wakaba-purpose-title">制作目的</h3>
+          <p class="websites-detail-label">Challenge</p>
+          <h3 id="wakaba-purpose-title">解決した課題</h3>
           <p>必要な情報を迷わず見つけ、無料体験・電話・LINE・フォームから安心して問い合わせられるサイトを目指しました。</p>
         </section>
+      </div>
+
+      <div class="websites-featured-visual">
+        <img src="img/wakaba.png" alt="シニア向けスマホ教室「若葉」のトップページ">
+      </div>
+
+      <div class="websites-detail-heading">
+        <p class="websites-detail-label">Design decisions</p>
+        <h3>工夫したこと</h3>
       </div>
 
       <div class="websites-detail-grid">
@@ -201,12 +225,12 @@
       <div>
         <p class="v2-section-label">Next</p>
         <h2 id="websites-next-title">他のカテゴリを見る</h2>
-        <p>各詳細ページは、Portfolio v2の制作に合わせて順次追加します。</p>
+        <p>制作の視点ごとに、Portfolio v2の各ページへ案内します。</p>
       </div>
-      <div class="websites-cta-list" aria-label="準備中のページ">
-        <div><span>Designを見る</span><small>準備中</small></div>
-        <div><span>Developmentを見る</span><small>準備中</small></div>
-        <div><span>Contactへ進む</span><small>準備中</small></div>
+      <div class="websites-cta-list" aria-label="次に見るページ">
+        <a href="design.html"><span>Designを見る</span><small>View</small></a>
+        <a href="development.html"><span>Developmentを見る</span><small>View</small></a>
+        <a href="contact.html"><span>Contactへ進む</span><small>View</small></a>
       </div>
     </section>
   </main>
@@ -222,6 +246,6 @@
     <p class="v2-copyright">© 2026 Portfolio</p>
     <a href="#" class="back-to-top" aria-label="ページ上部へ戻る">↑</a>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.js?v=10"></script>
 </body>
 </html>

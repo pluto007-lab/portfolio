@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Career Trackをはじめ、実際の困りごとを起点に設計・改善したWebアプリを紹介します。">
   <title>Web Apps | Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=19">
 </head>
 
 <body class="home-v2 web-apps-v2">
@@ -14,15 +14,34 @@
   <header class="header">
     <div class="header-inner">
       <a href="index.html" class="logo" aria-label="Portfolio ホーム">Portfolio</a>
-      <nav aria-label="メインナビゲーション">
-        <a href="index.html">Home</a>
-        <a href="index.html#projects">Projects</a>
-        <a href="web-apps.html" aria-current="page">Web Apps</a>
-        <a href="index.html#now">Now</a>
-        <a href="about.html">About</a>
+      <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-navigation" aria-label="メニューを開く">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+      <nav id="mobile-navigation" class="site-nav" aria-label="メインナビゲーション">
+        <button class="mobile-nav-close" type="button" aria-label="メニューを閉じる"><span aria-hidden="true">×</span></button>
+        <div class="site-nav-group">
+          <p class="site-nav-group-label">Overview</p>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+        </div>
+        <div class="site-nav-group">
+          <p class="site-nav-group-label">Works</p>
+          <a href="web-apps.html" aria-current="page">Web Apps</a>
+          <a href="websites.html">Websites</a>
+          <a href="design.html">Design</a>
+          <a href="development.html">Development</a>
+          <a href="planning.html">Planning</a>
+          <a href="writing.html">Writing</a>
+          <a href="lab.html">Lab</a>
+        </div>
+        <div class="site-nav-group">
+          <p class="site-nav-group-label">Connect</p>
+          <a href="contact.html">Contact</a>
+        </div>
       </nav>
     </div>
   </header>
+  <div class="mobile-nav-overlay" aria-hidden="true"></div>
 
   <main id="main-content">
     <section class="web-apps-hero" aria-labelledby="web-apps-title">
@@ -33,10 +52,7 @@
       </nav>
       <p class="v2-section-label">Projects / Web applications</p>
       <h1 id="web-apps-title">Web Apps</h1>
-      <p>
-        実際の困りごとや管理しづらさを起点に、情報を整理し、
-        使いやすい形へ落とし込んだWebアプリを掲載しています。
-      </p>
+      <p>就職活動や勤務管理など、日常の管理に困る人へ向けて、情報を見つけやすく整理したWebアプリを紹介します。</p>
     </section>
 
     <section class="v2-section web-apps-featured" aria-labelledby="career-track-title">
@@ -48,26 +64,26 @@
         <span>開発継続中</span>
       </div>
 
-      <div class="web-apps-featured-visual">
-        <img src="img/career-track.png" alt="Career Trackのダッシュボード画面">
-      </div>
-
       <div class="web-apps-featured-summary">
         <section aria-labelledby="career-overview-title">
-          <p class="web-apps-detail-label">Overview</p>
-          <h3 id="career-overview-title">概要</h3>
-          <p>企業情報・応募状況・面接準備を一元管理し、今確認すべき企業と次に行うことを整理するWebアプリです。</p>
+          <p class="web-apps-detail-label">Problem</p>
+          <h3 id="career-overview-title">どんな課題</h3>
+          <p>企業情報、応募状況、提出期限、面接予定が複数の場所へ分散し、次に行うことが分かりづらくなる課題があります。</p>
         </section>
         <section aria-labelledby="career-origin-title">
-          <p class="web-apps-detail-label">Origin</p>
-          <h3 id="career-origin-title">制作のきっかけ</h3>
-          <p>就職活動で企業情報、応募状況、提出期限、面接予定が複数の場所へ分散し、管理が煩雑になった経験から制作を始めました。</p>
+          <p class="web-apps-detail-label">For</p>
+          <h3 id="career-origin-title">誰向け</h3>
+          <p>複数企業へ応募し、企業情報と選考予定を並行して管理する就職活動中の人を想定しています。</p>
         </section>
         <section aria-labelledby="career-problem-title">
-          <p class="web-apps-detail-label">Problem</p>
-          <h3 id="career-problem-title">解決したい課題</h3>
-          <p>次に行うことが分かりづらい、予定を見落としやすい、企業を比較しにくいといった管理上の負担を減らすことを目指しています。</p>
+          <p class="web-apps-detail-label">Solution</p>
+          <h3 id="career-problem-title">何を解決したか</h3>
+          <p>企業情報・応募状況・面接準備を一元管理し、今確認すべき企業と次の行動を見つけやすくしました。</p>
         </section>
+      </div>
+
+      <div class="web-apps-featured-visual">
+        <img src="img/career-track.png" alt="Career Trackのダッシュボード画面">
       </div>
 
       <div class="web-apps-featured-detail">
@@ -142,12 +158,13 @@
       </div>
 
       <div class="web-apps-card-grid">
-        <article class="web-app-card">
+        <article class="web-app-card web-app-card-shift">
           <img src="img/shift-app.png" alt="勤務シフト管理アプリの画面">
           <div class="web-app-card-content">
-            <div class="web-app-card-meta"><span>Web App</span><small>公開中</small></div>
+            <div class="web-app-card-meta"><span>React Application</span><small>公開中</small></div>
             <h3>勤務シフト管理アプリ</h3>
             <p>看護師向けの勤務シフト管理アプリです。有休・夏季休暇の管理や勤務ルールの確認を行えるよう設計しました。</p>
+            <ul class="web-app-card-points"><li>有休・夏季休暇の管理</li><li>勤務ルールの確認</li><li>勤務情報の整理</li></ul>
             <p class="web-app-card-tech">React / Tailwind CSS / Vite / Gemini API</p>
             <div class="web-app-card-links">
               <a href="https://pluto007-lab.github.io/shift-app/" target="_blank" rel="noopener noreferrer">Demo</a>
@@ -156,31 +173,27 @@
           </div>
         </article>
 
-        <article class="web-app-card">
-          <img src="img/umabiyori.png" alt="umabiyori.の画面">
+        <article class="web-app-card web-app-card-admin">
+          <div class="web-app-card-admin-visual" aria-hidden="true"><span>JSON</span><span>EDIT</span><span>EXPORT</span></div>
           <div class="web-app-card-content">
-            <div class="web-app-card-meta"><span>Record App</span><small>公開中</small></div>
-            <h3>umabiyori.</h3>
-            <p>競馬場や牧場などの旅先を記録・管理するためのWebアプリです。</p>
-            <p class="web-app-card-tech">HTML / CSS / JavaScript / LocalStorage</p>
+            <div class="web-app-card-meta"><span>Management Tool</span><small>Local Tool</small></div>
+            <h3>Design Works Admin</h3>
+            <p>Designページの作品データを読み込み、作品追加・タグ・公開状態・代表作品・並び順を画面上で管理し、JSONとして書き出すツールです。</p>
+            <p class="web-app-card-tech">HTML / CSS / JavaScript / JSON / File API</p>
             <div class="web-app-card-links">
-              <a href="https://pluto007-lab.github.io/umabiyori/" target="_blank" rel="noopener noreferrer">Demo</a>
-              <a href="https://github.com/pluto007-lab/umabiyori" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="design-admin.html">Demo</a>
+              <a href="https://github.com/pluto007-lab/portfolio" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
         </article>
 
-        <article class="web-app-card">
-          <img src="img/rinkaku.png" alt="自己探求アプリ「輪郭」の画面">
+        <article class="web-app-card web-app-card-template">
+          <img src="img/web-app-template.png" alt="VSCodeで開いたWeb App Templateの開発画面">
           <div class="web-app-card-content">
-            <div class="web-app-card-meta"><span>Reflection App</span><small>公開中</small></div>
-            <h3>輪郭</h3>
-            <p>他者の視点や日々の問いを通して、自分自身を見つめ直す自己探求アプリです。</p>
-            <p class="web-app-card-tech">HTML / Tailwind CSS / JavaScript</p>
-            <div class="web-app-card-links">
-              <a href="https://pluto007-lab.github.io/rinkaku/" target="_blank" rel="noopener noreferrer">Demo</a>
-              <a href="https://github.com/pluto007-lab/rinkaku" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
+            <div class="web-app-card-meta"><span>Development Foundation</span><small>Common Base</small></div>
+            <h3>Web App Template v1.0</h3>
+            <p>新しいWebアプリを素早く立ち上げるための共通開発基盤です。</p>
+            <p class="web-app-card-tech">React / TypeScript / Vite / React Router / Tailwind CSS v4</p>
           </div>
         </article>
       </div>
@@ -204,13 +217,13 @@
       <div>
         <p class="v2-section-label">Next</p>
         <h2 id="web-apps-next-title">他のカテゴリを見る</h2>
-        <p>各詳細ページは、Portfolio v2の制作に合わせて順次追加します。</p>
+        <p>開発工程やWebサイト制作、連絡先へ続きます。</p>
       </div>
-      <div class="web-apps-cta-list" aria-label="準備中のページ">
-        <div><span>Developmentを見る</span><small>準備中</small></div>
-        <div><span>Websitesを見る</span><small>準備中</small></div>
-        <div><span>Contactへ進む</span><small>準備中</small></div>
-      </div>
+      <nav class="web-apps-cta-list" aria-label="次に見るページ">
+        <a href="development.html"><span>Developmentを見る</span><small>View</small></a>
+        <a href="websites.html"><span>Websitesを見る</span><small>View</small></a>
+        <a href="contact.html"><span>Contactへ進む</span><small>View</small></a>
+      </nav>
     </section>
   </main>
 
@@ -225,6 +238,6 @@
     <p class="v2-copyright">© 2026 Portfolio</p>
     <a href="#" class="back-to-top" aria-label="ページ上部へ戻る">↑</a>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.js?v=10"></script>
 </body>
 </html>

@@ -1,0 +1,7 @@
+{
+  "name": "portfolio-v2-local-tools",
+  "private": true,
+  "scripts": {
+    "writing-admin": "node tools/writing-metadata-server.js"
+  }
+}

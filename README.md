@@ -1,154 +1,103 @@
-![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
-![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?logo=githubpages&logoColor=white)
+# Portfolio v2
 
-# Portfolio
+Webアプリ開発を中心に、Webサイト、デザイン、開発基盤、企画、文章、実験的な取り組みをカテゴリごとに紹介するポートフォリオサイトです。
 
-![Portfolio](img/preview.png)
+縦長の1ページ構成だった旧版を、作品や活動が増えても整理・更新しやすい複数ページ構成へリニューアルしています。
 
-**「Web制作とAI活用、その両方を実践するポートフォリオ。」**
-
-Web制作・AI活用・実務経験・資格・制作物をまとめたポートフォリオサイトです。
-
-職業訓練校で学んだWeb制作の成果を中心に、制作物だけでなく、使用技術・資格・実務経験・生成AIの活用方法まで、一つのサイトで確認できる構成にしています。
-
----
-
-## 公開ページ
+## 公開URL
 
 https://pluto007-lab.github.io/portfolio/
 https://portfolio.pluto-lab.com
 
----
+## 主なページ
 
-## 制作目的
+- `index.html` — Home。各カテゴリと代表作品への入口
+- `about.html` — 制作姿勢、強み、経験、資格
+- `web-apps.html` — Webアプリ作品
+- `websites.html` — Webサイト作品
+- `design.html` — JSONで管理するデザイン作品ギャラリー
+- `development.html` — 設計・実装・運用改善を紹介する開発ケーススタディ
+- `planning.html` — 企画立案、役割設計、進行・ディレクション
+- `writing.html` — note記事とWriting管理・分析システムの紹介
+- `lab.html` — 実験、アイデア、試作、研究ログ
+- `contact.html` — EmailとGitHubへの連絡導線
 
-- Web制作の学習成果をまとめる
-- 制作物やスキルを分かりやすく紹介するポートフォリオサイトの制作
-- HTML・CSS・JavaScriptを用いたWebサイト構築
-- 採用担当者が短時間で人物像やスキルを把握できる情報設計
-- GitHub Pagesによる公開
+詳細な制作事例として、`writing-system.html`も用意しています。
 
----
+## 代表的な制作物
 
-## ターゲット
-
-- Web制作・Web開発職の採用担当者
-- ポートフォリオを閲覧する企業担当者
-- 制作実績やスキルを確認したい方
-
----
-
-## サイトコンセプト
-
-**「制作物だけではなく、学習姿勢や改善力も伝えるポートフォリオ」**
-
-作品・資格・実務経験・AI活用を一つのサイトにまとめ、これまでの学習内容や制作経験を分かりやすく紹介できる構成を目指しました。
-
-また、制作物を継続的に改善し、その過程も伝えられるポートフォリオを意識しています。
-
----
+- **Career Track** — 企業情報、応募状況、面接予定を管理する就職活動管理Webアプリ
+- **シニア向けスマホ教室「若葉」** — 読みやすさ、操作性、アクセシビリティを意識したサービス紹介サイト
+- **pale table** — カートやお気に入りなどを実装したECサイト風のWebサイト
+- **Writing管理・分析システム** — note記事の管理、アクセス状況の半自動取得、指標計算、時系列履歴を扱うローカル管理ツール
+- **Design Works Admin** — デザイン作品の追加・編集・並べ替え・公開設定とJSON書き出しを行う管理画面
 
 ## 使用技術
 
-- HTML5
-- CSS3
-- JavaScript
-- Git
-- GitHub
+ポートフォリオ本体：
+
+- HTML
+- CSS
+- Vanilla JavaScript
+- JSON
+- Git / GitHub
 - GitHub Pages
 
----
+ローカル管理ツール：
 
-## AI活用
+- Node.js
+- File API
+- Bookmarklet
 
-制作では複数の生成AIを用途に応じて使い分けています。
+掲載作品では、React、TypeScript、Vite、Tailwind CSSなども使用しています。各作品の技術構成は、それぞれの掲載ページで確認できます。
 
-- ChatGPT：企画整理・要件定義・文章作成・レビュー
-- Codex：既存コードの確認・修正・機能追加
-- Claude：実装相談・コードレビュー
-- Gemini：アイデア整理・調査
-- NotebookLM：資料整理・情報収集
-- Manus：試作・検証
+## ローカルで確認する方法
 
-AIの出力をそのまま採用するのではなく、内容を確認・検証しながら改善を繰り返すことを意識しています。
+JSONを`fetch`するページがあるため、`file://`ではなくローカルサーバー経由で確認します。
 
----
+Node.jsが利用できる環境で、リポジトリのルートから次を実行してください。
 
-## 主な掲載内容
+```bash
+npm run writing-admin
+```
 
-- About
-- Skills
-- AI Tools
-- Qualifications
-- Experience
-- Works
-- Contact
+起動後、以下へアクセスします。
 
----
+```text
+http://127.0.0.1:8787/
+```
 
-## 工夫したポイント
+通常の公開ページ確認にも利用できます。Writing管理画面でnote記事情報を取得するローカルAPIも同じサーバーから提供されます。
 
-### 情報を整理した構成
-
-採用担当者が短時間で必要な情報へアクセスできるよう、About・Skills・Worksなどをセクションごとに整理しました。
-
-### 制作物以外も伝える
-
-制作物だけでなく、資格・実務経験・AI活用も掲載し、学習内容や人物像が伝わる構成にしています。
-
-### AI活用を具体的に紹介
-
-使用しているAIツールだけでなく、それぞれの役割や活用方法も紹介しています。
-
-### 更新しやすい設計
-
-新しい制作物や資格を追加しやすい構成とし、継続的にポートフォリオを改善できるよう設計しました。
-
-### レスポンシブ対応
-
-PC・タブレット・スマートフォンの各画面サイズで閲覧しやすいレイアウトを実装しています。
-
----
-
-## ディレクトリ構成
+## リポジトリ構成
 
 ```text
 portfolio/
-├── css/
-├── img/
-├── js/
-├── index.html
-└── README.md
+├── index.html                  # Home
+├── about.html                  # About
+├── web-apps.html               # Web Apps
+├── websites.html               # Websites
+├── design.html                 # Design
+├── development.html            # Development
+├── planning.html               # Planning & Direction
+├── writing.html                # Writing
+├── writing-system.html         # Writing管理・分析システム詳細
+├── lab.html                    # Lab
+├── contact.html                # Contact
+├── css/                        # 共通・ページ固有スタイル
+├── js/                         # 共通UI、ギャラリー、管理画面処理
+├── data/                       # Design・Writingの公開データと履歴
+├── img/                        # 作品画像とスクリーンショット
+├── docs/                       # Portfolio v2の設計書
+└── tools/                      # ローカルサーバー、ブックマークレット
 ```
 
----
+## データ管理
 
-## 学んだこと
+- Design作品：`data/design-works.json`
+- Writing記事：`data/writing-articles.json`
+- Writingアクセス履歴：`data/writing-stats-history.json`
 
-- 情報設計を意識したポートフォリオ制作
-- HTML・CSS・JavaScriptによるサイト構築
-- レスポンシブデザインの実装
-- 制作物を継続的に改善する重要性
-- AIを活用した制作フローの構築
-- GitHub Pagesによる公開
+管理画面は静的サイト上のファイルを直接更新しません。編集結果をJSONまたはfallbackファイルとしてダウンロードし、対象ファイルを差し替えてからGitで反映する運用です。
 
----
-
-## 今後改善したい点
-
-- 制作物ごとの詳細ページ追加
-- ダークモード対応
-- アニメーションの改善
-- Lighthouseによるパフォーマンス改善
-- アクセシビリティのさらなる向上
-- 新しい制作実績の追加
-
----
-
-## 制作について
-
-職業訓練校での学習成果をまとめるために制作しました。
-
-現在も新しい制作物や学習内容に合わせて継続的に更新しており、制作実績だけでなく、学習の過程や改善の積み重ねも伝えられるポートフォリオを目指しています。
+`design-admin.html`と`writing-admin.html`には認証機能やサーバー保存機能を実装していません。

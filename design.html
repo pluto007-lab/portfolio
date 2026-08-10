@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Photoshop、Illustrator、Canvaなどを使用して制作したデザインを紹介します。">
   <title>Design | Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=19">
 </head>
 
 <body class="home-v2 design-v2">
@@ -14,16 +14,34 @@
   <header class="header">
     <div class="header-inner">
       <a href="index.html" class="logo" aria-label="Portfolio ホーム">Portfolio</a>
-      <nav aria-label="メインナビゲーション">
-        <a href="index.html">Home</a>
-        <a href="index.html#projects">Projects</a>
-        <a href="web-apps.html">Web Apps</a>
-        <a href="websites.html">Websites</a>
-        <a href="design.html" aria-current="page">Design</a>
-        <a href="about.html">About</a>
+      <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-navigation" aria-label="メニューを開く">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+      <nav id="mobile-navigation" class="site-nav" aria-label="メインナビゲーション">
+        <button class="mobile-nav-close" type="button" aria-label="メニューを閉じる"><span aria-hidden="true">×</span></button>
+        <div class="site-nav-group">
+          <p class="site-nav-group-label">Overview</p>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+        </div>
+        <div class="site-nav-group">
+          <p class="site-nav-group-label">Works</p>
+          <a href="web-apps.html">Web Apps</a>
+          <a href="websites.html">Websites</a>
+          <a href="design.html" aria-current="page">Design</a>
+          <a href="development.html">Development</a>
+          <a href="planning.html">Planning</a>
+          <a href="writing.html">Writing</a>
+          <a href="lab.html">Lab</a>
+        </div>
+        <div class="site-nav-group">
+          <p class="site-nav-group-label">Connect</p>
+          <a href="contact.html">Contact</a>
+        </div>
       </nav>
     </div>
   </header>
+  <div class="mobile-nav-overlay" aria-hidden="true"></div>
 
   <main id="main-content">
     <section class="design-v2-hero" aria-labelledby="design-title">
@@ -149,8 +167,8 @@
       </div>
       <div class="design-v2-cta-list">
         <a href="websites.html"><span>Websitesを見る</span><small>View</small></a>
-        <div><span>Developmentを見る</span><small>準備中</small></div>
-        <div><span>Contactへ進む</span><small>準備中</small></div>
+        <a href="development.html"><span>Developmentを見る</span><small>View</small></a>
+        <a href="contact.html"><span>Contactへ進む</span><small>View</small></a>
       </div>
     </section>
   </main>
@@ -166,7 +184,7 @@
     <p class="v2-copyright">© 2026 Portfolio</p>
     <a href="#" class="back-to-top" aria-label="ページ上部へ戻る">↑</a>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="js/script.js?v=10"></script>
   <script src="data/design-works-fallback.js"></script>
   <script src="js/design-gallery.js"></script>
 </body>

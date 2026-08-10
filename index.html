@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Webアプリ開発、Webサイト制作、デザイン、開発基盤、AI活用に取り組むpluto007-labのポートフォリオです。">
   <title>Portfolio | pluto007-lab</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=19">
 </head>
 
 <body class="home-v2">
@@ -15,22 +15,41 @@
     <div class="header-inner">
       <a href="#top" class="logo" aria-label="Portfolio ホーム">Portfolio</a>
 
-      <nav aria-label="メインナビゲーション">
-        <a href="#top">Home</a>
-        <a href="#projects">Projects</a>
-        <a href="#featured">Featured</a>
-        <a href="#now">Now</a>
-        <a href="about.html">About</a>
+      <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-navigation" aria-label="メニューを開く">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+      <nav id="mobile-navigation" class="site-nav" aria-label="メインナビゲーション">
+        <button class="mobile-nav-close" type="button" aria-label="メニューを閉じる"><span aria-hidden="true">×</span></button>
+        <div class="site-nav-group">
+          <p class="site-nav-group-label">Overview</p>
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="about.html">About</a>
+        </div>
+        <div class="site-nav-group">
+          <p class="site-nav-group-label">Works</p>
+          <a href="web-apps.html">Web Apps</a>
+          <a href="websites.html">Websites</a>
+          <a href="design.html">Design</a>
+          <a href="development.html">Development</a>
+          <a href="planning.html">Planning</a>
+          <a href="writing.html">Writing</a>
+          <a href="lab.html">Lab</a>
+        </div>
+        <div class="site-nav-group">
+          <p class="site-nav-group-label">Connect</p>
+          <a href="contact.html">Contact</a>
+        </div>
       </nav>
     </div>
   </header>
+  <div class="mobile-nav-overlay" aria-hidden="true"></div>
 
   <main id="main-content">
     <section class="v2-hero" id="top" aria-labelledby="hero-title">
       <p class="v2-eyebrow">pluto007-lab</p>
       <h1 id="hero-title">Web Developer <span aria-hidden="true">/</span> Designer</h1>
       <p class="v2-hero-copy">
-        Webアプリ開発を中心に、デザイン・開発基盤・AI活用まで幅広く取り組んでいます。
+        <span>Webアプリ開発を中心に、</span><span>デザイン・開発基盤・AI活用まで</span><span>幅広く取り組んでいます。</span>
       </p>
 
       <div class="v2-actions">
@@ -45,7 +64,7 @@
         </a>
       </div>
 
-      <p class="v2-hero-note">Building, learning, and experimenting.</p>
+      <p class="v2-hero-note"><strong>Building, learning, and experimenting.</strong><span>つくり、学び、実験する。</span></p>
     </section>
 
     <section class="v2-section" id="projects" aria-labelledby="projects-title">
@@ -57,48 +76,55 @@
         <p>制作内容を目的や分野ごとに整理しています。</p>
       </div>
 
-      <div class="v2-category-grid">
-        <a class="v2-category-card v2-category-card-link" href="web-apps.html" aria-labelledby="category-web-apps">
+      <div class="v2-category-grid v2-category-grid-seven">
+        <a class="v2-category-card v2-category-card-link v2-category-card-primary" href="web-apps.html" aria-labelledby="category-web-apps">
           <p class="v2-category-number" aria-hidden="true">01</p>
           <h3 id="category-web-apps">Web Apps</h3>
           <p>ReactやJavaScriptを用いたWebアプリ</p>
           <span class="v2-category-action">View projects →</span>
         </a>
 
-        <a class="v2-category-card v2-category-card-link" href="websites.html" aria-labelledby="category-websites">
+        <a class="v2-category-card v2-category-card-link v2-category-card-primary" href="websites.html" aria-labelledby="category-websites">
           <p class="v2-category-number" aria-hidden="true">02</p>
           <h3 id="category-websites">Websites</h3>
           <p>企画・デザイン・実装を行ったWebサイト</p>
           <span class="v2-category-action">View projects →</span>
         </a>
 
-        <a class="v2-category-card v2-category-card-link" href="design.html" aria-labelledby="category-design">
+        <a class="v2-category-card v2-category-card-link v2-category-card-primary" href="design.html" aria-labelledby="category-design">
           <p class="v2-category-number" aria-hidden="true">03</p>
           <h3 id="category-design">Design</h3>
           <p>AdobeやCanvaを使用したデザイン制作</p>
           <span class="v2-category-action">View projects →</span>
         </a>
 
-        <a class="v2-category-card v2-category-card-link" href="development.html" aria-labelledby="category-development">
+        <a class="v2-category-card v2-category-card-link v2-category-card-secondary" href="development.html" aria-labelledby="category-development">
           <p class="v2-category-number" aria-hidden="true">04</p>
           <h3 id="category-development">Development</h3>
           <p>開発基盤、技術、AIを活用した制作工程</p>
           <span class="v2-category-action">View projects →</span>
         </a>
 
-        <article class="v2-category-card" aria-labelledby="category-writing">
+        <a class="v2-category-card v2-category-card-link v2-category-card-secondary" href="planning.html" aria-labelledby="category-planning">
           <p class="v2-category-number" aria-hidden="true">05</p>
-          <h3 id="category-writing">Writing</h3>
-          <p>制作記録や学習内容をまとめた記事</p>
-          <span class="v2-status" aria-label="Writingページは準備中">準備中</span>
-        </article>
+          <h3 id="category-planning">Planning &amp; Direction</h3>
+          <p>企画立案・役割設計・進行</p>
+          <span class="v2-category-action">View projects →</span>
+        </a>
 
-        <article class="v2-category-card" aria-labelledby="category-lab">
+        <a class="v2-category-card v2-category-card-link v2-category-card-secondary" href="writing.html" aria-labelledby="category-writing">
           <p class="v2-category-number" aria-hidden="true">06</p>
+          <h3 id="category-writing">Writing</h3>
+          <p>エッセイ・観察・制作記録</p>
+          <span class="v2-category-action">View writing →</span>
+        </a>
+
+        <a class="v2-category-card v2-category-card-link v2-category-card-secondary" href="lab.html" aria-labelledby="category-lab">
+          <p class="v2-category-number" aria-hidden="true">07</p>
           <h3 id="category-lab">Lab</h3>
-          <p>試作、検証、アイデアを形にする実験室</p>
-          <span class="v2-status" aria-label="Labページは準備中">準備中</span>
-        </article>
+          <p>実験・アイデア・試作</p>
+          <span class="v2-category-action">Enter the lab →</span>
+        </a>
       </div>
     </section>
 
@@ -144,9 +170,6 @@
               今後の個人開発における共通基盤として利用します。
             </p>
             <p class="v2-tags">React / TypeScript / Vite / React Router / Tailwind CSS v4</p>
-            <div class="v2-project-links">
-              <a href="https://github.com/pluto007-lab/webapp-template" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
           </div>
         </article>
 
@@ -216,6 +239,6 @@
     <a href="#top" class="back-to-top" aria-label="ページ上部へ戻る">↑</a>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="js/script.js?v=10"></script>
 </body>
 </html>
