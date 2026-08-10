@@ -135,6 +135,19 @@ main {
   margin-top: 16px;
 }
 
+/* Development case study: Writing management and analytics */
+.development-v2 .development-case-writing { background:linear-gradient(145deg,#f7fafb,#fbf7f0); }
+.development-v2 .development-writing-lead { max-width:850px; margin:-4px 0 22px; color:var(--v2-muted); font-size:14px; line-height:1.85; }
+.development-v2 .development-case-writing h3 em { font:inherit; font-style:normal; }
+.development-v2 .development-writing-process { margin-bottom:10px; color:#3e6577 !important; font-size:12px !important; font-weight:700; line-height:1.75 !important; }
+.development-v2 .development-writing-body { grid-template-columns:minmax(0,1.2fr) minmax(0,.85fr) minmax(0,.85fr); }
+
+@media (max-width:600px) {
+  .development-v2 .development-case-writing h3 em { display:block; width:max-content; max-width:100%; white-space:nowrap; }
+  .development-v2 .development-writing-lead { font-size:13px; line-height:1.75; }
+  .development-v2 .development-writing-process { font-size:11px !important; }
+}
+
 .about-text {
   max-width: 820px;
 }

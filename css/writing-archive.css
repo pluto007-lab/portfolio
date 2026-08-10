@@ -63,3 +63,31 @@
     grid-column: 1 / -1;
   }
 }
+
+.writing-system { padding: clamp(24px, 3.5vw, 38px); border: 1px solid var(--writing-line); border-radius: 22px; background: #fffdf8; }
+.writing-system-summary { display: grid; grid-template-columns: minmax(250px, .8fr) minmax(0, 1.2fr); gap: clamp(24px, 5vw, 64px); align-items: end; }
+.writing-system-summary h2 { margin-top: 6px; color: var(--writing-ink); font-family: Georgia, "Yu Mincho", serif; font-size: clamp(27px, 3.5vw, 40px); font-weight: 400; line-height: 1.3; }
+.writing-system-summary > p { color: var(--writing-muted); font-size: 13px; line-height: 1.85; }
+.writing-system-flow { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); margin: 24px 0 0; padding: 0; border-block: 1px solid var(--writing-line); list-style: none; }
+.writing-system-flow li { position: relative; min-width: 0; padding: 16px 18px; }
+.writing-system-flow li:not(:last-child)::after { position: absolute; top: 50%; right: -5px; color: var(--writing-red); content: "→"; transform: translateY(-50%); }
+.writing-system-flow span { display: block; margin-bottom: 8px; color: var(--writing-red); font: 700 9px/1 monospace; }
+.writing-system-flow strong { color: var(--writing-ink); font-size: 11px; line-height: 1.5; }
+.writing-system-footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-top: 18px; }
+.writing-system-footer p { color: var(--writing-muted); font-size: 10px; }
+.writing-system-footer a { flex: none; color: var(--writing-red); font-size: 12px; font-weight: 700; text-decoration: none; }
+.writing-system-footer a:hover { text-decoration: underline; text-underline-offset: 4px; }
+
+@media (max-width: 900px) {
+  .writing-system-summary { grid-template-columns: 1fr; gap: 14px; }
+  .writing-system-flow { grid-template-columns: 1fr; }
+  .writing-system-flow li { display: grid; grid-template-columns: 28px 1fr; padding: 10px 4px; border-bottom: 1px solid var(--writing-line); }
+  .writing-system-flow li:last-child { border-bottom: 0; }
+  .writing-system-flow li:not(:last-child)::after { top: auto; right: 5px; bottom: -8px; content: "↓"; transform: none; }
+  .writing-system-flow span { margin: 2px 0 0; }
+}
+
+@media (max-width: 600px) {
+  .writing-system { padding: 22px 18px; border-radius: 18px; }
+  .writing-system-footer { align-items: flex-start; flex-direction: column; gap: 12px; }
+}

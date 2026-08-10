@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Webアプリや制作支援ツールの設計、実装、改善プロセスを紹介します。">
   <title>Development | Portfolio</title>
-  <link rel="stylesheet" href="css/style.css?v=20">
+  <link rel="stylesheet" href="css/style.css?v=21">
 </head>
 <body class="home-v2 development-v2">
   <a class="skip-link" href="#main-content">本文へ移動</a>
@@ -55,7 +55,7 @@
     </section>
 
     <section class="v2-section development-projects development-featured" aria-labelledby="development-projects-title">
-      <div class="development-section-heading"><div><p class="v2-section-label">Featured Development</p><h2 id="development-projects-title">開発ケーススタディ</h2></div><p>課題の発見から設計、実装、運用改善までを、代表的な2件で紹介します。</p></div>
+      <div class="development-section-heading"><div><p class="v2-section-label">Featured Development</p><h2 id="development-projects-title">開発ケーススタディ</h2></div><p>課題の発見から設計、実装、運用改善までを、代表的な制作事例で紹介します。</p></div>
 
       <article class="development-case development-case-primary" aria-labelledby="development-career-title">
         <header class="development-case-header"><div><p>Case 01 / Web Application</p><h3 id="development-career-title">Career Track</h3></div><span>継続開発中</span></header>
@@ -73,8 +73,27 @@
         <div class="development-links"><a href="https://pluto007-lab.github.io/career-track/" target="_blank" rel="noopener noreferrer">Demoを見る</a><a href="https://github.com/pluto007-lab/career-track" target="_blank" rel="noopener noreferrer">GitHubを見る</a></div>
       </article>
 
+      <article class="development-case development-case-writing" aria-labelledby="development-writing-title">
+        <header class="development-case-header"><div><p>Case 02 / Management &amp; Analytics</p><h3 id="development-writing-title"><em>Writing管理・</em><em>分析システム</em></h3></div><span>Local Tool</span></header>
+        <p class="development-writing-lead">note記事の掲載・更新、アクセス状況取得、PV・スキ・コメント・スキ率の管理、時系列データ蓄積までを効率化するために制作した自分用の管理・分析システムです。</p>
+        <div class="development-case-intro">
+          <section><p class="development-note-label">Background</p><h4>記事が増えても更新しやすくする</h4><p>タイトル、公開日、画像、紹介文、代表記事、掲載順、アクセス状況を手動で管理する負担が増えたことから制作しました。</p></section>
+          <section><p class="development-note-label">Problem</p><h4>最新値だけでは推移が残らない</h4><p>PV・スキ・コメントを上書きするだけでは、公開後の伸び方や過去の変化を後から確認できませんでした。</p></section>
+          <section><p class="development-note-label">Solution</p><h4>管理・分析・履歴を一つにする</h4><p>記事情報取得、JSON出力、アクセス状況の照合と更新、スキ率計算、時系列snapshot保存までをまとめました。</p></section>
+        </div>
+
+        <!-- 実画像追加時は、Career Trackと同じdevelopment-case-visual内へ管理画面のスクリーンショットを1枚配置します。 -->
+
+        <div class="development-case-body development-writing-body">
+          <section><p class="development-note-label">Design &amp; implementation</p><h4>一つの運用フローとして設計</h4><p class="development-writing-process">記事管理 → note情報取得 → アクセス状況取得 → 指標計算 → 時系列データ蓄積</p><p>Cookieやパスワード、内部APIを使わず、表示済みDOMから必要な情報だけを取得する半自動方式です。</p></section>
+          <section><p class="development-note-label">Technology</p><h4>使用技術</h4><ul class="development-tech-list"><li>HTML</li><li>CSS</li><li>Vanilla JavaScript</li><li>Node.js</li><li>JSON</li><li>Bookmarklet</li><li>Git</li><li>GitHub</li></ul></section>
+          <section><p class="development-note-label">Feature</p><h4>記事管理だけで終わらない</h4><p>noteアクセス状況、PV・スキ・コメント、スキ率、時系列履歴まで扱う「管理＋分析＋履歴蓄積」の仕組みです。</p></section>
+        </div>
+        <div class="development-links"><a href="writing-system.html">詳しく見る</a></div>
+      </article>
+
       <article class="development-case development-case-admin" aria-labelledby="development-admin-title">
-        <header class="development-case-header"><div><p>Case 02 / Management Tool</p><h3 id="development-admin-title">Design Works Admin</h3></div><span>Local Tool</span></header>
+        <header class="development-case-header"><div><p>Case 03 / Management Tool</p><h3 id="development-admin-title">Design Works Admin</h3></div><span>Local Tool</span></header>
         <ol class="development-admin-flow" aria-label="管理画面を制作した流れ"><li><span>01</span>作品数が増える</li><li><span>02</span>JSONの直接編集が煩雑になる</li><li><span>03</span>管理画面を自作する</li><li><span>04</span>追加・編集・公開管理を効率化する</li></ol>
         <div class="development-case-intro development-admin-intro">
           <section><p class="development-note-label">Background</p><h4>制作背景</h4><p>作品数が増え、JSONを直接編集する運用が煩雑になったことをきっかけに、ブラウザ上で作品情報を扱える管理画面を制作しました。</p></section>
