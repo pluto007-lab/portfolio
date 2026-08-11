@@ -8348,3 +8348,20 @@ html {
 @media(min-width:1200px){.home-v2.cafe-home-v2.contact-cafe main,.home-v2.cafe-home-v2.contact-cafe .pc-footer{position:relative;left:108px;width:min(1120px,calc(100% - 272px));margin-right:auto;margin-left:auto}}
 @media(max-width:900px){.contact-cafe .ctc-hero{grid-template-columns:minmax(0,1fr) minmax(270px,.82fr);gap:34px}.contact-cafe .ctc-heading,.contact-cafe .ctc-guide,.contact-cafe .ctc-ready{grid-template-columns:1fr;gap:28px}.contact-cafe .ctc-topics ol{grid-template-columns:repeat(3,1fr)}.contact-cafe .ctc-topics li:nth-child(3){border-right:0}.contact-cafe .ctc-topics li:nth-child(n+4){border-top:1px solid #e5e8eb}}
 @media(max-width:600px){.contact-cafe main{width:min(100% - 28px,1120px);padding-bottom:76px}.contact-cafe .ctc-hero{padding:44px 0 54px;grid-template-columns:1fr}.contact-cafe .ctc-hero h1{font-size:64px}.contact-cafe .ctc-lead{font-size:15px}.contact-cafe .ctc-message{padding:24px 20px;transform:none}.contact-cafe .ctc-section{margin-top:64px}.contact-cafe :is(.ctc-heading h2,.ctc-guide h2,.ctc-ready h2){font-size:34px}.contact-cafe .ctc-method-grid{grid-template-columns:1fr}.contact-cafe .ctc-method-grid article,.contact-cafe .ctc-method-grid article:first-child,.contact-cafe .ctc-method-grid article:last-child{min-height:0;padding:28px 0;border-right:0;border-bottom:1px solid #e5e8eb}.contact-cafe .ctc-method-grid h3{margin-top:26px;font-size:21px}.contact-cafe .ctc-method-grid a{font-size:11px}.contact-cafe .ctc-topics ol{grid-template-columns:1fr}.contact-cafe .ctc-topics li,.contact-cafe .ctc-topics li:first-child,.contact-cafe .ctc-topics li:last-child{display:grid;min-height:0;padding:20px 8px;grid-template-columns:48px 1fr;align-items:center;border-top:0;border-right:0;border-bottom:1px solid #e5e8eb}.contact-cafe .ctc-topics li span{margin:0;font-size:16px}.contact-cafe .ctc-guide{margin-top:68px;padding:42px 0}.contact-cafe .ctc-ready{margin-top:64px;padding:42px 0}.contact-cafe .ctc-ready nav a{grid-template-columns:42px 1fr}.contact-cafe .ctc-ready nav small{grid-column:2;margin-top:5px;text-align:left}.contact-cafe .ctc-end{gap:10px;letter-spacing:.08em}}
+
+/* Portfolio Cafe pre-release consistency fixes */
+.websites-cafe .wsc-hero h1,
+.development-cafe .dvc-hero h1 { color:#111111; }
+.web-apps-cafe .wac-category-end,
+.websites-cafe .wsc-category-end { display:flex; align-items:center; gap:16px; color:#317fab; font:700 8px/1.4 "Manrope",sans-serif; letter-spacing:.14em; }
+.web-apps-cafe .wac-category-end { margin-top:40px; }
+.websites-cafe .wsc-category-end { margin-top:34px; }
+.web-apps-cafe .wac-category-end i,
+.websites-cafe .wsc-category-end i { height:1px; flex:1; background:#78bce8; }
+.web-apps-cafe .wac-category-end + .wac-next { margin-top:52px; }
+.websites-cafe .wsc-category-end + .wsc-next { margin-top:48px; }
+.planning-cafe .plc-category-end { margin-top:16px; }
+.planning-cafe .plc-category-end + .plc-next { margin-top:56px; }
+@media (min-width:601px) and (max-width:900px) {
+  .development-cafe .dvc-hero h1 { font-size:51px; }
+}
