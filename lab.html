@@ -1,102 +1,14 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="好奇心、実験、思考、プロトタイプを、完成前の過程も含めて残すPortfolio Labです。">
-  <title>Lab | Portfolio</title>
-  <link rel="stylesheet" href="css/style.css?v=19">
-</head>
-<body class="home-v2 lab-v2">
-  <a class="skip-link" href="#main-content">本文へ移動</a>
-
-  <header class="header">
-    <div class="header-inner">
-      <a href="index.html" class="logo" aria-label="Portfolio ホーム">Portfolio</a>
-      <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-navigation" aria-label="メニューを開く">
-        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
-      </button>
-      <nav id="mobile-navigation" class="site-nav" aria-label="メインナビゲーション">
-        <button class="mobile-nav-close" type="button" aria-label="メニューを閉じる"><span aria-hidden="true">×</span></button>
-        <div class="site-nav-group">
-          <p class="site-nav-group-label">Overview</p>
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-        </div>
-        <div class="site-nav-group">
-          <p class="site-nav-group-label">Works</p>
-          <a href="web-apps.html">Web Apps</a>
-          <a href="websites.html">Websites</a>
-          <a href="design.html">Design</a>
-          <a href="development.html">Development</a>
-          <a href="planning.html">Planning</a>
-          <a href="writing.html">Writing</a>
-          <a href="lab.html" aria-current="page">Lab</a>
-        </div>
-        <div class="site-nav-group">
-          <p class="site-nav-group-label">Connect</p>
-          <a href="contact.html">Contact</a>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <div class="mobile-nav-overlay" aria-hidden="true"></div>
-
-  <main id="main-content">
-    <section class="lab-hero" aria-labelledby="lab-title">
-      <nav class="v2-breadcrumb" aria-label="パンくずリスト"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Lab</span></nav>
-      <div class="lab-hero-layout">
-        <div>
-          <p class="v2-section-label">Curiosity / Tests / Notes</p>
-          <h1 id="lab-title">Lab</h1>
-          <p class="lab-hero-lead">思いついたことを、すぐに試してみる。<br>完成品だけでなく、途中のアイデアや実験も残しています。</p>
-        </div>
-        <div class="lab-observation-board" aria-hidden="true">
-          <p>OBSERVATION LOG</p>
-          <div><span>?</span><i></i><strong>TRY</strong><i></i><span>↻</span></div>
-          <small>unfinished / learning / next test</small>
-        </div>
-      </div>
-    </section>
-
-    <section class="v2-section lab-tiny" aria-labelledby="tiny-title">
-      <div class="lab-section-heading"><p class="v2-section-label">Small Tests</p><h2 id="tiny-title">Tiny Experiments</h2><p>小さな疑問や思いつきを、完成度を求めすぎずに試すための棚です。結果だけでなく、途中で分かったことも残します。</p></div>
-      <div class="lab-tiny-strip" aria-label="小さな実験の進め方"><span>気づく</span><b aria-hidden="true">→</b><span>試す</span><b aria-hidden="true">→</b><span>観察する</span><b aria-hidden="true">→</b><span>残す</span></div>
-    </section>
-
-    <section class="v2-section lab-ideas" aria-labelledby="ideas-title">
-      <div class="lab-section-heading"><p class="v2-section-label">Idea Board</p><h2 id="ideas-title">思考途中のアイデア</h2><p>構想として確認できているものを、そのまま研究ノートへ留めています。</p></div>
-      <div class="lab-idea-grid">
-        <article><div><span>Idea</span><small>01</small></div><h3>Hackboard</h3><p>構想の記録。詳細は検討中です。</p></article>
-        <article><div><span>Idea</span><small>02</small></div><h3>占い管理アプリ</h3><p>構想の記録。詳細は検討中です。</p></article>
-        <article><div><span>Idea</span><small>03</small></div><h3>交通費精算アプリ</h3><p>構想の記録。詳細は検討中です。</p></article>
-        <article><div><span>Idea</span><small>04</small></div><h3>人生研究室</h3><p>構想の記録。詳細は検討中です。</p></article>
-        <article><div><span>Idea</span><small>05</small></div><h3>Tiny Experiments</h3><p>構想の記録。詳細は検討中です。</p></article>
-      </div>
-      <p class="lab-status-key"><span>Idea</span> 構想段階　<span>Research</span> 調査中　<span>Prototype</span> 試作中</p>
-    </section>
-
-    <section class="v2-section lab-log" aria-labelledby="log-title">
-      <div class="lab-section-heading"><p class="v2-section-label">Experiment Log</p><h2 id="log-title">試したことの記録</h2><p>完成したかどうかではなく、何を試し、次へ何を残したかを記録します。</p></div>
-      <ol class="lab-log-list">
-        <li><time>LOG 01</time><div><h3>Portfolio v2制作</h3><p>カテゴリごとに役割と世界観を分ける、複数ページ構成を試しています。</p></div><span>Testing</span></li>
-        <li><time>LOG 02</time><div><h3>Design作品管理画面</h3><p>作品情報の編集、表示管理、並べ替え、書き出しをブラウザ上で行う方法を試しました。</p></div><span>Built</span></li>
-        <li><time>LOG 03</time><div><h3>JSONによる作品管理</h3><p>表示データとHTMLを分け、作品が増えても管理しやすい構造を試しました。</p></div><span>Testing</span></li>
-      </ol>
-    </section>
-
-    <section class="v2-section lab-research" aria-labelledby="research-title">
-      <div class="lab-section-heading"><p class="v2-section-label">Current Research</p><h2 id="research-title">現在、観察していること</h2><p>制作や学習の中で、継続して考えているテーマです。</p></div>
-      <ul><li><span>01</span>AI活用</li><li><span>02</span>UX</li><li><span>03</span>情報整理</li><li><span>04</span>React</li><li><span>05</span>TypeScript</li></ul>
-    </section>
-
-    <section class="v2-section lab-philosophy" aria-labelledby="philosophy-title">
-      <div><p class="v2-section-label">Lab Philosophy</p><h2 id="philosophy-title">失敗も、次の実験に残る成果。</h2></div>
-      <p>完成だけをゴールにせず、試した過程と分かったことを残します。作って終わりではなく、観察して学び、次の改善へつなげます。</p>
-    </section>
-  </main>
-
-  <footer class="footer"><div class="v2-footer-inner"><div><a href="index.html" class="v2-footer-logo">Portfolio</a><p>Building, learning, and experimenting.</p><p class="lab-footer-ja">つくり、学び、実験する。</p></div><div class="v2-footer-links" aria-label="外部リンク"><a href="mailto:mfmf0707@gmail.com">Email</a><a href="https://github.com/pluto007-lab" target="_blank" rel="noopener noreferrer">GitHub</a></div></div><p class="v2-copyright">© 2026 Portfolio</p><a href="#" class="back-to-top" aria-label="ページ上部へ戻る">↑</a></footer>
-  <script src="js/script.js?v=10"></script>
-</body>
-</html>
+<html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="好奇心、実験、思考、プロトタイプを、完成前の過程も含めて残すPortfolio Labです。"><title>Lab | Portfolio Cafe</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;family=Noto+Sans+JP:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css?v=30"></head>
+<body class="home-v2 cafe-home-v2 lab-v2 lab-cafe"><a class="skip-link" href="#main-content">本文へ移動</a>
+<header class="header pc-header"><div class="header-inner"><a href="index.html" class="logo pc-nav-brand" aria-label="Portfolio Cafe ホーム">portfolio</a><p class="pc-header-note">PORTFOLIO CAFE <span>／</span> OPEN DAILY</p><div class="pc-receipt-head" aria-hidden="true"><strong>PORTFOLIO CAFE</strong><span>ORDER / NAV-01</span><small>10 ITEMS</small></div><button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-navigation" aria-label="メニューを開く"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></button><nav id="mobile-navigation" class="site-nav" aria-label="メインナビゲーション"><button class="mobile-nav-close" type="button" aria-label="メニューを閉じる"><span aria-hidden="true">×</span></button><div class="site-nav-group"><p class="site-nav-group-label">Overview</p><a href="index.html"><span>01</span>Home</a><a href="about.html"><span>02</span>About</a></div><div class="site-nav-group"><p class="site-nav-group-label">Works</p><a href="web-apps.html"><span>03</span>Web Apps</a><a href="websites.html"><span>04</span>Websites</a><a href="design.html"><span>05</span>Design</a><a href="development.html"><span>06</span>Development</a><a href="planning.html"><span>07</span>Planning</a><a href="writing.html"><span>08</span>Writing</a><a href="lab.html" aria-current="page"><span>09</span>Lab</a></div><div class="site-nav-group"><p class="site-nav-group-label">Connect</p><a href="contact.html"><span>10</span>Contact</a></div></nav><div class="pc-receipt-tail" aria-hidden="true"><span>OPEN DAILY</span><strong>MADE FRESH,<br>BUILT DAILY.</strong><small>THANK YOU / 2026</small></div></div></header><div class="mobile-nav-overlay" aria-hidden="true"></div>
+<main id="main-content">
+<section class="lbc-hero" id="top" aria-labelledby="lab-title"><div><p class="lbc-eye">TEST COUNTER / LAB-07</p><h1 id="lab-title">Lab</h1><p class="lbc-lead">思いついたことを、すぐに試してみる。<br>完成品だけでなく、途中のアイデアや実験も残しています。</p></div><aside class="lbc-ticket" aria-label="TEST BATCH 試作票"><header><span>TEST BATCH</span><strong>LAB-07</strong></header><p>SMALL BATCH / 01</p><h2>IDEA</h2><ol><li><span>01</span>TRY</li><li><span>02</span>CHECK</li><li><span>03</span>NEXT</li></ol><footer>UNFINISHED / LEARNING / NEXT TEST</footer></aside></section>
+<section class="lbc-section lbc-tiny" aria-labelledby="tiny-title"><header class="lbc-heading"><div><p class="lbc-eye">SMALL TESTS / TEST BATCH</p><h2 id="tiny-title">Tiny Experiments</h2></div><p>小さな疑問や思いつきを、完成度を求めすぎずに試すための棚です。結果だけでなく、途中で分かったことも残します。</p></header><ol><li><span>01 / NOTICE</span><strong>気づく</strong></li><li><span>02 / TRY</span><strong>試す</strong></li><li><span>03 / OBSERVE</span><strong>観察する</strong></li><li><span>04 / RECORD</span><strong>残す</strong></li></ol></section>
+<section class="lbc-section lbc-ideas" aria-labelledby="ideas-title"><header class="lbc-heading"><div><p class="lbc-eye">TEST BATCH / IDEA QUEUE</p><h2 id="ideas-title">思考途中のアイデア</h2></div><p>構想として確認できているものを、そのまま研究ノートへ留めています。</p></header><div><article><span>01</span><h3>Hackboard</h3><p>構想の記録。詳細は検討中です。</p><small>STATUS / IDEA</small></article><article><span>02</span><h3>占い管理アプリ</h3><p>構想の記録。詳細は検討中です。</p><small>STATUS / IDEA</small></article><article><span>03</span><h3>交通費精算アプリ</h3><p>構想の記録。詳細は検討中です。</p><small>STATUS / IDEA</small></article><article><span>04</span><h3>人生研究室</h3><p>構想の記録。詳細は検討中です。</p><small>STATUS / IDEA</small></article><article><span>05</span><h3>Tiny Experiments</h3><p>構想の記録。詳細は検討中です。</p><small>STATUS / IDEA</small></article></div><p class="lbc-key"><span>IDEA</span> 構想段階　<span>RESEARCH</span> 調査中　<span>PROTOTYPE</span> 試作中</p></section>
+<section class="lbc-section lbc-log" aria-labelledby="log-title"><header class="lbc-heading"><div><p class="lbc-eye">EXPERIMENT LOG</p><h2 id="log-title">試したことの記録</h2></div><p>完成したかどうかではなく、何を試し、次へ何を残したかを記録します。</p></header><ol><li><time>LOG 01</time><div><h3>Portfolio v2制作</h3><p>カテゴリごとに役割と世界観を分ける、複数ページ構成を試しています。</p></div><span>STATUS / TESTING</span></li><li><time>LOG 02</time><div><h3>Design作品管理画面</h3><p>作品情報の編集、表示管理、並べ替え、書き出しをブラウザ上で行う方法を試しました。</p></div><span>STATUS / BUILT</span></li><li><time>LOG 03</time><div><h3>JSONによる作品管理</h3><p>表示データとHTMLを分け、作品が増えても管理しやすい構造を試しました。</p></div><span>STATUS / TESTING</span></li></ol></section>
+<section class="lbc-section lbc-observation" aria-labelledby="research-title"><header class="lbc-heading"><div><p class="lbc-eye">CURRENT OBSERVATION</p><h2 id="research-title">現在、観察していること</h2></div><p>制作や学習の中で、継続して考えているテーマです。</p></header><ul><li><span>01</span>AI活用</li><li><span>02</span>UX</li><li><span>03</span>情報整理</li><li><span>04</span>React</li><li><span>05</span>TypeScript</li></ul></section>
+<section class="lbc-philosophy" aria-labelledby="philosophy-title"><div><p class="lbc-eye">LAB PHILOSOPHY</p><h2 id="philosophy-title">失敗も、<br>次の実験に残る成果。</h2></div><p>完成だけをゴールにせず、試した過程と分かったことを残します。作って終わりではなく、観察して学び、次の改善へつなげます。</p></section><div class="lbc-end" aria-hidden="true"><span>LAB / END</span><i></i><span>LAB-07 COMPLETE</span></div>
+<section class="lbc-next" aria-labelledby="next-title"><div><p class="lbc-eye">COUNTER / NEXT</p><h2 id="next-title">NEXT ORDER</h2><p>完成した制作物と、次のカテゴリへ続きます。</p></div><nav aria-label="次に見るページ"><a href="web-apps.html"><span>APP-01</span><strong>Web Apps</strong><small>DRINKS →</small></a><a href="development.html"><span>DEV-04</span><strong>Development</strong><small>BEANS →</small></a><a href="planning.html"><span>PLN-05</span><strong>Planning</strong><small>ORDER SHEET →</small></a><a href="contact.html"><span>10</span><strong>Contact</strong><small>COUNTER →</small></a></nav></section>
+</main>
+<footer class="footer pc-footer"><div><div class="pc-signature-slot" aria-label="Portfolio Cafe signature logo area"><img class="pc-signature-logo" src="img/portfolio-cafe/portfolio-cafe-signature-logo.png" alt="Portfolio — MADE FRESH, BUILT DAILY." width="980" height="447" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>PORTFOLIO / MADE FRESH, BUILT DAILY.</span></div><p class="pc-footer-thanks">THANK YOU.</p><p>OPEN DAILY.</p></div><nav aria-label="連絡先と外部リンク"><a href="mailto:mfmf0707@gmail.com">Email</a><a href="https://github.com/pluto007-lab" target="_blank" rel="noopener noreferrer">GitHub</a><a href="contact.html">Contact</a></nav><img class="pc-thank-you-tag" src="img/portfolio-cafe/portfolio-cafe-thank-you-tag.png" alt="PORTFOLIO CAFE THANK YOU tag" width="1086" height="1448"><p class="pc-footer-copy">© 2026 PORTFOLIO CAFE</p><a href="#top" class="back-to-top" aria-label="ページ上部へ戻る">↑</a></footer><script src="js/script.js?v=10"></script></body></html>
