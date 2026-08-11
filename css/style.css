@@ -8150,3 +8150,119 @@ html {
 .websites-cafe .wsc-menu-end { display:flex; margin-top:34px; align-items:center; gap:16px; color:#317fab; font:700 8px/1.4 "Manrope",sans-serif; letter-spacing:.14em; }
 .websites-cafe .wsc-menu-end i { height:1px; flex:1; background:#78bce8; }
 .websites-cafe .wsc-menu-end + .wsc-rules { margin-top:48px; }
+
+/* Portfolio Cafe Design — display shelf / editorial gallery */
+.design-cafe { background:#fff; color:#111; font-family:"Manrope","Noto Sans JP",sans-serif; }
+.design-cafe main { width:min(100% - 48px,1120px); margin:0 auto; padding:18px 0 96px; }
+.design-cafe .dsc-eyebrow { color:#317fab; font:700 8px/1.4 "Manrope",sans-serif; letter-spacing:.14em; }
+.design-cafe .dsc-hero { display:grid; padding:26px 0 38px; grid-template-columns:minmax(0,1.1fr) minmax(330px,.9fr); align-items:center; gap:46px; border-bottom:1px solid #111; }
+.design-cafe .dsc-hero h1 { margin-top:18px; color:#111; font:600 clamp(68px,8vw,104px)/.84 "Archivo",sans-serif; letter-spacing:-.065em; }
+.design-cafe .dsc-hero-lead { margin-top:34px; font-family:"Archivo","Noto Sans JP",sans-serif; font-size:clamp(22px,2.5vw,32px); font-weight:600; line-height:1.45; letter-spacing:-.035em; }
+.design-cafe .dsc-hero-copy { max-width:550px; margin-top:24px; color:#505960; font-size:12px; line-height:2; }
+.design-cafe .dsc-role { margin-top:24px; padding-top:16px; border-top:1px solid #e5e8eb; font:700 9px/1.4 "Manrope",sans-serif; letter-spacing:.14em; }
+.design-cafe .dsc-hero figure { margin:0; }
+.design-cafe .dsc-hero figure img { display:block; width:100%; aspect-ratio:1; object-fit:contain; }
+.design-cafe .dsc-hero figcaption { display:flex; padding-top:12px; justify-content:space-between; color:#6b747a; font:700 8px/1.4 "Manrope",sans-serif; letter-spacing:.12em; }
+.design-cafe .dsc-hero figcaption strong { padding:5px 8px; background:#eff8fd; color:#257aa9; }
+.design-cafe .dsc-section { margin-top:84px; }
+.design-cafe .dsc-section-heading { display:grid; padding-bottom:30px; grid-template-columns:minmax(500px,1.3fr) minmax(240px,.7fr); align-items:end; gap:42px; border-bottom:1px solid #111; }
+.design-cafe .dsc-section-heading h2,.design-cafe .dsc-notes h2,.design-cafe .dsc-tools h2,.design-cafe .dsc-next h2 { margin-top:10px; color:#111; font:600 clamp(42px,5vw,60px)/1 "Archivo","Noto Sans JP",sans-serif; letter-spacing:-.05em; }
+.design-cafe .dsc-section-heading > p { color:#596168; font-size:12px; line-height:1.9; }
+.design-cafe .dsc-categories nav { border-bottom:1px solid #111; }
+.design-cafe .dsc-categories nav a { display:grid; min-height:118px; padding:24px 8px; grid-template-columns:46px minmax(190px,.55fr) minmax(0,1.25fr) 190px; align-items:center; gap:24px; border-bottom:1px solid #e5e8eb; color:#111; }
+.design-cafe .dsc-categories nav a:last-child { border-bottom:0; }
+.design-cafe .dsc-categories nav span { color:#317fab; font:700 10px/1.4 "Manrope",sans-serif; }
+.design-cafe .dsc-categories nav strong { font:600 22px/1.2 "Archivo",sans-serif; letter-spacing:-.03em; }
+.design-cafe .dsc-categories nav p { color:#505960; font-size:11px; line-height:1.85; }
+.design-cafe .dsc-categories nav small { color:#317fab; font:700 8px/1.5 "Manrope",sans-serif; letter-spacing:.1em; text-align:right; }
+.design-cafe .design-gallery { margin-top:52px; }
+.design-cafe .design-featured-works { margin:0; padding:0; border:0; border-radius:0; background:none; box-shadow:none; }
+.design-cafe .design-gallery-group-heading { display:flex; padding-bottom:18px; align-items:end; justify-content:space-between; border-bottom:1px solid #e5e8eb; }
+.design-cafe .design-gallery-group-label,.design-cafe .design-gallery-group-count { color:#317fab; font:700 8px/1.4 "Manrope",sans-serif; letter-spacing:.12em; }
+.design-cafe .design-gallery-group-heading h3 { margin-top:8px; font:600 24px/1.2 "Archivo","Noto Sans JP",sans-serif; }
+.design-cafe .design-featured-grid { display:grid; grid-template-columns:repeat(12,minmax(0,1fr)); gap:66px 26px; }
+.design-cafe .design-gallery-card { min-width:0; background:none; border:0; border-radius:0; box-shadow:none; }
+.design-cafe .design-featured-grid .design-gallery-card:nth-child(1) { grid-column:1/9; }
+.design-cafe .design-featured-grid .design-gallery-card:nth-child(2) { grid-column:5/13; }
+.design-cafe .design-featured-grid .design-gallery-card:nth-child(3) { grid-column:1/9; }
+.design-cafe .design-gallery-image { margin:0; overflow:hidden; background:#f4f5f5; border-radius:0; }
+.design-cafe .design-gallery-image img { display:block; width:100%; height:auto; max-height:680px; object-fit:contain; }
+.design-cafe .design-gallery-content { display:grid; padding:18px 0 0; grid-template-columns:minmax(0,1fr) auto; gap:8px 30px; }
+.design-cafe .design-gallery-category { color:#317fab; font:700 8px/1.4 "Manrope",sans-serif; letter-spacing:.12em; }
+.design-cafe .design-gallery-content h4 { grid-column:1/-1; color:#111; font:600 clamp(26px,3.5vw,42px)/1.1 "Archivo","Noto Sans JP",sans-serif; letter-spacing:-.04em; }
+.design-cafe .design-gallery-meta,.design-cafe .design-gallery-description,.design-cafe .design-gallery-tags { grid-column:1/-1; color:#596168; font-size:10px; line-height:1.8; }
+.design-cafe .design-gallery-meta { display:flex; margin-top:6px; gap:24px; }
+.design-cafe .design-gallery-tags { display:flex; margin:0; padding:0; flex-wrap:wrap; gap:8px 16px; list-style:none; }
+.design-cafe .design-gallery-tags li { padding:0; background:none; }
+.design-cafe .design-other-works { margin-top:64px; }
+.design-cafe .design-gallery-group { margin-top:54px; }
+.design-cafe .design-gallery-group-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:42px 22px; }
+.design-cafe .design-gallery-group-grid .design-gallery-content h4 { font-size:22px; }
+.design-cafe .design-gallery-controls { display:flex; margin-top:46px; padding-top:24px; align-items:center; justify-content:space-between; border-top:1px solid #111; }
+.design-cafe .design-gallery-controls p { color:#596168; font-size:10px; }
+.design-cafe .design-gallery-toggle { padding:10px 0 5px; border:0; border-bottom:1px solid #78bce8; border-radius:0; background:none; color:#111; font:700 10px/1.4 "Manrope","Noto Sans JP",sans-serif; }
+.design-cafe .dsc-notes { display:grid; padding:50px 0; grid-template-columns:minmax(320px,.8fr) minmax(0,1.2fr); gap:64px; border-top:2px solid #78bce8; border-bottom:1px solid #111; }
+.design-cafe .dsc-notes header > p:last-child { max-width:310px; margin-top:20px; color:#596168; font-size:11px; line-height:1.85; }
+.design-cafe .dsc-notes ol { margin:0; padding:0; list-style:none; border-top:1px solid #e5e8eb; }
+.design-cafe .dsc-notes li { display:grid; min-height:58px; padding:14px 8px; grid-template-columns:42px minmax(0,1fr); align-items:center; border-bottom:1px solid #e5e8eb; }
+.design-cafe .dsc-notes li span { color:#317fab; font:700 9px/1.4 "Manrope",sans-serif; }
+.design-cafe .dsc-notes li p { font-size:12px; font-weight:500; }
+.design-cafe .dsc-tools { display:grid; margin-top:78px; padding:38px 0; grid-template-columns:minmax(260px,.72fr) minmax(0,1.28fr); gap:70px; border-top:1px solid #111; border-bottom:1px solid #111; }
+.design-cafe .dsc-tools h2 { font-size:38px; }
+.design-cafe .dsc-tools ul { display:grid; margin:0; padding:0; grid-template-columns:repeat(2,minmax(0,1fr)); list-style:none; }
+.design-cafe .dsc-tools li { display:grid; padding:14px 8px; grid-template-columns:48px 1fr; align-items:center; border-bottom:1px solid #e5e8eb; }
+.design-cafe .dsc-tools li span { color:#317fab; font:700 10px/1.4 "Manrope",sans-serif; }
+.design-cafe .dsc-tools li strong { font-size:11px; }
+.design-cafe .dsc-display-end { display:flex; margin-top:34px; align-items:center; gap:16px; color:#317fab; font:700 8px/1.4 "Manrope",sans-serif; letter-spacing:.14em; }
+.design-cafe .dsc-display-end i { height:1px; flex:1; background:#78bce8; }
+.design-cafe .dsc-display-end + .dsc-next { margin-top:48px; }
+.design-cafe .dsc-next { display:grid; padding:48px 0; grid-template-columns:minmax(270px,.72fr) minmax(0,1.28fr); align-items:center; gap:72px; border-top:2px solid #78bce8; border-bottom:1px solid #111; }
+.design-cafe .dsc-next > div > p:last-child { margin-top:18px; color:#596168; font-size:12px; line-height:1.9; }
+.design-cafe .dsc-next nav { display:grid; }
+.design-cafe .dsc-next nav a { display:grid; min-height:58px; padding:14px 8px; grid-template-columns:64px minmax(0,1fr) auto; align-items:center; gap:14px; border-bottom:1px solid #e5e8eb; color:#111; }
+.design-cafe .dsc-next nav a:first-child { border-top:1px solid #e5e8eb; }
+.design-cafe .dsc-next nav a span,.design-cafe .dsc-next nav a small { color:#317fab; font:700 8px/1.4 "Manrope",sans-serif; letter-spacing:.1em; }
+.design-cafe .dsc-next nav a strong { font-size:12px; }
+@media (min-width:1200px) { .home-v2.cafe-home-v2.design-cafe main,.home-v2.cafe-home-v2.design-cafe .pc-footer { position:relative; left:108px; width:min(1120px,calc(100% - 272px)); margin-right:auto; margin-left:auto; } }
+@media (max-width:1199px) { .design-cafe main { width:min(100% - 40px,1100px); padding-top:12px; } .design-cafe .dsc-hero { grid-template-columns:minmax(360px,1.05fr) minmax(280px,.95fr); gap:34px; } }
+@media (max-width:900px) {
+  .design-cafe .dsc-section-heading { grid-template-columns:1fr; gap:20px; }
+  .design-cafe .dsc-categories nav a { grid-template-columns:42px minmax(180px,.65fr) minmax(0,1.35fr); }
+  .design-cafe .dsc-categories nav small { grid-column:2/-1; text-align:left; }
+  .design-cafe .design-featured-grid { display:grid; grid-template-columns:1fr; gap:54px; }
+  .design-cafe .design-featured-grid .design-gallery-card:nth-child(n) { grid-column:1; }
+  .design-cafe .design-gallery-group-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .design-cafe .dsc-notes,.design-cafe .dsc-tools,.design-cafe .dsc-next { grid-template-columns:1fr; gap:34px; }
+}
+@media (max-width:600px) {
+  .design-cafe main { width:min(100% - 28px,1100px); padding-bottom:76px; }
+  .design-cafe .dsc-hero { padding:44px 0 54px; grid-template-columns:1fr; gap:30px; }
+  .design-cafe .dsc-hero h1 { font-size:clamp(58px,17vw,72px); }
+  .design-cafe .dsc-hero-lead { font-size:21px; }
+  .design-cafe .dsc-hero figure { width:min(100%,350px); justify-self:center; }
+  .design-cafe .dsc-section { margin-top:72px; }
+  .design-cafe .dsc-section-heading h2,.design-cafe .dsc-notes h2,.design-cafe .dsc-next h2 { font-size:38px; }
+  .design-cafe .dsc-categories nav a { padding:22px 0; grid-template-columns:38px minmax(0,1fr); gap:12px; }
+  .design-cafe .dsc-categories nav p,.design-cafe .dsc-categories nav small { grid-column:2; }
+  .design-cafe .design-gallery-content { grid-template-columns:1fr; }
+  .design-cafe .design-gallery-content h4 { font-size:28px; }
+  .design-cafe .design-gallery-group-grid { grid-template-columns:1fr; }
+  .design-cafe .design-gallery-controls { align-items:flex-start; flex-direction:column; gap:18px; }
+  .design-cafe .dsc-notes,.design-cafe .dsc-next { padding:38px 0; }
+  .design-cafe .dsc-tools ul { grid-template-columns:1fr; }
+  .design-cafe .dsc-next nav a { grid-template-columns:52px minmax(0,1fr); }
+  .design-cafe .dsc-next nav small { grid-column:2; }
+}
+
+/* Design selected works — compact editorial rhythm */
+.design-cafe .design-featured-works > .design-gallery-group-heading { display:none; }
+.design-cafe .design-featured-grid { margin-top:0; }
+@media (min-width:901px) {
+  .design-cafe .design-featured-grid { row-gap:16px; }
+  .design-cafe .design-featured-grid .design-gallery-content { padding-top:8px; gap:5px 24px; }
+  .design-cafe .design-featured-grid .design-gallery-category { min-height:0; margin:0; padding:0; background:none; }
+  .design-cafe .design-featured-grid .design-gallery-content h3 { display:block; min-height:0; margin:0; overflow:visible; color:#111; font:600 clamp(26px,3.5vw,42px)/1.1 "Archivo","Noto Sans JP",sans-serif; letter-spacing:-.04em; -webkit-line-clamp:unset; }
+  .design-cafe .design-featured-grid .design-gallery-content dl { grid-column:1; margin:3px 0 0; }
+  .design-cafe .design-featured-grid .design-gallery-content dl > div { min-height:0; padding:5px 0; }
+  .design-cafe .design-featured-grid .design-gallery-tags { grid-column:2; grid-row:2; max-height:none; margin:2px 0 0; padding-top:0; align-self:end; }
+}
