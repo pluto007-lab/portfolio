@@ -7815,3 +7815,142 @@ html {
   }
 
 }
+
+/* Portfolio Cafe Web Apps — product catalog */
+.home-v2.cafe-home-v2.web-apps-cafe { background:#fff; color:#111; font-family:"Manrope","Noto Sans JP",sans-serif; }
+.web-apps-cafe main { padding:0 0 104px; }
+.web-apps-cafe main section,.web-apps-cafe main article { scroll-margin-top:32px; }
+.web-apps-cafe .wac-eyebrow,.web-apps-cafe .wac-spec-label { color:#327fab; font:700 9px/1.4 "Manrope",sans-serif; letter-spacing:.18em; }
+.web-apps-cafe .wac-hero { display:grid; margin-top:18px; padding:44px 0 58px; grid-template-columns:minmax(420px,1.05fr) minmax(320px,.95fr); align-items:center; gap:54px; border-bottom:1px solid #111; }
+.web-apps-cafe .wac-hero h1 { margin-top:12px; color:#111; font-family:"Archivo",sans-serif; font-size:clamp(70px,8vw,108px); font-weight:600; line-height:.84; letter-spacing:-.065em; }
+.web-apps-cafe .wac-hero-lead { margin-top:36px; font-size:clamp(22px,2.7vw,34px); font-weight:600; line-height:1.55; letter-spacing:.045em; }
+.web-apps-cafe .wac-hero-description { max-width:560px; margin-top:22px; color:#505960; font-size:12px; line-height:2; }
+.web-apps-cafe .wac-role { margin-top:24px; padding-top:16px; border-top:1px solid #e5e8eb; font:700 9px/1.4 "Manrope",sans-serif; letter-spacing:.14em; }
+.web-apps-cafe .wac-hero-product { position:relative; margin:0; }
+.web-apps-cafe .wac-hero-product img { width:100%; aspect-ratio:1; object-fit:contain; }
+.web-apps-cafe .wac-hero-product figcaption { display:flex; padding-top:12px; align-items:center; justify-content:space-between; color:#6b747a; font:700 8px/1.4 "Manrope",sans-serif; letter-spacing:.12em; }
+.web-apps-cafe .wac-hero-product figcaption strong { padding:5px 8px; background:#eff8fd; color:#257aa9; }
+.web-apps-cafe .wac-featured { margin-top:86px; }
+.web-apps-cafe .wac-featured-heading { display:grid; padding-bottom:32px; grid-template-columns:minmax(0,1.2fr) minmax(280px,.8fr); align-items:end; gap:64px; border-bottom:1px solid #111; }
+.web-apps-cafe .wac-product-code { margin-top:26px; color:#6b747a; font:700 9px/1.4 "Manrope",sans-serif; letter-spacing:.14em; }
+.web-apps-cafe .wac-featured-heading h2 { margin-top:5px; color:#111; font-family:"Archivo","Noto Sans JP",sans-serif; font-size:clamp(54px,7vw,82px); font-weight:600; line-height:.95; letter-spacing:-.055em; }
+.web-apps-cafe .wac-product-type { margin-top:12px; font:700 9px/1.4 "Manrope",sans-serif; letter-spacing:.15em; }
+.web-apps-cafe .wac-featured-heading > div:last-child strong { display:inline-block; padding:6px 9px; background:#eff8fd; color:#257aa9; font:700 8px/1.4 "Manrope",sans-serif; letter-spacing:.12em; }
+.web-apps-cafe .wac-featured-heading > div:last-child p { margin-top:15px; color:#505960; font-size:12px; line-height:1.95; }
+.web-apps-cafe .wac-spec-trio { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); border-bottom:1px solid #111; }
+.web-apps-cafe .wac-spec-trio > div { min-height:230px; padding:32px 28px; border-right:1px solid #e5e8eb; }
+.web-apps-cafe .wac-spec-trio > div:first-child { padding-left:0; }
+.web-apps-cafe .wac-spec-trio > div:last-child { padding-right:0; border-right:0; }
+.web-apps-cafe .wac-spec-trio h3,.web-apps-cafe .wac-detail-pair h3,.web-apps-cafe .wac-spec-footer h3 { margin-top:12px; color:#111; font-family:"Archivo","Noto Sans JP",sans-serif; font-size:22px; font-weight:600; line-height:1.35; }
+.web-apps-cafe .wac-spec-trio > div > p:last-child,.web-apps-cafe .wac-spec-footer p,.web-apps-cafe .wac-spec-footer li { margin-top:16px; color:#505960; font-size:11px; line-height:1.9; }
+.web-apps-cafe .wac-featured-screen { margin:64px 0 0; }
+.web-apps-cafe .wac-featured-screen figcaption { display:flex; padding-bottom:14px; justify-content:space-between; border-bottom:1px solid #e5e8eb; color:#317fab; font:700 8px/1.4 "Manrope",sans-serif; letter-spacing:.14em; }
+.web-apps-cafe .wac-featured-screen img { display:block; width:100%; max-height:720px; margin-top:22px; object-fit:contain; object-position:top center; }
+.web-apps-cafe .wac-detail-pair { display:grid; margin-top:64px; grid-template-columns:repeat(2,minmax(0,1fr)); border-top:1px solid #111; border-bottom:1px solid #111; }
+.web-apps-cafe .wac-detail-pair > div { padding:36px 38px 40px; border-right:1px solid #e5e8eb; }
+.web-apps-cafe .wac-detail-pair > div:first-child { padding-left:0; }
+.web-apps-cafe .wac-detail-pair > div:last-child { padding-right:0; border-right:0; }
+.web-apps-cafe .wac-detail-pair ul { margin-top:24px; padding:0; list-style:none; }
+.web-apps-cafe .wac-detail-pair li { padding:10px 0 10px 18px; border-bottom:1px solid #e5e8eb; color:#505960; font-size:11px; line-height:1.75; }
+.web-apps-cafe .wac-detail-pair li::before { margin-left:-18px; padding-right:10px; color:#78bce8; content:"—"; }
+.web-apps-cafe .wac-spec-footer { display:grid; margin-top:64px; grid-template-columns:repeat(3,minmax(0,1fr)); border-top:1px solid #111; border-bottom:1px solid #111; }
+.web-apps-cafe .wac-spec-footer > div { min-height:300px; padding:34px 28px; border-right:1px solid #e5e8eb; }
+.web-apps-cafe .wac-spec-footer > div:first-child { padding-left:0; }
+.web-apps-cafe .wac-spec-footer > div:last-child { padding-right:0; border-right:0; }
+.web-apps-cafe .wac-spec-footer ul { margin:14px 0 0; padding-left:17px; }
+.web-apps-cafe .wac-spec-footer li { margin-top:7px; }
+.web-apps-cafe .wac-tech { color:#317fab!important; font:700 10px/1.9 "Manrope",sans-serif!important; letter-spacing:.05em; }
+.web-apps-cafe .wac-actions { display:grid; margin-top:28px; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1px; background:#e5e8eb; }
+.web-apps-cafe .wac-actions a { display:flex; min-height:72px; padding:18px 22px; align-items:center; justify-content:space-between; gap:20px; background:#fff; color:#111; font-weight:700; }
+.web-apps-cafe .wac-actions a:hover { background:#f5faff; }
+.web-apps-cafe .wac-actions span { color:#317fab; font:700 8px/1.4 "Manrope",sans-serif; letter-spacing:.12em; }
+.web-apps-cafe .wac-featured-end { display:flex; margin-top:36px; align-items:center; gap:16px; color:#317fab; font:700 8px/1.4 "Manrope",sans-serif; letter-spacing:.14em; }
+.web-apps-cafe .wac-featured-end i { height:1px; flex:1; background:#78bce8; }
+.web-apps-cafe .wac-featured-end + .wac-more { margin-top:64px; }
+.web-apps-cafe .wac-section { margin-top:104px; }
+.web-apps-cafe .wac-section-heading { display:grid; padding-bottom:32px; grid-template-columns:minmax(520px,1.35fr) minmax(250px,.65fr); align-items:end; gap:40px; border-bottom:1px solid #111; }
+.web-apps-cafe .wac-section-heading h2,.web-apps-cafe .wac-rules h2,.web-apps-cafe .wac-next h2 { margin-top:10px; color:#111; font-family:"Archivo","Noto Sans JP",sans-serif; font-size:clamp(42px,5vw,64px); font-weight:600; line-height:1; letter-spacing:-.05em; }
+.web-apps-cafe .wac-section-heading > p { color:#596168; font-size:12px; line-height:1.9; }
+.web-apps-cafe .wac-product { padding:54px 0 64px; border-bottom:1px solid #111; }
+.web-apps-cafe .wac-product > header { display:grid; padding-bottom:24px; grid-template-columns:72px minmax(0,1fr) auto; align-items:end; gap:30px; }
+.web-apps-cafe .wac-menu-code { align-self:stretch; padding-top:4px; border-top:1px solid #78bce8; }
+.web-apps-cafe .wac-menu-code span,.web-apps-cafe .wac-menu-code strong { display:block; }
+.web-apps-cafe .wac-menu-code span { color:#317fab; font:700 7px/1.4 "Manrope",sans-serif; letter-spacing:.12em; }
+.web-apps-cafe .wac-menu-code strong { margin-top:9px; color:#111; font:700 12px/1 "Archivo",sans-serif; letter-spacing:.04em; }
+.web-apps-cafe .wac-product > header h3 { margin-top:7px; color:#111; font-family:"Archivo","Noto Sans JP",sans-serif; font-size:clamp(28px,4vw,46px); font-weight:600; line-height:1.1; letter-spacing:-.045em; }
+.web-apps-cafe .wac-product > header > strong { padding:5px 8px; background:#eff8fd; color:#257aa9; font:700 8px/1.4 "Manrope",sans-serif; letter-spacing:.1em; }
+.web-apps-cafe .wac-product figure { margin:0; overflow:hidden; background:#f7f8f8; }
+.web-apps-cafe .wac-product figure img { display:block; width:100%; max-height:620px; object-fit:contain; object-position:top center; }
+.web-apps-cafe .wac-admin-visual { display:grid; min-height:310px; padding:42px; grid-template-columns:repeat(3,1fr); align-items:center; gap:1px; background:#f2f9fd; }
+.web-apps-cafe .wac-admin-visual span { display:grid; min-height:150px; place-items:center; border:1px solid #78bce8; color:#317fab; font:700 12px/1.4 "Manrope",sans-serif; letter-spacing:.14em; }
+.web-apps-cafe .wac-product-copy { display:grid; padding-top:28px; grid-template-columns:minmax(0,1.2fr) minmax(220px,.8fr); align-items:start; gap:24px 50px; }
+.web-apps-cafe .wac-product-copy > p:first-child { color:#505960; font-size:12px; line-height:1.95; }
+.web-apps-cafe .wac-product-copy ul { color:#505960; font-size:11px; line-height:1.8; }
+.web-apps-cafe .wac-product-copy nav { display:flex; grid-column:1/-1; gap:24px; }
+.web-apps-cafe .wac-product-copy nav a { padding-bottom:4px; border-bottom:1px solid #78bce8; font-size:10px; font-weight:700; }
+.web-apps-cafe .wac-rules { display:grid; padding:54px 0; grid-template-columns:minmax(370px,.85fr) minmax(0,1.15fr); align-items:start; gap:50px; border-top:2px solid #78bce8; border-bottom:1px solid #111; }
+.web-apps-cafe .wac-rules h2 { font-size:clamp(42px,4vw,52px); }
+.web-apps-cafe .wac-rules h2 span { display:block; }
+.web-apps-cafe .wac-rules ol { margin:0; padding:0; list-style:none; }
+.web-apps-cafe .wac-rules li { display:grid; min-height:58px; padding:14px 8px; grid-template-columns:38px minmax(0,1fr); align-items:center; gap:14px; border-bottom:1px solid #e5e8eb; }
+.web-apps-cafe .wac-rules li:first-child { border-top:1px solid #e5e8eb; }
+.web-apps-cafe .wac-rules li span { color:#317fab; font:700 9px/1.4 "Manrope",sans-serif; }
+.web-apps-cafe .wac-rules li p { font-size:12px; font-weight:500; }
+.web-apps-cafe .wac-next { display:grid; padding:48px 0; grid-template-columns:minmax(270px,.72fr) minmax(0,1.28fr); align-items:center; gap:72px; border-top:2px solid #78bce8; border-bottom:1px solid #111; }
+.web-apps-cafe .wac-next > div > p:last-child { margin-top:18px; color:#596168; font-size:12px; line-height:1.9; }
+.web-apps-cafe .wac-next nav { display:grid; }
+.web-apps-cafe .wac-next nav a { display:grid; min-height:58px; padding:14px 8px; grid-template-columns:64px minmax(0,1fr) auto; align-items:center; gap:14px; border-bottom:1px solid #e5e8eb; color:#111; }
+.web-apps-cafe .wac-next nav a:first-child { border-top:1px solid #e5e8eb; }
+.web-apps-cafe .wac-next nav a:hover { background:#f5faff; }
+.web-apps-cafe .wac-next nav span,.web-apps-cafe .wac-next nav small { color:#317fab; font:700 8px/1.4 "Manrope",sans-serif; letter-spacing:.1em; }
+.web-apps-cafe .wac-next nav strong { font-family:"Archivo","Noto Sans JP",sans-serif; font-size:15px; font-weight:600; }
+@media (min-width:1200px) {
+  .home-v2.cafe-home-v2.web-apps-cafe .pc-header { left:40px; }
+  .home-v2.cafe-home-v2.web-apps-cafe main,.home-v2.cafe-home-v2.web-apps-cafe .pc-footer { position:relative; left:108px; width:min(1120px,calc(100% - 272px)); margin-right:auto; margin-left:auto; }
+}
+@media (max-width:1199px) {
+  .web-apps-cafe main { width:min(100% - 40px,1100px); margin:0 auto; padding-top:12px; }
+  .web-apps-cafe .wac-hero { grid-template-columns:minmax(360px,1.05fr) minmax(280px,.95fr); gap:36px; }
+  .web-apps-cafe .wac-featured-heading { gap:38px; }
+}
+@media (max-width:900px) {
+  .web-apps-cafe .wac-hero { grid-template-columns:1fr .72fr; }
+  .web-apps-cafe .wac-hero h1 { font-size:clamp(58px,11vw,82px); }
+  .web-apps-cafe .wac-featured { margin-top:72px; }
+  .web-apps-cafe .wac-featured-heading,.web-apps-cafe .wac-section-heading { grid-template-columns:1fr; gap:20px; }
+  .web-apps-cafe .wac-featured-heading > div:last-child { max-width:620px; }
+  .web-apps-cafe .wac-spec-trio { grid-template-columns:1fr; }
+  .web-apps-cafe .wac-spec-trio > div,.web-apps-cafe .wac-spec-trio > div:first-child,.web-apps-cafe .wac-spec-trio > div:last-child { min-height:0; padding:28px 0; border-right:0; border-bottom:1px solid #e5e8eb; }
+  .web-apps-cafe .wac-spec-trio > div:last-child { border-bottom:0; }
+  .web-apps-cafe .wac-detail-pair { grid-template-columns:1fr; }
+  .web-apps-cafe .wac-detail-pair > div,.web-apps-cafe .wac-detail-pair > div:first-child,.web-apps-cafe .wac-detail-pair > div:last-child { padding:32px 0; border-right:0; border-bottom:1px solid #e5e8eb; }
+  .web-apps-cafe .wac-detail-pair > div:last-child { border-bottom:0; }
+  .web-apps-cafe .wac-spec-footer { grid-template-columns:1fr; }
+  .web-apps-cafe .wac-spec-footer > div,.web-apps-cafe .wac-spec-footer > div:first-child,.web-apps-cafe .wac-spec-footer > div:last-child { min-height:0; padding:30px 0; border-right:0; border-bottom:1px solid #e5e8eb; }
+  .web-apps-cafe .wac-spec-footer > div:last-child { border-bottom:0; }
+  .web-apps-cafe .wac-product-copy { grid-template-columns:1fr; gap:18px; }
+  .web-apps-cafe .wac-product-copy nav { grid-column:auto; }
+  .web-apps-cafe .wac-rules,.web-apps-cafe .wac-next { grid-template-columns:1fr; gap:34px; }
+}
+@media (max-width:600px) {
+  .web-apps-cafe main { width:min(100% - 28px,1100px); padding-bottom:76px; }
+  .web-apps-cafe .wac-hero { margin-top:0; padding:44px 0 54px; grid-template-columns:1fr; gap:30px; }
+  .web-apps-cafe .wac-hero h1 { font-size:clamp(52px,16vw,68px); }
+  .web-apps-cafe .wac-hero-lead { margin-top:28px; font-size:21px; }
+  .web-apps-cafe .wac-hero-product { width:min(100%,350px); justify-self:center; }
+  .web-apps-cafe .wac-featured { margin-top:64px; }
+  .web-apps-cafe .wac-featured-heading h2 { font-size:48px; overflow-wrap:anywhere; }
+  .web-apps-cafe .wac-featured-screen,.web-apps-cafe .wac-detail-pair,.web-apps-cafe .wac-spec-footer { margin-top:48px; }
+  .web-apps-cafe .wac-actions { grid-template-columns:1fr; }
+  .web-apps-cafe .wac-section { margin-top:76px; }
+  .web-apps-cafe .wac-section-heading h2,.web-apps-cafe .wac-rules h2,.web-apps-cafe .wac-next h2 { font-size:38px; }
+  .web-apps-cafe .wac-product { padding:42px 0 52px; }
+  .web-apps-cafe .wac-product > header { grid-template-columns:48px minmax(0,1fr); gap:16px; }
+  .web-apps-cafe .wac-product > header > strong { grid-column:2; justify-self:start; }
+  .web-apps-cafe .wac-product > header h3 { font-size:27px; overflow-wrap:anywhere; }
+  .web-apps-cafe .wac-admin-visual { min-height:210px; padding:18px; }
+  .web-apps-cafe .wac-admin-visual span { min-height:110px; font-size:9px; }
+  .web-apps-cafe .wac-rules,.web-apps-cafe .wac-next { padding:38px 0; }
+  .web-apps-cafe .wac-next nav a { grid-template-columns:52px minmax(0,1fr); }
+  .web-apps-cafe .wac-next nav small { grid-column:2; }
+}
