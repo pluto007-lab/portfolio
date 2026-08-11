@@ -4,238 +4,146 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Webアプリ開発、Webサイト制作、デザイン、開発基盤、AI活用に取り組むpluto007-labのポートフォリオです。">
-  <title>Portfolio | pluto007-lab</title>
-  <link rel="stylesheet" href="css/style.css?v=19">
+  <title>Portfolio Cafe | pluto007-lab</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='32' fill='%2378BCE8'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Arial' font-size='38' font-weight='700' fill='%23111111'%3EP%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;family=Noto+Sans+JP:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=22">
 </head>
 
-<body class="home-v2">
+<body class="home-v2 cafe-home cafe-home-v2">
   <a class="skip-link" href="#main-content">本文へ移動</a>
 
-  <header class="header">
+  <header class="header pc-header">
     <div class="header-inner">
-      <a href="#top" class="logo" aria-label="Portfolio ホーム">Portfolio</a>
-
+      <a href="#top" class="logo pc-nav-brand" aria-label="Portfolio Cafe ホーム">portfolio</a>
+      <p class="pc-header-note">PORTFOLIO CAFE <span>／</span> OPEN DAILY</p>
+      <div class="pc-receipt-head" aria-hidden="true"><strong>PORTFOLIO CAFE</strong><span>ORDER / NAV-01</span><small>10 ITEMS</small></div>
       <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-navigation" aria-label="メニューを開く">
         <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
       </button>
       <nav id="mobile-navigation" class="site-nav" aria-label="メインナビゲーション">
         <button class="mobile-nav-close" type="button" aria-label="メニューを閉じる"><span aria-hidden="true">×</span></button>
-        <div class="site-nav-group">
-          <p class="site-nav-group-label">Overview</p>
-          <a href="index.html" aria-current="page">Home</a>
-          <a href="about.html">About</a>
-        </div>
-        <div class="site-nav-group">
-          <p class="site-nav-group-label">Works</p>
-          <a href="web-apps.html">Web Apps</a>
-          <a href="websites.html">Websites</a>
-          <a href="design.html">Design</a>
-          <a href="development.html">Development</a>
-          <a href="planning.html">Planning</a>
-          <a href="writing.html">Writing</a>
-          <a href="lab.html">Lab</a>
-        </div>
-        <div class="site-nav-group">
-          <p class="site-nav-group-label">Connect</p>
-          <a href="contact.html">Contact</a>
-        </div>
+        <div class="site-nav-group"><p class="site-nav-group-label">Overview</p><a href="index.html" aria-current="page"><span>01</span>Home</a><a href="about.html"><span>02</span>About</a></div>
+        <div class="site-nav-group"><p class="site-nav-group-label">Works</p><a href="web-apps.html"><span>03</span>Web Apps</a><a href="websites.html"><span>04</span>Websites</a><a href="design.html"><span>05</span>Design</a><a href="development.html"><span>06</span>Development</a><a href="planning.html"><span>07</span>Planning</a><a href="writing.html"><span>08</span>Writing</a><a href="lab.html"><span>09</span>Lab</a></div>
+        <div class="site-nav-group"><p class="site-nav-group-label">Connect</p><a href="contact.html"><span>10</span>Contact</a></div>
       </nav>
+      <div class="pc-receipt-tail" aria-hidden="true"><span>OPEN DAILY</span><strong>MADE FRESH,<br>BUILT DAILY.</strong><small>THANK YOU / 2026</small></div>
     </div>
   </header>
   <div class="mobile-nav-overlay" aria-hidden="true"></div>
 
   <main id="main-content">
-    <section class="v2-hero" id="top" aria-labelledby="hero-title">
-      <p class="v2-eyebrow">pluto007-lab</p>
-      <h1 id="hero-title">Web Developer <span aria-hidden="true">/</span> Designer</h1>
-      <p class="v2-hero-copy">
-        <span>Webアプリ開発を中心に、</span><span>デザイン・開発基盤・AI活用まで</span><span>幅広く取り組んでいます。</span>
-      </p>
-
-      <div class="v2-actions">
-        <a href="#projects" class="btn">Projectsを見る</a>
-        <a
-          href="https://github.com/pluto007-lab"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="btn v2-btn-secondary"
-        >
-          GitHubを見る
-        </a>
-      </div>
-
-      <p class="v2-hero-note"><strong>Building, learning, and experimenting.</strong><span>つくり、学び、実験する。</span></p>
-    </section>
-
-    <section class="v2-section" id="projects" aria-labelledby="projects-title">
-      <div class="v2-section-header">
-        <div>
-          <p class="v2-section-label">Explore</p>
-          <h2 id="projects-title">Projects <span>カテゴリ</span></h2>
+    <section class="pc-hero" id="top" aria-labelledby="hero-title">
+      <div class="pc-hero-copy">
+        <p class="pc-kicker">PORTFOLIO CAFE</p>
+        <div class="pc-main-brand" aria-labelledby="hero-title">
+          <h1 id="hero-title" class="pc-logo-slot">
+            <img class="pc-main-logo" src="img/portfolio-cafe/portfolio-cafe-main-logo.png" alt="portfolio — MADE FRESH, BUILT DAILY." width="1307" height="487" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+            <span class="pc-logo-fallback" hidden><b>portfolio</b><small>MADE FRESH, BUILT DAILY.</small></span>
+          </h1>
         </div>
-        <p>制作内容を目的や分野ごとに整理しています。</p>
+        <p class="pc-hero-ja">毎日考えて、つくって、更新していく。</p>
+        <p class="pc-hero-description">いつでも開いているカフェのように、その時々の新鮮なアイデアや作品を並べています。</p>
+        <p class="pc-role"><span>WEB DEVELOPER / DESIGNER</span>Webアプリを中心に、企画・デザイン・実装・改善まで取り組んでいます。</p>
+        <div class="pc-hero-links"><a href="#menu">メニューを見る</a><a href="#signature">代表作品を見る</a></div>
       </div>
+      <div class="pc-hero-visual">
+        <img src="img/portfolio-cafe/app-01-web-apps.png" alt="Portfolio CafeのWeb Appsを表現したアイスコーヒー商品">
+        <img class="pc-open-sticker" src="img/portfolio-cafe/portfolio-cafe-open-daily-stamp.png" alt="PORTFOLIO CAFE — OPEN DAILY stamp" width="1254" height="1254">
+        <p>APP-01 <b>FRESHLY SERVED</b></p>
+      </div>
+    </section>
 
-      <div class="v2-category-grid v2-category-grid-seven">
-        <a class="v2-category-card v2-category-card-link v2-category-card-primary" href="web-apps.html" aria-labelledby="category-web-apps">
-          <p class="v2-category-number" aria-hidden="true">01</p>
-          <h3 id="category-web-apps">Web Apps</h3>
-          <p>ReactやJavaScriptを用いたWebアプリ</p>
-          <span class="v2-category-action">View projects →</span>
+    <section class="pc-menu" id="menu" aria-labelledby="menu-title">
+      <header class="pc-section-heading">
+        <div><p class="pc-kicker">CATEGORY / MENU</p><h2 id="menu-title">Today’s Menu</h2></div>
+        <p>つくったものを、7つのメニューに分けています。気になる商品からご覧ください。</p>
+      </header>
+
+      <div class="pc-menu-shelf">
+        <a class="pc-menu-item pc-menu-item-app" href="web-apps.html">
+          <figure><img src="img/portfolio-cafe/app-01-web-apps.png" alt="Web Appsを表現したアイスコーヒー"></figure>
+          <div><p>APP-01 <span>DRINKS</span></p><h3>Web Apps</h3><small>ReactやJavaScriptを用いたWebアプリ</small><b>View projects →</b></div>
         </a>
-
-        <a class="v2-category-card v2-category-card-link v2-category-card-primary" href="websites.html" aria-labelledby="category-websites">
-          <p class="v2-category-number" aria-hidden="true">02</p>
-          <h3 id="category-websites">Websites</h3>
-          <p>企画・デザイン・実装を行ったWebサイト</p>
-          <span class="v2-category-action">View projects →</span>
+        <a class="pc-menu-item pc-menu-item-web" href="websites.html">
+          <figure><img src="img/portfolio-cafe/web-02-websites.png" alt="Websitesを表現したテイクアウトバッグ"></figure>
+          <div><p>WEB-02 <span>TAKEOUT</span></p><h3>Websites</h3><small>企画・デザイン・実装を行ったWebサイト</small><b>View projects →</b></div>
         </a>
-
-        <a class="v2-category-card v2-category-card-link v2-category-card-primary" href="design.html" aria-labelledby="category-design">
-          <p class="v2-category-number" aria-hidden="true">03</p>
-          <h3 id="category-design">Design</h3>
-          <p>AdobeやCanvaを使用したデザイン制作</p>
-          <span class="v2-category-action">View projects →</span>
+        <a class="pc-menu-item pc-menu-item-design" href="design.html">
+          <figure><img src="img/portfolio-cafe/des-03-design.png" alt="Designを表現したスイーツボックス"></figure>
+          <div><p>DES-03 <span>SWEETS</span></p><h3>Design</h3><small>AdobeやCanvaを使用したデザイン制作</small><b>View projects →</b></div>
         </a>
-
-        <a class="v2-category-card v2-category-card-link v2-category-card-secondary" href="development.html" aria-labelledby="category-development">
-          <p class="v2-category-number" aria-hidden="true">04</p>
-          <h3 id="category-development">Development</h3>
-          <p>開発基盤、技術、AIを活用した制作工程</p>
-          <span class="v2-category-action">View projects →</span>
+        <a class="pc-menu-item pc-menu-item-development" href="development.html">
+          <figure><img src="img/portfolio-cafe/dev-04-development.png" alt="Developmentを表現したコーヒー豆のパッケージ"></figure>
+          <div><p>DEV-04 <span>BEANS</span></p><h3>Development</h3><small>開発基盤、技術、AIを活用した制作工程</small><b>View projects →</b></div>
         </a>
-
-        <a class="v2-category-card v2-category-card-link v2-category-card-secondary" href="planning.html" aria-labelledby="category-planning">
-          <p class="v2-category-number" aria-hidden="true">05</p>
-          <h3 id="category-planning">Planning &amp; Direction</h3>
-          <p>企画立案・役割設計・進行</p>
-          <span class="v2-category-action">View projects →</span>
+        <a class="pc-menu-item pc-menu-item-writing" href="writing.html">
+          <figure><img src="img/portfolio-cafe/wrt-05-writing.png" alt="Writingを表現した白いZINE"></figure>
+          <div><p>WRT-05 <span>ZINE</span></p><h3>Writing</h3><small>エッセイ・観察・制作記録</small><b>View writing →</b></div>
         </a>
-
-        <a class="v2-category-card v2-category-card-link v2-category-card-secondary" href="writing.html" aria-labelledby="category-writing">
-          <p class="v2-category-number" aria-hidden="true">06</p>
-          <h3 id="category-writing">Writing</h3>
-          <p>エッセイ・観察・制作記録</p>
-          <span class="v2-category-action">View writing →</span>
+        <a class="pc-menu-item pc-menu-item-planning" href="planning.html">
+          <figure><img src="img/portfolio-cafe/pln-06-planning.png" alt="Planning and Directionを表現した注文票"></figure>
+          <div><p>PLN-06 <span>ORDER SHEET</span></p><h3>Planning &amp;<br>Direction</h3><small>企画立案・役割設計・進行</small><b>View projects →</b></div>
         </a>
-
-        <a class="v2-category-card v2-category-card-link v2-category-card-secondary" href="lab.html" aria-labelledby="category-lab">
-          <p class="v2-category-number" aria-hidden="true">07</p>
-          <h3 id="category-lab">Lab</h3>
-          <p>実験・アイデア・試作</p>
-          <span class="v2-category-action">Enter the lab →</span>
+        <a class="pc-menu-item pc-menu-item-lab" href="lab.html">
+          <figure><img src="img/portfolio-cafe/lab-07-lab.png" alt="Labを表現したTEST BATCHの小瓶"></figure>
+          <div><p>LAB-07 <span>TEST BATCH</span></p><h3>Lab</h3><small>実験・アイデア・試作</small><b>Enter the lab →</b></div>
         </a>
       </div>
     </section>
 
-    <section class="v2-section" id="featured" aria-labelledby="featured-title">
-      <div class="v2-section-header">
-        <div>
-          <p class="v2-section-label">Selected work</p>
-          <h2 id="featured-title">Featured Projects <span>注目の制作</span></h2>
-        </div>
-        <p>現在の取り組みを代表する3作品です。</p>
+    <section class="pc-signature" id="signature" aria-labelledby="signature-title">
+      <div class="pc-signature-intro">
+        <header class="pc-section-heading">
+          <div><p class="pc-kicker">SIGNATURE ITEMS</p><h2 id="signature-title">Selected Work</h2></div>
+          <p>設計と実装だけでなく、実際に使いながら改善を重ねている代表作品です。</p>
+        </header>
+        <figure class="pc-ticket-accent"><img src="img/portfolio-cafe/portfolio-cafe-ticket-label.png" alt="Portfolio CafeのTEST BATCHチケット型コンセプトラベル" width="1536" height="1024"><figcaption>CONCEPT LABEL / ITEM 07</figcaption></figure>
       </div>
 
-      <div class="v2-featured-grid">
-        <article class="v2-project-card v2-project-card-primary">
-          <img src="img/career-track.png" alt="Career Trackのダッシュボード画面">
-          <div class="v2-project-content">
-            <div class="v2-project-heading">
-              <p>Web Application</p>
-              <span>開発継続中</span>
-            </div>
-            <h3>Career Track</h3>
-            <p>
-              企業情報・応募状況・面接予定を一元管理できるWebアプリです。
-              実際の就職活動で利用しながら継続的に改善しています。
-            </p>
-            <p class="v2-tags">React / TypeScript / Vite / Tailwind CSS / LocalStorage</p>
-            <div class="v2-project-links">
-              <a href="https://pluto007-lab.github.io/career-track/" target="_blank" rel="noopener noreferrer">Demo</a>
-              <a href="https://github.com/pluto007-lab/career-track" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
-          </div>
-        </article>
+      <article class="pc-case pc-case-primary">
+        <div class="pc-case-number"><span>01</span><small>WEB APPLICATION</small></div>
+        <figure><img src="img/career-track.png" alt="Career Trackのダッシュボード画面"></figure>
+        <div class="pc-case-body"><p class="pc-status">FRESHLY SERVED</p><h3>Career Track</h3><p>企業情報・応募状況・面接予定を一元管理し、実際の就職活動で使いながら継続的に改善しているWebアプリです。</p><ul><li>DESIGN + FRONTEND</li><li>REACT / TYPESCRIPT</li><li>RELEASED / IMPROVING</li></ul><div class="pc-case-links"><a href="https://pluto007-lab.github.io/career-track/" target="_blank" rel="noopener noreferrer">Demo</a><a href="web-apps.html#career-track-title">Details</a><a href="https://github.com/pluto007-lab/career-track" target="_blank" rel="noopener noreferrer">GitHub</a></div></div>
+      </article>
 
-        <article class="v2-project-card">
-          <img src="img/web-app-template.png" alt="VSCodeで開いたWeb App Templateの開発画面">
-          <div class="v2-project-content">
-            <div class="v2-project-heading">
-              <p>Development</p>
-            </div>
-            <h3>Web App Template v1.0</h3>
-            <p>
-              React + TypeScript + ViteをベースにしたWebアプリ開発テンプレートです。
-              今後の個人開発における共通基盤として利用します。
-            </p>
-            <p class="v2-tags">React / TypeScript / Vite / React Router / Tailwind CSS v4</p>
-          </div>
-        </article>
+      <article class="pc-case">
+        <div class="pc-case-number"><span>02</span><small>MANAGEMENT + ANALYTICS</small></div>
+        <div class="pc-case-glyph" aria-hidden="true"><span>WRT</span><b>05</b></div>
+        <div class="pc-case-body"><p class="pc-status">IN OPERATION</p><h3>Writing管理・<wbr>分析システム</h3><p>記事の掲載・更新から分析、履歴保存までを一つの運用フローとして設計した、自分用の管理ツールです。</p><ul><li>PLANNING + DEVELOPMENT</li><li>LOCAL TOOL</li></ul><div class="pc-case-links"><a href="writing-system.html">Case Study</a><a href="development.html#development-writing-title">Details</a></div></div>
+      </article>
 
-        <article class="v2-project-card">
-          <img src="img/wakaba.png" alt="シニア向けスマホ教室「若葉」の画面">
-          <div class="v2-project-content">
-            <div class="v2-project-heading">
-              <p>Website</p>
-            </div>
-            <h3>シニア向けスマホ教室「若葉」</h3>
-            <p>
-              シニア向けスマホ教室を想定した架空サイトです。
-              見やすさと操作性に配慮し、複数ページ構成へ改善しました。
-            </p>
-            <p class="v2-tags">HTML / CSS / Tailwind CSS / JavaScript / JSON-LD</p>
-            <div class="v2-project-links">
-              <a href="https://pluto007-lab.github.io/wakaba/" target="_blank" rel="noopener noreferrer">Demo</a>
-              <a href="https://github.com/pluto007-lab/wakaba" target="_blank" rel="noopener noreferrer">GitHub</a>
-            </div>
-          </div>
-        </article>
-      </div>
+      <article class="pc-case">
+        <div class="pc-case-number"><span>03</span><small>CONTENT MANAGEMENT</small></div>
+        <div class="pc-case-glyph pc-case-glyph-blue" aria-hidden="true"><span>DES</span><b>03</b></div>
+        <div class="pc-case-body"><p class="pc-status">IN OPERATION</p><h3>Design Works Admin</h3><p>作品・タグ・公開状態・表示順をまとめて管理し、JSON検証と書き出しまで行える制作管理ツールです。</p><ul><li>UI + DEVELOPMENT</li><li>ADMIN TOOL</li></ul><div class="pc-case-links"><a href="design-admin.html">Demo</a><a href="development.html#development-admin-title">Details</a></div></div>
+      </article>
     </section>
 
-    <section class="v2-section v2-now" id="now" aria-labelledby="now-title">
-      <div class="v2-now-intro">
-        <p class="v2-section-label">Currently</p>
-        <h2 id="now-title">Now <span>現在の取り組み</span></h2>
-        <p>学習と実践を往復しながら、制作の幅を広げています。</p>
-      </div>
-
-      <ul class="v2-now-list">
-        <li><span aria-hidden="true">01</span>Portfolio v2 制作中</li>
-        <li><span aria-hidden="true">02</span>学校公式SNS運営</li>
-        <li><span aria-hidden="true">03</span>React / TypeScript 学習</li>
-        <li><span aria-hidden="true">04</span>ハッカソン参加準備</li>
-      </ul>
+    <section class="pc-brewing" id="now" aria-labelledby="now-title">
+      <header><p class="pc-kicker">CURRENT BATCH / 2026</p><h2 id="now-title"><span>NOW</span><span>BREWING</span></h2><p>今日も店内で、次のアイデアを仕込んでいます。</p><img class="pc-brewing-stamp" src="img/portfolio-cafe/portfolio-cafe-test-batch-stamp.png" alt="TEST BATCH 2026.08.10 stamp" width="1254" height="1254"></header>
+      <ol><li><span>01</span><p>Portfolio Cafe コンセプト検証</p><b>NOW BREWING</b></li><li><span>02</span><p>学校公式SNS運営</p><b>IN SERVICE</b></li><li><span>03</span><p>React / TypeScript 学習</p><b>DAILY</b></li><li><span>04</span><p>Webアプリ・管理ツール改善</p><b>FRESHLY SERVED</b></li></ol>
     </section>
 
-    <section class="v2-section v2-about" id="about" aria-labelledby="about-title">
-      <div>
-        <p class="v2-section-label">Profile</p>
-        <h2 id="about-title">About <span>自己紹介</span></h2>
-      </div>
-      <div class="v2-about-content">
-        <p>
-          職業訓練校でWeb制作を学びながら、WebサイトやWebアプリの企画・デザイン・実装・改善に取り組んでいます。
-          HTML・CSS・JavaScriptに加え、Reactを用いたWebアプリ開発も経験しています。
-        </p>
-        <a href="about.html" class="v2-about-link">Aboutを詳しく見る →</a>
-      </div>
+    <section class="pc-maker" id="about" aria-labelledby="about-title">
+      <div><p class="pc-kicker">ABOUT THE MAKER</p><h2 id="about-title">ABOUT</h2></div>
+      <div class="pc-maker-copy"><p>職業訓練校でWeb制作を学びながら、WebサイトやWebアプリの企画・デザイン・実装・改善に取り組んでいます。HTML・CSS・JavaScriptに加え、Reactを用いたWebアプリ開発も経験しています。</p><a href="about.html">Aboutを詳しく見る →</a></div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="v2-footer-inner">
-      <div>
-        <a href="#top" class="v2-footer-logo">Portfolio</a>
-        <p>Building, learning, and experimenting.</p>
+  <footer class="footer pc-footer">
+    <div>
+      <div class="pc-signature-slot" aria-label="Portfolio Cafe signature logo area">
+        <img class="pc-signature-logo" src="img/portfolio-cafe/portfolio-cafe-signature-logo.png" alt="Portfolio — MADE FRESH, BUILT DAILY." width="980" height="447" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+        <span hidden>PORTFOLIO / MADE FRESH, BUILT DAILY.</span>
       </div>
-      <div class="v2-footer-links" aria-label="外部リンク">
-        <a href="mailto:mfmf0707@gmail.com">Email</a>
-        <a href="https://github.com/pluto007-lab" target="_blank" rel="noopener noreferrer">GitHub</a>
-      </div>
+      <p class="pc-footer-thanks">THANK YOU.</p><p>OPEN DAILY.</p>
     </div>
-    <p class="v2-copyright">© 2026 Portfolio</p>
+    <nav aria-label="連絡先と外部リンク"><a href="mailto:mfmf0707@gmail.com">Email</a><a href="https://github.com/pluto007-lab" target="_blank" rel="noopener noreferrer">GitHub</a><a href="contact.html">Contact</a></nav>
+    <img class="pc-thank-you-tag" src="img/portfolio-cafe/portfolio-cafe-thank-you-tag.png" alt="PORTFOLIO CAFE THANK YOU tag" width="1086" height="1448">
+    <p class="pc-footer-copy">© 2026 PORTFOLIO CAFE</p>
     <a href="#top" class="back-to-top" aria-label="ページ上部へ戻る">↑</a>
   </footer>
 
