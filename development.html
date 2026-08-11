@@ -1,149 +1,22 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Webアプリや制作支援ツールの設計、実装、改善プロセスを紹介します。">
-  <title>Development | Portfolio</title>
-  <link rel="stylesheet" href="css/style.css?v=21">
-</head>
-<body class="home-v2 development-v2">
-  <a class="skip-link" href="#main-content">本文へ移動</a>
-  <header class="header">
-    <div class="header-inner">
-      <a href="index.html" class="logo" aria-label="Portfolio ホーム">Portfolio</a>
-      <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-navigation" aria-label="メニューを開く">
-        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
-      </button>
-      <nav id="mobile-navigation" class="site-nav" aria-label="メインナビゲーション">
-        <button class="mobile-nav-close" type="button" aria-label="メニューを閉じる"><span aria-hidden="true">×</span></button>
-        <div class="site-nav-group">
-          <p class="site-nav-group-label">Overview</p>
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-        </div>
-        <div class="site-nav-group">
-          <p class="site-nav-group-label">Works</p>
-          <a href="web-apps.html">Web Apps</a>
-          <a href="websites.html">Websites</a>
-          <a href="design.html">Design</a>
-          <a href="development.html" aria-current="page">Development</a>
-          <a href="planning.html">Planning</a>
-          <a href="writing.html">Writing</a>
-          <a href="lab.html">Lab</a>
-        </div>
-        <div class="site-nav-group">
-          <p class="site-nav-group-label">Connect</p>
-          <a href="contact.html">Contact</a>
-        </div>
-      </nav>
-    </div>
-  </header>
-  <div class="mobile-nav-overlay" aria-hidden="true"></div>
+<html lang="ja"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Webアプリや制作支援ツールの設計、実装、改善プロセスを紹介します。"><title>Development | Portfolio Cafe</title><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;family=Noto+Sans+JP:wght@400;500;600;700&amp;display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css?v=27"></head>
+<body class="home-v2 cafe-home-v2 development-cafe"><a class="skip-link" href="#main-content">本文へ移動</a>
+<header class="header pc-header"><div class="header-inner"><a href="index.html" class="logo pc-nav-brand" aria-label="Portfolio Cafe ホーム">portfolio</a><p class="pc-header-note">PORTFOLIO CAFE <span>／</span> OPEN DAILY</p><div class="pc-receipt-head" aria-hidden="true"><strong>PORTFOLIO CAFE</strong><span>ORDER / NAV-01</span><small>10 ITEMS</small></div><button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-navigation" aria-label="メニューを開く"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></button><nav id="mobile-navigation" class="site-nav" aria-label="メインナビゲーション"><button class="mobile-nav-close" type="button" aria-label="メニューを閉じる"><span aria-hidden="true">×</span></button><div class="site-nav-group"><p class="site-nav-group-label">Overview</p><a href="index.html"><span>01</span>Home</a><a href="about.html"><span>02</span>About</a></div><div class="site-nav-group"><p class="site-nav-group-label">Works</p><a href="web-apps.html"><span>03</span>Web Apps</a><a href="websites.html"><span>04</span>Websites</a><a href="design.html"><span>05</span>Design</a><a href="development.html" aria-current="page"><span>06</span>Development</a><a href="planning.html"><span>07</span>Planning</a><a href="writing.html"><span>08</span>Writing</a><a href="lab.html"><span>09</span>Lab</a></div><div class="site-nav-group"><p class="site-nav-group-label">Connect</p><a href="contact.html"><span>10</span>Contact</a></div></nav><div class="pc-receipt-tail" aria-hidden="true"><span>OPEN DAILY</span><strong>MADE FRESH,<br>BUILT DAILY.</strong><small>THANK YOU / 2026</small></div></div></header><div class="mobile-nav-overlay" aria-hidden="true"></div>
+<main id="main-content">
+<section class="dvc-hero" id="top" aria-labelledby="development-title"><div><p class="dvc-eye">BACK OF HOUSE / DEV-04</p><h1 id="development-title">DEVELOPMENT</h1><p class="dvc-lead">つくって終わりではなく、<br>使いながら育てる。</p><p class="dvc-copy">課題を整理し、設計・実装・公開後の運用まで見据えて改善する開発プロセスを紹介します。</p><p class="dvc-role">BUILD / TEST / IMPROVE</p></div><figure><img src="img/portfolio-cafe/dev-04-development.png" alt="Developmentカテゴリを表現したPortfolio Cafeの商品パッケージ"><figcaption><span>DEV-04</span><strong>WORKBENCH</strong></figcaption></figure></section>
 
-  <main id="main-content">
-    <section class="development-hero" aria-labelledby="development-title">
-      <nav class="v2-breadcrumb" aria-label="パンくずリスト"><a href="index.html">Home</a><span aria-hidden="true">/</span><span aria-current="page">Development</span></nav>
-      <div class="development-hero-grid">
-        <div>
-          <p class="v2-section-label">Build / Test / Improve</p>
-          <h1 id="development-title">Development</h1>
-          <p>課題を整理し、設計・実装・公開後の運用まで見据えて改善する開発プロセスを紹介します。</p>
-        </div>
-        <div class="development-blueprint" aria-hidden="true"><span>01</span><span>PLAN</span><span>BUILD</span><span>REVIEW</span></div>
-      </div>
-    </section>
+<section class="dvc-build-log" aria-labelledby="career-title"><header class="dvc-case-head"><div><p class="dvc-eye">BUILD LOG / FEATURED DEVELOPMENT</p><p class="dvc-code">CASE 01 / DEV-04-01</p><h2 id="career-title">Career Track</h2><p class="dvc-type">WEB APPLICATION / 継続開発中</p></div><p>課題の発見から設計、実装、実利用を通した改善までを追うケーススタディです。</p></header><div class="dvc-trio"><section><p class="dvc-label">BACKGROUND</p><h3>制作背景</h3><p>就職活動で企業情報、応募状況、提出期限、面接予定が複数の場所へ分散し、管理が煩雑になった経験から制作を始めました。</p></section><section><p class="dvc-label">PROBLEM</p><h3>誰のどんな課題を解決するか</h3><p>就職活動中に、次に行うことが分かりづらい、予定を見落としやすい、企業を比較しにくいといった管理上の負担を減らします。</p></section><section><p class="dvc-label">SOLUTION</p><h3>解決方法</h3><p>企業情報・応募状況・面接準備を一元管理し、今確認すべき企業と次に行うことを整理できる形にしました。</p></section></div><figure class="dvc-screen"><figcaption><span>SCREEN / CASE 01</span><strong>DASHBOARD</strong></figcaption><img src="img/career-track.png" alt="Career Trackのダッシュボード画面"></figure><div class="dvc-case-detail"><section><p class="dvc-label">DESIGN / IMPLEMENTATION</p><h3>設計・実装上の工夫</h3><p>情報を企業単位で整理し、応募状況、面接予定、企業評価を確認できる構成にしています。LocalStorageによる保存とJSONバックアップ・復元にも対応しています。</p><ul><li>企業情報管理</li><li>応募状況管理</li><li>面接予定・面接対策</li><li>企業評価</li></ul></section><section><p class="dvc-label">TECHNOLOGY</p><h3>使用技術</h3><ul><li>React</li><li>TypeScript</li><li>Vite</li><li>React Router</li><li>Tailwind CSS</li><li>LocalStorage</li><li>Git</li><li>GitHub</li></ul></section><section><p class="dvc-label">CONTINUOUS IMPROVEMENT</p><h3>継続改善</h3><p>実際の就職活動で利用しながら、必要になった機能を追加し、操作や情報の見つけやすさを継続的に改善しています。</p></section></div><nav class="dvc-actions" aria-label="Career Trackのリンク"><a href="https://pluto007-lab.github.io/career-track/" target="_blank" rel="noopener noreferrer"><span>ACTION / 01</span>Demoを見る →</a><a href="https://github.com/pluto007-lab/career-track" target="_blank" rel="noopener noreferrer"><span>ACTION / 02</span>GitHubを見る →</a></nav></section>
 
-    <section class="v2-section development-projects development-featured" aria-labelledby="development-projects-title">
-      <div class="development-section-heading"><div><p class="v2-section-label">Featured Development</p><h2 id="development-projects-title">開発ケーススタディ</h2></div><p>課題の発見から設計、実装、運用改善までを、代表的な制作事例で紹介します。</p></div>
+<article class="dvc-case dvc-case-two" aria-labelledby="writing-case-title"><header><div><p class="dvc-eye">BUILD LOG / CASE 02</p><p class="dvc-code">DEV-04-02</p><h2 id="writing-case-title">Writing管理・分析システム</h2></div><strong>LOCAL TOOL</strong></header><p class="dvc-case-lead">note記事の掲載・更新、アクセス状況取得、PV・スキ・コメント・スキ率の管理、時系列データ蓄積までを効率化するために制作した自分用の管理・分析システムです。</p><div class="dvc-trio"><section><p class="dvc-label">BACKGROUND</p><h3>記事が増えても更新しやすくする</h3><p>タイトル、公開日、画像、紹介文、代表記事、掲載順、アクセス状況を手動で管理する負担が増えたことから制作しました。</p></section><section><p class="dvc-label">PROBLEM</p><h3>最新値だけでは推移が残らない</h3><p>PV・スキ・コメントを上書きするだけでは、公開後の伸び方や過去の変化を後から確認できませんでした。</p></section><section><p class="dvc-label">SOLUTION</p><h3>管理・分析・履歴を一つにする</h3><p>記事情報取得、JSON出力、アクセス状況の照合と更新、スキ率計算、時系列snapshot保存までをまとめました。</p></section></div><div class="dvc-two-detail"><section><p class="dvc-label">DESIGN / IMPLEMENTATION</p><h3>一つの運用フローとして設計</h3><p class="dvc-process">記事管理 → note情報取得 → アクセス状況取得 → 指標計算 → 時系列データ蓄積</p><p>Cookieやパスワード、内部APIを使わず、表示済みDOMから必要な情報だけを取得する半自動方式です。</p></section><section><p class="dvc-label">TECHNOLOGY / FEATURE</p><h3>使用技術と特徴</h3><ul><li>HTML / CSS / Vanilla JavaScript</li><li>Node.js / JSON / Bookmarklet</li><li>Git / GitHub</li></ul><p>noteアクセス状況、PV・スキ・コメント、スキ率、時系列履歴まで扱う「管理＋分析＋履歴蓄積」の仕組みです。</p></section></div><nav class="dvc-inline"><a href="writing-system.html">詳しく見る →</a></nav></article>
 
-      <article class="development-case development-case-primary" aria-labelledby="development-career-title">
-        <header class="development-case-header"><div><p>Case 01 / Web Application</p><h3 id="development-career-title">Career Track</h3></div><span>継続開発中</span></header>
-        <div class="development-case-intro">
-          <section><p class="development-note-label">Background</p><h4>制作背景</h4><p>就職活動で企業情報、応募状況、提出期限、面接予定が複数の場所へ分散し、管理が煩雑になった経験から制作を始めました。</p></section>
-          <section><p class="development-note-label">Problem</p><h4>誰のどんな課題を解決するか</h4><p>就職活動中に、次に行うことが分かりづらい、予定を見落としやすい、企業を比較しにくいといった管理上の負担を減らします。</p></section>
-          <section><p class="development-note-label">Solution</p><h4>解決方法</h4><p>企業情報・応募状況・面接準備を一元管理し、今確認すべき企業と次に行うことを整理できる形にしました。</p></section>
-        </div>
-        <div class="development-case-visual"><img src="img/career-track.png" alt="Career Trackのダッシュボード画面"></div>
-        <div class="development-case-body">
-          <section><p class="development-note-label">Design &amp; implementation</p><h4>設計・実装上の工夫</h4><p>情報を企業単位で整理し、応募状況、面接予定、企業評価を確認できる構成にしています。LocalStorageによる保存とJSONバックアップ・復元にも対応しています。</p><ul><li>企業情報管理</li><li>応募状況管理</li><li>面接予定・面接対策</li><li>企業評価</li></ul></section>
-          <section><p class="development-note-label">Technology</p><h4>技術</h4><ul class="development-tech-list"><li>React</li><li>TypeScript</li><li>Vite</li><li>React Router</li><li>Tailwind CSS</li><li>LocalStorage</li><li>Git</li><li>GitHub</li></ul></section>
-          <section><p class="development-note-label">Continuous improvement</p><h4>継続改善</h4><p>実際の就職活動で利用しながら、必要になった機能を追加し、操作や情報の見つけやすさを継続的に改善しています。</p></section>
-        </div>
-        <div class="development-links"><a href="https://pluto007-lab.github.io/career-track/" target="_blank" rel="noopener noreferrer">Demoを見る</a><a href="https://github.com/pluto007-lab/career-track" target="_blank" rel="noopener noreferrer">GitHubを見る</a></div>
-      </article>
+<article class="dvc-case dvc-case-three" aria-labelledby="admin-case-title"><header><div><p class="dvc-eye">BUILD LOG / CASE 03</p><p class="dvc-code">DEV-04-03</p><h2 id="admin-case-title">Design Works Admin</h2></div><strong>LOCAL TOOL</strong></header><ol class="dvc-flow"><li><span>01</span>作品数が増える</li><li><span>02</span>JSONの直接編集が煩雑になる</li><li><span>03</span>管理画面を自作する</li><li><span>04</span>追加・編集・公開管理を効率化する</li></ol><div class="dvc-admin-grid"><section><p class="dvc-label">BACKGROUND</p><h3>制作背景</h3><p>作品数が増え、JSONを直接編集する運用が煩雑になったことをきっかけに、ブラウザ上で作品情報を扱える管理画面を制作しました。</p></section><section><p class="dvc-label">SOLUTION</p><h3>解決した課題</h3><p>Designページのデータを読み込み、追加・編集・並べ替え・公開管理からJSON出力までを一つの画面へまとめました。</p></section><section><p class="dvc-label">TECHNOLOGY</p><h3>使用技術</h3><p>HTML / CSS / JavaScript / JSON / File API / Drag and Drop API</p></section><section><p class="dvc-label">STATIC OPERATION</p><h3>静的サイトでの運用方法</h3><p>サーバーへ直接保存せず、検証済みのJSONとfile://用フォールバックをダウンロードし、リポジトリ内のファイルと置き換えて反映します。</p></section></div><p class="dvc-functions">作品管理 / タグ管理 / 代表作品管理 / 公開状態管理 / 並べ替え / JSON検証・書き出し / 簡易プレビュー</p><nav class="dvc-inline"><a href="design-admin.html">Demoを見る →</a><a href="https://github.com/pluto007-lab/portfolio" target="_blank" rel="noopener noreferrer">GitHubを見る →</a></nav></article>
 
-      <article class="development-case development-case-writing" aria-labelledby="development-writing-title">
-        <header class="development-case-header"><div><p>Case 02 / Management &amp; Analytics</p><h3 id="development-writing-title"><em>Writing管理・</em><em>分析システム</em></h3></div><span>Local Tool</span></header>
-        <p class="development-writing-lead">note記事の掲載・更新、アクセス状況取得、PV・スキ・コメント・スキ率の管理、時系列データ蓄積までを効率化するために制作した自分用の管理・分析システムです。</p>
-        <div class="development-case-intro">
-          <section><p class="development-note-label">Background</p><h4>記事が増えても更新しやすくする</h4><p>タイトル、公開日、画像、紹介文、代表記事、掲載順、アクセス状況を手動で管理する負担が増えたことから制作しました。</p></section>
-          <section><p class="development-note-label">Problem</p><h4>最新値だけでは推移が残らない</h4><p>PV・スキ・コメントを上書きするだけでは、公開後の伸び方や過去の変化を後から確認できませんでした。</p></section>
-          <section><p class="development-note-label">Solution</p><h4>管理・分析・履歴を一つにする</h4><p>記事情報取得、JSON出力、アクセス状況の照合と更新、スキ率計算、時系列snapshot保存までをまとめました。</p></section>
-        </div>
+<div class="dvc-end" aria-hidden="true"><span>BUILD LOG / END</span><i></i><span>FEATURED DEVELOPMENT COMPLETE</span></div>
+<section class="dvc-section dvc-other" aria-labelledby="other-builds-title"><header class="dvc-section-head"><div><p class="dvc-eye">OTHER BUILDS / FROM THE WORKBENCH</p><h2 id="other-builds-title">その他の開発</h2></div><p>機能・技術・役割を短く確認できる開発事例です。</p></header><div class="dvc-other-grid"><article><p class="dvc-code">DEV-04-04</p><p class="dvc-label">FOUNDATION / COMMON BASE</p><h3>Web App Template v1.0</h3><p>React + TypeScript + Viteを利用し、新しいWebアプリを素早く立ち上げるために制作したテンプレートです。毎回の環境構築と準備を共通化します。</p><p><strong>個人開発を素早く始めるための共通開発基盤</strong></p><p class="dvc-tech">React / TypeScript / Vite / React Router / Tailwind CSS v4 / GitHub Template Repository / GitHub Actions / Xserver自動デプロイ / 共通フォルダ構成</p></article><article><p class="dvc-code">DEV-04-05</p><p class="dvc-label">REACT APPLICATION / 公開中</p><h3>勤務シフト管理アプリ</h3><p>看護師向けの勤務シフト管理アプリです。有休・夏季休暇の管理や勤務ルールの確認に加え、休み希望を考慮した割り当て、違反警告、公平性を意識した設計に取り組みました。</p><ul><li>休み希望を考慮した割り当て</li><li>違反警告</li><li>公平性を意識した設計</li></ul><p class="dvc-tech">React / Vite / Tailwind CSS</p><nav class="dvc-inline"><a href="https://pluto007-lab.github.io/shift-app/" target="_blank" rel="noopener noreferrer">Demoを見る →</a><a href="https://github.com/pluto007-lab/shift-app" target="_blank" rel="noopener noreferrer">GitHubを見る →</a></nav></article></div></section>
 
-        <!-- 実画像追加時は、Career Trackと同じdevelopment-case-visual内へ管理画面のスクリーンショットを1枚配置します。 -->
-
-        <div class="development-case-body development-writing-body">
-          <section><p class="development-note-label">Design &amp; implementation</p><h4>一つの運用フローとして設計</h4><p class="development-writing-process">記事管理 → note情報取得 → アクセス状況取得 → 指標計算 → 時系列データ蓄積</p><p>Cookieやパスワード、内部APIを使わず、表示済みDOMから必要な情報だけを取得する半自動方式です。</p></section>
-          <section><p class="development-note-label">Technology</p><h4>使用技術</h4><ul class="development-tech-list"><li>HTML</li><li>CSS</li><li>Vanilla JavaScript</li><li>Node.js</li><li>JSON</li><li>Bookmarklet</li><li>Git</li><li>GitHub</li></ul></section>
-          <section><p class="development-note-label">Feature</p><h4>記事管理だけで終わらない</h4><p>noteアクセス状況、PV・スキ・コメント、スキ率、時系列履歴まで扱う「管理＋分析＋履歴蓄積」の仕組みです。</p></section>
-        </div>
-        <div class="development-links"><a href="writing-system.html">詳しく見る</a></div>
-      </article>
-
-      <article class="development-case development-case-admin" aria-labelledby="development-admin-title">
-        <header class="development-case-header"><div><p>Case 03 / Management Tool</p><h3 id="development-admin-title">Design Works Admin</h3></div><span>Local Tool</span></header>
-        <ol class="development-admin-flow" aria-label="管理画面を制作した流れ"><li><span>01</span>作品数が増える</li><li><span>02</span>JSONの直接編集が煩雑になる</li><li><span>03</span>管理画面を自作する</li><li><span>04</span>追加・編集・公開管理を効率化する</li></ol>
-        <div class="development-case-intro development-admin-intro">
-          <section><p class="development-note-label">Background</p><h4>制作背景</h4><p>作品数が増え、JSONを直接編集する運用が煩雑になったことをきっかけに、ブラウザ上で作品情報を扱える管理画面を制作しました。</p></section>
-          <section><p class="development-note-label">Solution</p><h4>解決した課題</h4><p>Designページのデータを読み込み、追加・編集・並べ替え・公開管理からJSON出力までを一つの画面へまとめました。</p></section>
-        </div>
-        <div class="development-admin-functions" aria-label="Design Works Adminの主な機能"><span>作品管理</span><span>タグ管理</span><span>代表作品管理</span><span>公開状態管理</span><span>並べ替え</span><span>JSON検証・書き出し</span><span>簡易プレビュー</span></div>
-        <div class="development-case-body development-admin-body">
-          <section><p class="development-note-label">Technology</p><h4>使用技術</h4><ul class="development-tech-list"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>JSON</li><li>File API</li><li>Drag and Drop API</li></ul></section>
-          <section><p class="development-note-label">Static operation</p><h4>静的サイトでの運用方法</h4><p>サーバーへ直接保存せず、検証済みのJSONとfile://用フォールバックをダウンロードし、リポジトリ内のファイルと置き換えて反映します。</p></section>
-        </div>
-        <div class="development-links"><a href="design-admin.html">Demoを見る</a><a href="https://github.com/pluto007-lab/portfolio" target="_blank" rel="noopener noreferrer">GitHubを見る</a></div>
-      </article>
-    </section>
-
-    <section class="v2-section development-other" aria-labelledby="development-other-title">
-      <div class="development-section-heading"><div><p class="v2-section-label">Other Development</p><h2 id="development-other-title">開発基盤・アプリ</h2></div><p>機能・技術・役割を短く確認できる要点型の開発事例です。</p></div>
-      <div class="development-other-grid">
-        <article class="development-other-card" aria-labelledby="development-template-title">
-          <header><div><p>Foundation / Common Base</p><h3 id="development-template-title">Web App Template v1.0</h3></div><span>共通開発基盤</span></header>
-          <p>React + TypeScript + Viteを利用し、新しいWebアプリを素早く立ち上げるために制作したテンプレートです。毎回の環境構築と準備を共通化します。</p>
-          <p class="development-other-position">個人開発を素早く始めるための共通開発基盤</p>
-          <ul class="development-tech-list"><li>React</li><li>TypeScript</li><li>Vite</li><li>React Router</li><li>Tailwind CSS v4</li><li>GitHub Template Repository</li><li>GitHub Actions</li><li>Xserver自動デプロイ</li><li>共通フォルダ構成</li></ul>
-        </article>
-        <article class="development-other-card" aria-labelledby="development-shift-title">
-          <header><div><p>React Application</p><h3 id="development-shift-title">勤務シフト管理アプリ</h3></div><span>公開中</span></header>
-          <p>看護師向けの勤務シフト管理アプリです。有休・夏季休暇の管理や勤務ルールの確認に加え、休み希望を考慮した割り当て、違反警告、公平性を意識した設計に取り組みました。</p>
-          <ul class="development-other-points"><li>休み希望を考慮した割り当て</li><li>違反警告</li><li>公平性を意識した設計</li></ul>
-          <ul class="development-tech-list"><li>React</li><li>Vite</li><li>Tailwind CSS</li></ul>
-          <div class="development-links"><a href="https://pluto007-lab.github.io/shift-app/" target="_blank" rel="noopener noreferrer">Demoを見る</a><a href="https://github.com/pluto007-lab/shift-app" target="_blank" rel="noopener noreferrer">GitHubを見る</a></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="v2-section development-philosophy" aria-labelledby="philosophy-title">
-      <div class="development-section-heading"><div><p class="v2-section-label">Development Philosophy</p><h2 id="philosophy-title">開発で大切にしていること</h2></div></div>
-      <ol><li><span>01</span><strong>自分の困りごとから考える</strong></li><li><span>02</span><strong>小さく作って改善する</strong></li><li><span>03</span><strong>運用まで考える</strong></li><li><span>04</span><strong>公開して育てる</strong></li><li><span>05</span><strong>AIを開発パートナーとして活用する</strong></li></ol>
-    </section>
-
-    <section class="v2-section development-future" aria-labelledby="future-title">
-      <div class="development-section-heading"><div><p class="v2-section-label">Future Projects</p><h2 id="future-title">次の構想</h2></div><p>今後取り組むプロジェクトです。</p></div>
-      <div class="development-future-list"><article><span>01</span><h3>Hackboard</h3><p>構想中</p></article><article><span>02</span><h3>Tiny Experiments</h3><p>構想中</p></article></div>
-    </section>
-
-    <section class="v2-section development-cta" aria-labelledby="development-next-title">
-      <div><p class="v2-section-label">Next Category</p><h2 id="development-next-title">次の視点へ進む</h2><p>作品、企画、連絡先を、それぞれのページで紹介しています。</p></div>
-      <div class="development-cta-list"><a href="web-apps.html"><span>Web Appsを見る</span><small>View</small></a><a href="planning.html"><span>Planningを見る</span><small>View</small></a><a href="contact.html"><span>Contactへ進む</span><small>View</small></a></div>
-    </section>
-  </main>
-
-  <footer class="footer"><div class="v2-footer-inner"><div><a href="index.html" class="v2-footer-logo">Portfolio</a><p>Building, learning, and experimenting.</p></div><div class="v2-footer-links" aria-label="外部リンク"><a href="mailto:mfmf0707@gmail.com">Email</a><a href="https://github.com/pluto007-lab" target="_blank" rel="noopener noreferrer">GitHub</a></div></div><p class="v2-copyright">© 2026 Portfolio</p><a href="#" class="back-to-top" aria-label="ページ上部へ戻る">↑</a></footer>
-  <script src="js/script.js?v=10"></script>
-</body>
-</html>
+<section class="dvc-section dvc-notes" aria-labelledby="dev-notes-title"><header><p class="dvc-eye">DEVELOPMENT NOTES</p><h2 id="dev-notes-title">開発で大切にしていること</h2></header><ol><li><span>01</span><strong>自分の困りごとから考える</strong></li><li><span>02</span><strong>小さく作って改善する</strong></li><li><span>03</span><strong>運用まで考える</strong></li><li><span>04</span><strong>公開して育てる</strong></li><li><span>05</span><strong>AIを開発パートナーとして活用する</strong></li></ol></section>
+<section class="dvc-brewing" aria-labelledby="brewing-title"><header><p class="dvc-eye">NOW BREWING / NEXT BATCH</p><h2 id="brewing-title">NEXT BATCH</h2><p>今後取り組むプロジェクトです。</p></header><div><article><span>NEXT BATCH / 01</span><h3>Hackboard</h3><p>構想中</p></article><article><span>NEXT BATCH / 02</span><h3>Tiny Experiments</h3><p>構想中</p></article></div></section>
+<div class="dvc-end" aria-hidden="true"><span>DEVELOPMENT / END</span><i></i><span>DEV-04 COMPLETE</span></div>
+<section class="dvc-section dvc-next" aria-labelledby="dev-next-title"><div><p class="dvc-eye">COUNTER / NEXT</p><h2 id="dev-next-title">NEXT ORDER</h2><p>ほかの制作カテゴリと、ご連絡先へ続きます。</p></div><nav aria-label="次に見るページ"><a href="web-apps.html"><span>APP-01</span><strong>Web Apps</strong><small>DRINKS →</small></a><a href="planning.html"><span>PLN-06</span><strong>Planning</strong><small>ORDER SHEET →</small></a><a href="contact.html"><span>10</span><strong>Contact</strong><small>COUNTER →</small></a></nav></section>
+</main>
+<footer class="footer pc-footer"><div><div class="pc-signature-slot" aria-label="Portfolio Cafe signature logo area"><img class="pc-signature-logo" src="img/portfolio-cafe/portfolio-cafe-signature-logo.png" alt="Portfolio — MADE FRESH, BUILT DAILY." width="980" height="447" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>PORTFOLIO / MADE FRESH, BUILT DAILY.</span></div><p class="pc-footer-thanks">THANK YOU.</p><p>OPEN DAILY.</p></div><nav aria-label="連絡先と外部リンク"><a href="mailto:mfmf0707@gmail.com">Email</a><a href="https://github.com/pluto007-lab" target="_blank" rel="noopener noreferrer">GitHub</a><a href="contact.html">Contact</a></nav><img class="pc-thank-you-tag" src="img/portfolio-cafe/portfolio-cafe-thank-you-tag.png" alt="PORTFOLIO CAFE THANK YOU tag" width="1086" height="1448"><p class="pc-footer-copy">© 2026 PORTFOLIO CAFE</p><a href="#top" class="back-to-top" aria-label="ページ上部へ戻る">↑</a></footer><script src="js/script.js?v=10"></script></body></html>
