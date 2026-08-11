@@ -4,243 +4,109 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="pluto007-labの制作に対する考え方、活動スタイル、経験、資格を紹介します。">
-  <title>About | Portfolio</title>
-  <link rel="stylesheet" href="css/style.css?v=19">
+  <title>About the Maker | Portfolio Cafe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700;800&amp;family=Noto+Sans+JP:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=23">
 </head>
 
-<body class="home-v2 about-v2">
+<body class="home-v2 cafe-home-v2 about-cafe">
   <a class="skip-link" href="#main-content">本文へ移動</a>
 
-  <header class="header">
+  <header class="header pc-header">
     <div class="header-inner">
-      <a href="index.html" class="logo" aria-label="Portfolio ホーム">Portfolio</a>
-
-      <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-navigation" aria-label="メニューを開く">
-        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
-      </button>
+      <a href="index.html" class="logo pc-nav-brand" aria-label="Portfolio Cafe ホーム">portfolio</a>
+      <p class="pc-header-note">PORTFOLIO CAFE <span>／</span> OPEN DAILY</p>
+      <div class="pc-receipt-head" aria-hidden="true"><strong>PORTFOLIO CAFE</strong><span>ORDER / NAV-01</span><small>10 ITEMS</small></div>
+      <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-navigation" aria-label="メニューを開く"><span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
       <nav id="mobile-navigation" class="site-nav" aria-label="メインナビゲーション">
         <button class="mobile-nav-close" type="button" aria-label="メニューを閉じる"><span aria-hidden="true">×</span></button>
-        <div class="site-nav-group">
-          <p class="site-nav-group-label">Overview</p>
-          <a href="index.html">Home</a>
-          <a href="about.html" aria-current="page">About</a>
-        </div>
-        <div class="site-nav-group">
-          <p class="site-nav-group-label">Works</p>
-          <a href="web-apps.html">Web Apps</a>
-          <a href="websites.html">Websites</a>
-          <a href="design.html">Design</a>
-          <a href="development.html">Development</a>
-          <a href="planning.html">Planning</a>
-          <a href="writing.html">Writing</a>
-          <a href="lab.html">Lab</a>
-        </div>
-        <div class="site-nav-group">
-          <p class="site-nav-group-label">Connect</p>
-          <a href="contact.html">Contact</a>
-        </div>
+        <div class="site-nav-group"><p class="site-nav-group-label">Overview</p><a href="index.html"><span>01</span>Home</a><a href="about.html" aria-current="page"><span>02</span>About</a></div>
+        <div class="site-nav-group"><p class="site-nav-group-label">Works</p><a href="web-apps.html"><span>03</span>Web Apps</a><a href="websites.html"><span>04</span>Websites</a><a href="design.html"><span>05</span>Design</a><a href="development.html"><span>06</span>Development</a><a href="planning.html"><span>07</span>Planning</a><a href="writing.html"><span>08</span>Writing</a><a href="lab.html"><span>09</span>Lab</a></div>
+        <div class="site-nav-group"><p class="site-nav-group-label">Connect</p><a href="contact.html"><span>10</span>Contact</a></div>
       </nav>
+      <div class="pc-receipt-tail" aria-hidden="true"><span>OPEN DAILY</span><strong>MADE FRESH,<br>BUILT DAILY.</strong><small>THANK YOU / 2026</small></div>
     </div>
   </header>
   <div class="mobile-nav-overlay" aria-hidden="true"></div>
 
   <main id="main-content">
-    <section class="about-v2-hero" aria-labelledby="about-page-title">
-      <nav class="v2-breadcrumb" aria-label="パンくずリスト">
-        <a href="index.html">Home</a>
-        <span aria-hidden="true">/</span>
-        <span aria-current="page">About</span>
-      </nav>
-
-      <p class="v2-section-label">Profile &amp; approach</p>
-      <h1 id="about-page-title">About</h1>
-      <p class="about-v2-lead">
-        <span>「思いついたら、</span><span>まず小さく作ってみる」</span><span>を大切にしています。</span>
-      </p>
-    </section>
-
-    <section class="about-v2-summary v2-section" id="about-details" aria-labelledby="about-summary-title">
-      <div class="about-v2-summary-heading">
-        <p class="v2-section-label">Approach</p>
-        <h2 id="about-summary-title">制作姿勢</h2>
+    <section class="ac-hero" id="top" aria-labelledby="about-page-title">
+      <div class="ac-hero-heading">
+        <p class="ac-eyebrow">PROFILE / 02</p>
+        <h1 id="about-page-title">ABOUT<br>THE MAKER</h1>
       </div>
-      <div class="about-v2-intro">
-        <p>
-          職業訓練校でWeb制作を学びながら、WebアプリやWebサイトの企画・デザイン・実装・改善に取り組んでいます。
-          デザインや文章にも関心を持ち、興味を持ったものを試しながら形にしています。
-        </p>
-        <p>
-          最初から完成形を目指すのではなく、まず動くものを作り、使って気づいた点を見直す進め方を大切にしています。
-          生成AIも活用しますが、出力をそのまま採用せず、目的や既存仕様との整合性、変更後の動作を確認しています。
-        </p>
-      </div>
-    </section>
-
-    <section class="v2-section" aria-labelledby="strengths-title">
-      <div class="v2-section-header">
-        <div>
-          <p class="v2-section-label">Strengths</p>
-          <h2 id="strengths-title">私の強み</h2>
+      <div class="ac-hero-copy">
+        <p class="ac-hero-lead">「思いついたら、<br>まず小さく作ってみる」</p>
+        <div class="ac-hero-description">
+          <p>職業訓練校でWeb制作を学びながら、WebアプリやWebサイトの企画・デザイン・実装・改善に取り組んでいます。デザインや文章にも関心を持ち、興味を持ったものを試しながら形にしています。</p>
+          <p>最初から完成形を目指すのではなく、まず動くものを作り、使って気づいた点を見直す進め方を大切にしています。生成AIも活用しますが、出力をそのまま採用せず、目的や既存仕様との整合性、変更後の動作を確認しています。</p>
         </div>
-        <p>考えを整理し、小さな実装と検証を重ねながら、伝わる形へ整えます。</p>
-      </div>
-
-      <div class="about-v2-strength-grid">
-        <article class="about-v2-strength-card">
-          <p aria-hidden="true">01</p>
-          <h3>整理して仕組みにする</h3>
-          <p>散らばった情報や手順を整理し、使いやすい画面や運用しやすい仕組みに落とし込みます。</p>
-        </article>
-
-        <article class="about-v2-strength-card">
-          <p aria-hidden="true">02</p>
-          <h3>0から企画し、形にする</h3>
-          <p>課題や目的を考えるところから始め、必要な機能や情報を組み立てて制作につなげます。</p>
-        </article>
-
-        <article class="about-v2-strength-card">
-          <p aria-hidden="true">03</p>
-          <h3>調べて改善を続ける</h3>
-          <p>分からないことをそのままにせず、調査・試作・確認を繰り返して改善します。</p>
-        </article>
-
-        <article class="about-v2-strength-card">
-          <p aria-hidden="true">04</p>
-          <h3>AIを制作工程に活かす</h3>
-          <p>要件整理、設計、比較、コード確認、検証など、目的に合わせてAIを使い分けます。</p>
-        </article>
-
-        <article class="about-v2-strength-card">
-          <p aria-hidden="true">05</p>
-          <h3>文章で意図を伝える</h3>
-          <p>制作の目的や判断理由を言葉にし、読み手に伝わる順序と表現を考えます。</p>
-        </article>
+        <div class="ac-role"><strong>WEB DEVELOPER / DESIGNER</strong><p><span>PLANNING</span><span>DESIGN</span><span>DEVELOPMENT</span><span>WRITING</span></p></div>
       </div>
     </section>
 
-    <section class="v2-section about-v2-style" aria-labelledby="style-title">
-      <div class="about-v2-style-intro">
-        <p class="v2-section-label">How I work</p>
-        <h2 id="style-title">制作・活動スタイル</h2>
-        <p>制作物だけでなく、その後も改善しやすい進め方や公開環境まで含めて考えます。</p>
+    <section class="ac-section ac-strengths" aria-labelledby="strengths-title">
+      <header class="ac-section-heading"><div><p class="ac-eyebrow">STRENGTHS / MAKER'S NOTES</p><h2 id="strengths-title">私の強み</h2></div><p>考えを整理し、小さな実装と検証を重ねながら、伝わる形へ整えます。</p></header>
+      <div class="ac-note-list">
+        <article><p class="ac-number">01</p><h3>整理して仕組みにする</h3><p>散らばった情報や手順を整理し、使いやすい画面や運用しやすい仕組みに落とし込みます。</p></article>
+        <article><p class="ac-number">02</p><h3>0から企画し、形にする</h3><p>課題や目的を考えるところから始め、必要な機能や情報を組み立てて制作につなげます。</p></article>
+        <article><p class="ac-number">03</p><h3>調べて改善を続ける</h3><p>分からないことをそのままにせず、調査・試作・確認を繰り返して改善します。</p></article>
+        <article><p class="ac-number">04</p><h3>AIを制作工程に活かす</h3><p>要件整理、設計、比較、コード確認、検証など、目的に合わせてAIを使い分けます。</p></article>
+        <article><p class="ac-number">05</p><h3>文章で意図を伝える</h3><p>制作の目的や判断理由を言葉にし、読み手に伝わる順序と表現を考えます。</p></article>
       </div>
+    </section>
 
-      <ol class="about-v2-style-list">
-        <li>
-          <span>01</span>
-          <div><h3>小さく試作する</h3><p>必要な部分から作り、実際に動かしてから改善点を見つけます。</p></div>
-        </li>
-        <li>
-          <span>02</span>
-          <div><h3>自分の困りごとから考える</h3><p>日々の不便や管理しづらさを、制作テーマや機能の起点にします。</p></div>
-        </li>
-        <li>
-          <span>03</span>
-          <div><h3>公開・運用まで整える</h3><p>開発だけで終わらせず、公開後に使い続けられる状態まで整えます。</p></div>
-        </li>
-        <li>
-          <span>04</span>
-          <div><h3>作業を仕組み化する</h3><p>GitHubや開発テンプレートを活用し、繰り返す作業を共通化します。</p></div>
-        </li>
-        <li>
-          <span>05</span>
-          <div><h3>全体を一つの体験として見る</h3><p>実装だけでなく、デザインや文章、情報の流れも含めて考えます。</p></div>
-        </li>
+    <section class="ac-section ac-recipe" aria-labelledby="recipe-title">
+      <header class="ac-recipe-heading"><p class="ac-eyebrow">MY RECIPE</p><h2 id="recipe-title">HOW I WORK</h2><p>制作物だけでなく、その後も改善しやすい進め方や公開環境まで含めて考えます。</p></header>
+      <ol class="ac-recipe-list">
+        <li><span>01</span><div><h3>小さく試作する</h3><p>必要な部分から作り、実際に動かしてから改善点を見つけます。</p></div><small>PROTOTYPE</small></li>
+        <li><span>02</span><div><h3>自分の困りごとから考える</h3><p>日々の不便や管理しづらさを、制作テーマや機能の起点にします。</p></div><small>DISCOVER</small></li>
+        <li><span>03</span><div><h3>公開・運用まで整える</h3><p>開発だけで終わらせず、公開後に使い続けられる状態まで整えます。</p></div><small>DELIVER</small></li>
+        <li><span>04</span><div><h3>作業を仕組み化する</h3><p>GitHubや開発テンプレートを活用し、繰り返す作業を共通化します。</p></div><small>SYSTEMIZE</small></li>
+        <li><span>05</span><div><h3>全体を一つの体験として見る</h3><p>実装だけでなく、デザインや文章、情報の流れも含めて考えます。</p></div><small>EXPERIENCE</small></li>
       </ol>
     </section>
 
-    <section class="v2-section" aria-labelledby="experience-title">
-      <div class="v2-section-header">
-        <div>
-          <p class="v2-section-label">Experience</p>
-          <h2 id="experience-title">経験・活動</h2>
-        </div>
-        <p>学習、業務、学校での活動、個人制作を通して実践を重ねています。</p>
-      </div>
-
-      <div class="about-v2-experience-list">
-        <article class="about-v2-experience-card">
-          <p class="about-v2-experience-type">Training</p>
-          <h3>職業訓練でのWeb制作・アプリ開発</h3>
-          <p>HTML・CSS・JavaScriptによるWeb制作に加え、Reactを用いたWebアプリ開発を経験しています。</p>
-        </article>
-
-        <article class="about-v2-experience-card">
-          <p class="about-v2-experience-type">Work</p>
-          <h3>法人情報の調査・Excel整備業務</h3>
-          <p>法人情報を調査し、確認した内容をExcelへ入力・整理する業務に取り組みました。</p>
-        </article>
-
-        <article class="about-v2-experience-card">
-          <p class="about-v2-experience-type">School activity</p>
-          <h3>学校公式SNSの企画・立ち上げ・運営</h3>
-          <p>学校公式SNSについて、企画から立ち上げ、運営までの活動に取り組んでいます。</p>
-        </article>
-
-        <article class="about-v2-experience-card">
-          <p class="about-v2-experience-type">Personal development</p>
-          <h3>個人開発と公開環境の構築</h3>
-          <p>WebサイトやWebアプリを個人で制作し、GitHubでの管理とGitHub Pages・Xserverを利用した公開環境の整備を行っています。</p>
-        </article>
+    <section class="ac-section ac-log" aria-labelledby="experience-title">
+      <header class="ac-section-heading"><div><p class="ac-eyebrow">EXPERIENCE / WORK LOG</p><h2 id="experience-title">経験・活動</h2></div><p>学習、業務、学校での活動、個人制作を通して実践を重ねています。</p></header>
+      <div class="ac-log-list">
+        <article><p class="ac-number">01</p><p class="ac-log-type">TRAINING</p><h3>職業訓練でのWeb制作・アプリ開発</h3><p>HTML・CSS・JavaScriptによるWeb制作に加え、Reactを用いたWebアプリ開発を経験しています。</p></article>
+        <article><p class="ac-number">02</p><p class="ac-log-type">WORK</p><h3>法人情報の調査・Excel整備業務</h3><p>法人情報を調査し、確認した内容をExcelへ入力・整理する業務に取り組みました。</p></article>
+        <article><p class="ac-number">03</p><p class="ac-log-type">SCHOOL ACTIVITY</p><h3>学校公式SNSの企画・立ち上げ・運営</h3><p>学校公式SNSについて、企画から立ち上げ、運営までの活動に取り組んでいます。</p></article>
+        <article><p class="ac-number">04</p><p class="ac-log-type">PERSONAL DEVELOPMENT</p><h3>個人開発と公開環境の構築</h3><p>WebサイトやWebアプリを個人で制作し、GitHubでの管理とGitHub Pages・Xserverを利用した公開環境の整備を行っています。</p></article>
       </div>
     </section>
 
-    <section class="v2-section about-v2-qualifications" aria-labelledby="qualifications-title">
-      <div>
-        <p class="v2-section-label">Qualifications</p>
-        <h2 id="qualifications-title">資格・学習中</h2>
-      </div>
-
-      <div class="about-v2-qualification-columns">
-        <section aria-labelledby="acquired-title">
-          <h3 id="acquired-title">取得済み</h3>
-          <dl class="about-v2-qualification-list">
-            <div><dt>2023.07</dt><dd>ITパスポート</dd></div>
-            <div><dt>2023.11</dt><dd>Microsoft Office Specialist Excel 2019</dd></div>
-            <div><dt>2024.05</dt><dd>G検定</dd></div>
-            <div><dt>2024.07</dt><dd>生成AIパスポート</dd></div>
-          </dl>
-        </section>
-
-        <section aria-labelledby="learning-title">
-          <h3 id="learning-title">学習中</h3>
-          <ul class="about-v2-learning-list">
-            <li>基本情報技術者</li>
-            <li>情報セキュリティマネジメント</li>
-          </ul>
-        </section>
+    <section class="ac-section ac-qualifications" aria-labelledby="qualifications-title">
+      <header class="ac-section-heading"><div><p class="ac-eyebrow">QUALIFICATIONS</p><h2 id="qualifications-title">資格・学習中</h2></div><p>取得した資格と、現在学習している分野を記録しています。</p></header>
+      <div class="ac-qualification-table" role="table" aria-label="資格と学習状況">
+        <div class="ac-table-head" role="row"><span role="columnheader">DATE</span><span role="columnheader">QUALIFICATION</span><span role="columnheader">STATUS</span></div>
+        <div role="row"><time datetime="2023-07">2023.07</time><p>ITパスポート</p><strong>ACQUIRED</strong></div>
+        <div role="row"><time datetime="2023-11">2023.11</time><p>Microsoft Office Specialist Excel 2019</p><strong>ACQUIRED</strong></div>
+        <div role="row"><time datetime="2024-05">2024.05</time><p>G検定</p><strong>ACQUIRED</strong></div>
+        <div role="row"><time datetime="2024-07">2024.07</time><p>生成AIパスポート</p><strong>ACQUIRED</strong></div>
+        <div role="row"><time>—</time><p>基本情報技術者</p><strong class="ac-learning">LEARNING</strong></div>
+        <div role="row"><time>—</time><p>情報セキュリティマネジメント</p><strong class="ac-learning">LEARNING</strong></div>
       </div>
     </section>
 
-    <section class="v2-section about-v2-cta" aria-labelledby="next-title">
-      <div>
-        <p class="v2-section-label">Next</p>
-        <h2 id="next-title">制作と取り組みを見る</h2>
-        <p>制作分野の詳細と、ご連絡先をご案内します。</p>
-      </div>
-
-      <nav class="about-v2-cta-list" aria-label="次に見るページ">
-        <a href="web-apps.html"><span>Web Appsを見る</span><small>View</small></a>
-        <a href="development.html"><span>Developmentを見る</span><small>View</small></a>
-        <a href="contact.html"><span>Contactへ進む</span><small>View</small></a>
-      </nav>
+    <section class="ac-section ac-next" aria-labelledby="next-title">
+      <div><p class="ac-eyebrow">COUNTER / NEXT</p><h2 id="next-title">NEXT ORDER</h2><p>制作分野の詳細と、ご連絡先をご案内します。</p></div>
+      <nav class="ac-next-list" aria-label="次に見るページ"><a href="web-apps.html"><span>01</span><strong>Web Appsを見る</strong><small>DRINKS →</small></a><a href="development.html"><span>02</span><strong>Developmentを見る</strong><small>BEANS →</small></a><a href="contact.html"><span>03</span><strong>Contactへ進む</strong><small>COUNTER →</small></a></nav>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="v2-footer-inner">
-      <div>
-        <a href="index.html" class="v2-footer-logo">Portfolio</a>
-        <p>Building, learning, and experimenting.</p>
-        <p class="about-v2-footer-ja">つくり、学び、実験する。</p>
-      </div>
-      <div class="v2-footer-links" aria-label="外部リンク">
-        <a href="mailto:mfmf0707@gmail.com">Email</a>
-        <a href="https://github.com/pluto007-lab" target="_blank" rel="noopener noreferrer">GitHub</a>
-      </div>
+  <footer class="footer pc-footer">
+    <div>
+      <div class="pc-signature-slot" aria-label="Portfolio Cafe signature logo area"><img class="pc-signature-logo" src="img/portfolio-cafe/portfolio-cafe-signature-logo.png" alt="Portfolio — MADE FRESH, BUILT DAILY." width="980" height="447" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span hidden>PORTFOLIO / MADE FRESH, BUILT DAILY.</span></div>
+      <p class="pc-footer-thanks">THANK YOU.</p><p>OPEN DAILY.</p>
     </div>
-    <p class="v2-copyright">© 2026 Portfolio</p>
-    <a href="#" class="back-to-top" aria-label="ページ上部へ戻る">↑</a>
+    <nav aria-label="連絡先と外部リンク"><a href="mailto:mfmf0707@gmail.com">Email</a><a href="https://github.com/pluto007-lab" target="_blank" rel="noopener noreferrer">GitHub</a><a href="contact.html">Contact</a></nav>
+    <img class="pc-thank-you-tag" src="img/portfolio-cafe/portfolio-cafe-thank-you-tag.png" alt="PORTFOLIO CAFE THANK YOU tag" width="1086" height="1448">
+    <p class="pc-footer-copy">© 2026 PORTFOLIO CAFE</p>
+    <a href="#top" class="back-to-top" aria-label="ページ上部へ戻る">↑</a>
   </footer>
 
   <script src="js/script.js?v=10"></script>

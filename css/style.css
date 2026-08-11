@@ -135,6 +135,114 @@ main {
   margin-top: 16px;
 }
 
+/* Portfolio Cafe About — lower-page design baseline */
+.home-v2.cafe-home-v2.about-cafe {
+  background:#fff;
+  color:#111;
+  font-family:"Manrope","Noto Sans JP",sans-serif;
+}
+.about-cafe main { padding:0 0 104px; }
+.about-cafe main section { scroll-margin-top:32px; }
+.about-cafe .ac-eyebrow { color:#327fab; font:700 9px/1.4 "Manrope",sans-serif; letter-spacing:.2em; }
+.about-cafe .ac-hero { display:grid; margin-top:18px; padding:72px 0 88px; grid-template-columns:minmax(350px,.84fr) minmax(0,1.16fr); align-items:end; gap:72px; border-bottom:1px solid #111; }
+.about-cafe .ac-hero h1 { margin-top:18px; color:#111; font-family:"Archivo","Noto Sans JP",sans-serif; font-size:clamp(66px,7.5vw,104px); font-weight:600; line-height:.82; letter-spacing:-.065em; }
+.about-cafe .ac-hero-copy { display:grid; gap:28px; }
+.about-cafe .ac-hero-lead { font-family:"Noto Sans JP",sans-serif; font-size:clamp(23px,2.5vw,34px); font-weight:600; line-height:1.65; letter-spacing:.055em; }
+.about-cafe .ac-hero-description { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:30px; }
+.about-cafe .ac-hero-description p { color:#4f575c; font-size:12px; line-height:2.05; }
+.about-cafe .ac-role { display:flex; padding-top:18px; align-items:center; justify-content:space-between; gap:24px; border-top:1px solid #e5e8eb; }
+.about-cafe .ac-role strong { font:700 9px/1.4 "Manrope",sans-serif; letter-spacing:.14em; }
+.about-cafe .ac-role p { display:flex; flex-wrap:wrap; justify-content:flex-end; gap:7px 15px; color:#697177; font:700 8px/1.4 "Manrope",sans-serif; letter-spacing:.1em; }
+.about-cafe .ac-section { margin-top:0; padding:104px 0 0; }
+.about-cafe .ac-section-heading { display:grid; padding-bottom:34px; grid-template-columns:minmax(0,1fr) minmax(300px,430px); align-items:end; gap:60px; border-bottom:1px solid #111; }
+.about-cafe .ac-section-heading h2,.about-cafe .ac-recipe h2,.about-cafe .ac-next h2 { margin-top:10px; color:#111; font-family:"Archivo","Noto Sans JP",sans-serif; font-size:clamp(42px,5vw,64px); font-weight:600; line-height:1; letter-spacing:-.05em; }
+.about-cafe .ac-section-heading > p { color:#596168; font-size:12px; line-height:1.9; }
+.about-cafe .ac-note-list article { display:grid; padding:38px 0; grid-template-columns:72px minmax(300px,.9fr) minmax(0,1.1fr); align-items:start; gap:42px; border-bottom:1px solid #e5e8eb; }
+.about-cafe .ac-number { color:#78bce8; font:500 24px/1 "Manrope",sans-serif; letter-spacing:-.03em; }
+.about-cafe .ac-note-list h3,.about-cafe .ac-log-list h3 { color:#111; font-family:"Archivo","Noto Sans JP",sans-serif; font-size:clamp(22px,2.6vw,32px); font-weight:600; line-height:1.35; letter-spacing:-.035em; }
+.about-cafe .ac-note-list article > p:last-child,.about-cafe .ac-log-list article > p:last-child { max-width:620px; color:#505960; font-size:12px; line-height:1.95; }
+.about-cafe .ac-recipe { display:grid; margin-top:104px; padding:62px 54px 54px; grid-template-columns:minmax(230px,.65fr) minmax(0,1.35fr); align-items:start; gap:72px; border-top:3px solid #78bce8; background:#f2f9fd; }
+.about-cafe .ac-recipe-heading { position:static; }
+.about-cafe .ac-recipe-heading > p:last-child { max-width:300px; margin-top:24px; color:#596168; font-size:12px; line-height:1.95; }
+.about-cafe .ac-recipe-list { margin:0; padding:0 24px; background:#fff; box-shadow:0 12px 28px rgba(59,124,163,.07); list-style:none; }
+.about-cafe .ac-recipe-list li { display:grid; min-height:112px; padding:24px 0; grid-template-columns:40px minmax(0,1fr) auto; align-items:center; gap:22px; border-bottom:1px solid #e5e8eb; }
+.about-cafe .ac-recipe-list li:last-child { border-bottom:0; }
+.about-cafe .ac-recipe-list > li > span { color:#317fab; font:700 10px/1 "Manrope",sans-serif; }
+.about-cafe .ac-recipe-list h3 { color:#111; font-family:"Archivo","Noto Sans JP",sans-serif; font-size:20px; font-weight:600; line-height:1.35; }
+.about-cafe .ac-recipe-list p { margin-top:7px; color:#505960; font-size:11px; line-height:1.8; }
+.about-cafe .ac-recipe-list small { color:#317fab; font:700 8px/1.4 "Manrope",sans-serif; letter-spacing:.12em; }
+.about-cafe .ac-log-list article { display:grid; padding:36px 0; grid-template-columns:58px 150px minmax(260px,.9fr) minmax(0,1.1fr); align-items:start; gap:30px; border-bottom:1px solid #e5e8eb; }
+.about-cafe .ac-log-type { color:#317fab; font:700 8px/1.5 "Manrope",sans-serif; letter-spacing:.12em; }
+.about-cafe .ac-qualification-table { margin-top:40px; border-top:1px solid #111; }
+.about-cafe .ac-qualification-table > div { display:grid; min-height:68px; padding:17px 10px; grid-template-columns:140px minmax(0,1fr) 130px; align-items:center; gap:24px; border-bottom:1px solid #e5e8eb; }
+.about-cafe .ac-qualification-table .ac-table-head { min-height:44px; padding-top:10px; padding-bottom:10px; color:#6b747a; font:700 8px/1.4 "Manrope",sans-serif; letter-spacing:.14em; }
+.about-cafe .ac-qualification-table time { color:#317fab; font:700 10px/1.4 "Manrope",sans-serif; letter-spacing:.08em; }
+.about-cafe .ac-qualification-table p { color:#111; font-size:13px; font-weight:500; line-height:1.7; }
+.about-cafe .ac-qualification-table strong { justify-self:start; padding:5px 8px; background:#eff8fd; color:#257aa9; font:700 8px/1.4 "Manrope",sans-serif; letter-spacing:.1em; }
+.about-cafe .ac-qualification-table .ac-learning { border:1px solid #78bce8; background:#fff; }
+.about-cafe .ac-next { display:grid; margin-top:104px; padding:48px 0; grid-template-columns:minmax(270px,.72fr) minmax(0,1.28fr); align-items:center; gap:72px; border-top:2px solid #78bce8; border-bottom:1px solid #111; }
+.about-cafe .ac-next > div > p:last-child { margin-top:18px; color:#596168; font-size:12px; line-height:1.9; }
+.about-cafe .ac-next-list { display:grid; }
+.about-cafe .ac-next-list a { display:grid; min-height:64px; padding:17px 8px; grid-template-columns:36px minmax(0,1fr) auto; align-items:center; gap:14px; border-bottom:1px solid #e5e8eb; color:#111; }
+.about-cafe .ac-next-list a:first-child { border-top:1px solid #e5e8eb; }
+.about-cafe .ac-next-list a:hover { background:#f5faff; }
+.about-cafe .ac-next-list span,.about-cafe .ac-next-list small { color:#317fab; font:700 8px/1.4 "Manrope",sans-serif; letter-spacing:.1em; }
+.about-cafe .ac-next-list strong { font-family:"Archivo","Noto Sans JP",sans-serif; font-size:15px; font-weight:600; }
+
+@media (min-width:1200px) {
+  .home-v2.cafe-home-v2.about-cafe .pc-header { left:40px; }
+  .home-v2.cafe-home-v2.about-cafe main,.home-v2.cafe-home-v2.about-cafe .pc-footer { position:relative; left:108px; width:min(1120px,calc(100% - 272px)); margin-right:auto; margin-left:auto; }
+}
+@media (max-width:1199px) {
+  .about-cafe main { width:min(100% - 40px,1100px); margin:0 auto; padding-top:12px; }
+  .about-cafe .ac-hero { grid-template-columns:minmax(280px,.75fr) minmax(0,1.25fr); gap:42px; }
+  .about-cafe .ac-hero-description { grid-template-columns:1fr; gap:14px; }
+  .about-cafe .ac-note-list article { grid-template-columns:58px minmax(210px,.75fr) minmax(0,1.25fr); gap:28px; }
+  .about-cafe .ac-log-list article { grid-template-columns:48px 120px minmax(220px,.9fr) minmax(0,1.1fr); gap:22px; }
+}
+@media (max-width:900px) {
+  .about-cafe .ac-hero { padding:58px 0 72px; grid-template-columns:1fr; gap:42px; }
+  .about-cafe .ac-hero h1 { font-size:clamp(58px,11vw,82px); }
+  .about-cafe .ac-hero-copy { max-width:680px; }
+  .about-cafe .ac-section { padding-top:82px; }
+  .about-cafe .ac-section-heading { grid-template-columns:1fr; gap:18px; }
+  .about-cafe .ac-section-heading > p { max-width:620px; }
+  .about-cafe .ac-note-list article { grid-template-columns:52px minmax(220px,.8fr) minmax(0,1.2fr); gap:22px; }
+  .about-cafe .ac-recipe { margin-top:82px; padding:48px 36px; grid-template-columns:1fr; gap:34px; }
+  .about-cafe .ac-recipe-heading { position:static; }
+  .about-cafe .ac-recipe-heading > p:last-child { max-width:600px; }
+  .about-cafe .ac-log-list article { grid-template-columns:50px minmax(0,1fr); gap:12px 22px; }
+  .about-cafe .ac-log-type { grid-column:2; }
+  .about-cafe .ac-log-list h3,.about-cafe .ac-log-list article > p:last-child { grid-column:2; }
+  .about-cafe .ac-next { margin-top:82px; grid-template-columns:1fr; gap:34px; }
+}
+@media (max-width:600px) {
+  .about-cafe main { width:min(100% - 28px,1100px); padding-bottom:76px; }
+  .about-cafe .ac-hero { margin-top:0; padding:48px 0 58px; }
+  .about-cafe .ac-hero h1 { font-size:clamp(52px,16vw,68px); }
+  .about-cafe .ac-hero-lead { font-size:21px; }
+  .about-cafe .ac-role { align-items:flex-start; flex-direction:column; }
+  .about-cafe .ac-role p { justify-content:flex-start; }
+  .about-cafe .ac-section { padding-top:68px; }
+  .about-cafe .ac-section-heading h2,.about-cafe .ac-recipe h2,.about-cafe .ac-next h2 { font-size:38px; }
+  .about-cafe .ac-note-list article { padding:28px 0; grid-template-columns:38px minmax(0,1fr); gap:10px 15px; }
+  .about-cafe .ac-note-list article > p:last-child { grid-column:2; }
+  .about-cafe .ac-note-list h3 { font-size:22px; }
+  .about-cafe .ac-recipe { margin-top:68px; padding:38px 18px; }
+  .about-cafe .ac-recipe-list { padding:0 14px; }
+  .about-cafe .ac-recipe-list li { grid-template-columns:30px minmax(0,1fr); gap:14px; }
+  .about-cafe .ac-recipe-list small { grid-column:2; }
+  .about-cafe .ac-log-list article { padding:28px 0; grid-template-columns:38px minmax(0,1fr); gap:10px 15px; }
+  .about-cafe .ac-log-list h3 { font-size:22px; }
+  .about-cafe .ac-qualification-table { overflow:hidden; }
+  .about-cafe .ac-qualification-table > div { padding:15px 4px; grid-template-columns:68px minmax(0,1fr) 72px; gap:10px; }
+  .about-cafe .ac-qualification-table p { overflow-wrap:anywhere; font-size:11px; }
+  .about-cafe .ac-qualification-table strong { padding:4px; font-size:7px; }
+  .about-cafe .ac-next { margin-top:68px; padding:38px 0; }
+  .about-cafe .ac-next-list a { grid-template-columns:28px minmax(0,1fr); }
+  .about-cafe .ac-next-list small { grid-column:2; }
+}
+
 /* Portfolio Cafe Home redesign v2 — scoped to .cafe-home-v2 */
 .cafe-home-v2 { --pc-black:#111; --pc-blue:#78bce8; --pc-gray:#e5e8eb; background:#fff; color:var(--pc-black); font-family:Inter,"Helvetica Neue",Arial,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif; }
 .cafe-home-v2 img { display:block; max-width:100%; }
